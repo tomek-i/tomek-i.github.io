@@ -1,18 +1,18 @@
-var gurmukhi = "੧੨੩੪੫੬੭੮੯੦ੳਅਰਤਯਪਸਦਗਹਜਕਲਙੜਚਵਬਨਮੲਥਫਸ਼ਧਘਝਖਲ਼ੜ੍ਹਛਭਣ";
-var sanskrit = "१२३४५६७८९अरतयपसदगहजकलङषचवबनमआथय़फशधघझखळक्षछभणऒ";
-var hanzi = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑呂";
-var katakana = "゠クタハムヰアケチヒモヲィコッャンイツヤウゥサフュヵテユヶェショワエトヘヨォスラヱオナリカセニホル・ヌレーキソネヽノマヮミ";
-var hex = "ABCDEF"
-var lines = "│┃║";
-var squares = "■□▢○●";
-var geo = "◌◐◑◒◓◖◗◙◎▣▤▥▦▨▧";
-var shade = "█░▒▓";
+let gurmukhi = "੧੨੩੪੫੬੭੮੯੦ੳਅਰਤਯਪਸਦਗਹਜਕਲਙੜਚਵਬਨਮੲਥਫਸ਼ਧਘਝਖਲ਼ੜ੍ਹਛਭਣ";
+let sanskrit = "१२३४५६७८९अरतयपसदगहजकलङषचवबनमआथय़फशधघझखळक्षछभणऒ";
+let hanzi = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑呂";
+let katakana = "゠クタハムヰアケチヒモヲィコッャンイツヤウゥサフュヵテユヶェショワエトヘヨォスラヱオナリカセニホル・ヌレーキソネヽノマヮミ";
+let hex = "ABCDEF"
+let lines = "│┃║";
+let squares = "■□▢○●";
+let geo = "◌◐◑◒◓◖◗◙◎▣▤▥▦▨▧";
+let shade = "█░▒▓";
 
 let drops = []
 
 let letters = (hanzi + katakana + sanskrit + gurmukhi + hex +lines + squares + geo+ shade)
 
-var MAX_DROPS = 150;
+const MAX_DROPS = 150;
 const MIN_FONT_SIZE = 5;
 const MAX_FONT_SIZE = 21;
 
