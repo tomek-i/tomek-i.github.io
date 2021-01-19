@@ -26,13 +26,13 @@
 	</div>
 	</div>
 	<script>
-	function x(block){
+	function decode(block){
 		return String.fromCharCode(parseInt(block,2));
 	}
 	function decode(){
 		let code = document.querySelector("main p").innerText;
 		let [name,domain] = code.split("@");
-		let email = name.split(" ").slice(0,-1).map(x).join("").trim()+"@"+domain.split(" ").slice(1).map(x).join("");
+		let email = name.split(" ").slice(0,-1).map(x).join("").trim()+"@"+domain.split(" ").slice(1).map(decode).join("");
 		let a = document.querySelector("main p a");
 		a.innerText = email;
 		a.onclick = null;
