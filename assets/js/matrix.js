@@ -30,6 +30,7 @@ function draw(){
 
     if(Math.random()>0.4){
 		background(0,50);
+		
 	}
     for(let i=0;i<drops.length;i++){
         drops[i].draw()
@@ -52,8 +53,10 @@ class Drop{
         textSize(this.size)
         if(Math.random()>0.1)
             fill(50,150,50)
-		else if (Math.random()<0.05)
-			fill(255,255,255)
+		else if (Math.random()<0.05){
+			fill(255,255,255);
+			
+		}
         else
             fill(170,250,170)
         text(this.text,this.x,this.y)
