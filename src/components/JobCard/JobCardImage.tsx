@@ -13,10 +13,10 @@ export const JobCardImage: React.FC<JobCardImageProps> = ({
   const { job } = useJobCardContext();
 
   return (
-    <div className="-card_img-box">
+    <div className="job-card_img-box">
       <img
         src={job?.image}
-        className="-card_img"
+        className="job-card_img"
         width={width}
         height={height}
         alt={alt}

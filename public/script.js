@@ -11,7 +11,7 @@
     var agTimeline = $(".js-timeline"),
       agTimelineLine = $(".js-timeline_line"),
       agTimelineLineProgress = $(".js-timeline_line-progress"),
-      agTimelinePoint = $(".js-timeline-card_point-box"),
+      agTimelinePoint = $(".js-timeline-job-card_point-box"),
       agTimelineItem = $(".js-timeline_item"),
       agOuterHeight = $(window).outerHeight(),
       agHeight = $(window).height(),
@@ -60,8 +60,8 @@
         var agTop = $(this).find(agTimelinePoint).offset().top;
 
         agTop + agPosY - $(window).scrollTop() < agPosY + 0.5 * agOuterHeight
-          ? $(this).addClass("js-ag-active")
-          : $(this).removeClass("js-ag-active");
+          ? $(this).addClass("js-timeline-active")
+          : $(this).removeClass("js-timeline-active");
       });
     }
 

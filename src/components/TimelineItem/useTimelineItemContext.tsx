@@ -1,11 +1,6 @@
 import { createContext, useContext } from "react";
-import { Job } from "../JobCard/useCardContext";
+import { Timeline } from "../../types";
 
-export type Timeline = {
-  startDate: string;
-  endDate?: string;
-  job: Job;
-};
 export const TimelineItemContext = createContext<{ timeline: Timeline } | null>(
   null
 );

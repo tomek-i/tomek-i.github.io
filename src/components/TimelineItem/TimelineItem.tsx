@@ -1,53 +1,53 @@
-import JobCard from "../JobCard/JobCard";
+import { Timeline } from "../../types";
+import { JobCard } from "../JobCard/JobCard";
 import { JobTimelineItemMeta } from "./JobTimelineItemMeta";
 import { JobTimelineItemPoint } from "./JobTimelineItemPoint";
-import { Timeline } from "./useTimelineItemContext";
+import { TimelineItemContext } from "./useTimelineItemContext";
 
 interface TimelineItemProps {
   isAlternate: boolean;
   timeline: Timeline;
 }
-export const TimelineItem: React.FC<TimelineItemProps> = ({
-  timeline,
-  isAlternate,
-}) => {
+export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
   return (
-    <div className="js-timeline_item _item">
-      <div className="-card_box">
-        {isAlternate ? (
-          <>
-            <div className="-card_meta-box">
-              <JobTimelineItemMeta
-                text={`${timeline.startDate} - ${timeline.endDate}`}
-              />
-            </div>
-            <div className="js-timeline-card_point-box -card_point-box">
-              <JobTimelineItemPoint text="" />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="js-timeline-card_point-box -card_point-box">
-              <JobTimelineItemPoint text="" />
-            </div>
-            <div className="-card_meta-box">
-              <JobTimelineItemMeta
-                text={`${timeline.startDate} - ${timeline.endDate}`}
-              />
-            </div>
-          </>
-        )}
+    <TimelineItemContext.Provider value={{ timeline }}>
+      <div className="js-timeline_item timelime_item">
+        <div className="job-card_box">
+          {isAlternate ? (
+            <>
+              <div className="job-card_meta-box">
+                <TimelineItem.Meta />
+              </div>
+              <div className="js-timeline-job-card_point-box job-card_point-box">
+                <TimelineItem.Point />
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="js-timeline-job-card_point-box job-card_point-box">
+                <TimelineItem.Point />
+              </div>
+              <div className="job-card_meta-box">
+                <TimelineItem.Meta />
+              </div>
+            </>
+          )}
+        </div>
+        <JobCard
+          job={timeline.job}
+          image={<JobCard.Image />}
+          info={
+            <JobCard.Info>
+              <JobCard.Title />
+              <JobCard.Description />
+              <JobCard.Responsibilities />
+            </JobCard.Info>
+          }
+        />
       </div>
-      <JobCard
-        job={timeline.job}
-        image={<JobCard.Image />}
-        info={
-          <JobCard.Info>
-            <JobCard.Title />
-            <JobCard.Description />
-          </JobCard.Info>
-        }
-      />
-    </div>
+    </TimelineItemContext.Provider>
   );
-};
+}
+
+TimelineItem.Meta = JobTimelineItemMeta;
+TimelineItem.Point = JobTimelineItemPoint;

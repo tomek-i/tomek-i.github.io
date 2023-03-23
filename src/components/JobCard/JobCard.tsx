@@ -1,9 +1,11 @@
 import { ReactNode } from "react";
+import { Job } from "../../types";
 import { JobCardDescription } from "./JobCardDescription";
 import { JobCardImage } from "./JobCardImage";
 import { JobCardInfo } from "./JobCardInfo";
+import { JobCardResponsibilities } from "./JobCardResponsibilities";
 import { JobCardTitle } from "./JobCardTitle";
-import { JobCardContext, Job } from "./useCardContext";
+import { JobCardContext } from "./useCardContext";
 
 interface JobCardProps {
   job: Job;
@@ -11,22 +13,22 @@ interface JobCardProps {
   info?: ReactNode;
 }
 
-function JobCard({ job, image, info }: JobCardProps) {
+export function JobCard({ job, image, info }: JobCardProps) {
   return (
     <JobCardContext.Provider value={{ job }}>
-      <div className="-card_item">
-        <div className="-card_inner">
+      <div className="job-cardtimelime_item">
+        <div className="job-card_inner">
           {image}
           {info}
         </div>
-        <div className="-card_arrow"></div>
+        <div className="job-card_arrow"></div>
       </div>
     </JobCardContext.Provider>
   );
 }
+
 JobCard.Image = JobCardImage;
 JobCard.Info = JobCardInfo;
 JobCard.Title = JobCardTitle;
 JobCard.Description = JobCardDescription;
-
-export default JobCard;
+JobCard.Responsibilities = JobCardResponsibilities;

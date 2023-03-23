@@ -1,10 +1,6 @@
 import { createContext, useContext } from "react";
+import { Job } from "../../types";
 
-export type Job = {
-  company: string;
-  description: string;
-  image: string;
-};
 export const JobCardContext = createContext<{ job: Job } | null>(null);
 
 export function useJobCardContext() {

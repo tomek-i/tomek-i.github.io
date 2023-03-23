@@ -116,30 +116,25 @@ img {
   max-width: 100%;
 }
 
-.ag-format-container {
+.timeline-format-container {
   width: 1160px;
   margin: 0 auto;
-
   position: relative;
 }
 
-._item {
+.timelime_item {
   margin: 0 0 50px;
   position: relative;
 }
-._item:nth-child(2n) {
-  text-align: right;
+.timelime_item:nth-child(2n) {
+  @apply text-right;
 }
 
-. {
-  display: inline-block;
-  width: 100%;
-  max-width: 100%;
+.timeline {
+  @apply inline-block w-full max-w-full relative;
   margin: 0 auto;
-
-  position: relative;
 }
-._line {
+.timelime_line {
   width: 2px;
   background-color: #393935;
 
@@ -157,26 +152,29 @@ img {
   transform: translateX(-50%);
 }
 
-._line-progress {
+.timelime_line-progress {
   width: 100%;
   height: 20%;
   background-color: #ff0;
 }
 
-.-card_box {
+.job-card_box {
   padding: 0 0 20px 50%;
+  @apply flex items-center;
 }
-._item:nth-child(2n) .-card_box {
+
+.timelime_item:nth-child(2n) .job-card_box {
   padding: 0 50% 20px 0;
+  justify-content: flex-end;
 }
-.-card_point-box {
+.job-card_point-box {
   display: inline-block;
   margin: 0 14px 0 -28px;
 }
-._item:nth-child(2n) .-card_point-box {
+.timelime_item:nth-child(2n) .job-card_point-box {
   margin: 0 -28px 0 14px;
 }
-.-card_point {
+.job-card_point {
   height: 50px;
   line-height: 50px;
   width: 50px;
@@ -184,7 +182,6 @@ img {
   background-color: #1d1d1b;
 
   text-align: center;
-  font-family: "ESL Legend", sans-serif;
   font-size: 20px;
   color: #fff;
 
@@ -192,27 +189,23 @@ img {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-.js-ag-active .-card_point {
+.js-timeline-active .job-card_point {
   color: #1d1d1b;
   background-color: #ff0;
 }
-.-card_meta-box {
+.job-card_meta-box {
   display: inline-block;
 }
-.-card_meta {
-  margin: 10px 0 0;
-
-  font-family: "ESL Legend", sans-serif;
-  font-weight: bold;
-  font-size: 28px;
-  color: #ff0;
+.job-card_meta {
+  /* margin: 10px 0 0; */
+  @apply text-3xl font-bold;
 }
-.-card_item {
+.job-cardtimelime_item {
   display: inline-block;
   width: 45%;
   margin: -77px 0 0;
-  background-color: #282828;
-
+  /* background-color: #282828; */
+  @apply bg-red-400;
   opacity: 0;
 
   -webkit-border-radius: 6px;
@@ -231,22 +224,22 @@ img {
 
   position: relative;
 }
-._item:nth-child(2n + 1) .-card_item {
+.timelime_item:nth-child(2n + 1) .job-cardtimelime_item {
   -webkit-transform: translateX(-200%);
   -moz-transform: translateX(-200%);
   -ms-transform: translateX(-200%);
   -o-transform: translateX(-200%);
   transform: translateX(-200%);
 }
-._item:nth-child(2n) .-card_item {
+.timelime_item:nth-child(2n) .job-cardtimelime_item {
   -webkit-transform: translateX(200%);
   -moz-transform: translateX(200%);
   -ms-transform: translateX(200%);
   -o-transform: translateX(200%);
   transform: translateX(200%);
 }
-.js-ag-active._item:nth-child(2n + 1) .-card_item,
-.js-ag-active._item:nth-child(2n) .-card_item {
+.js-timeline-active.timelime_item:nth-child(2n + 1) .job-cardtimelime_item,
+.js-timeline-active.timelime_item:nth-child(2n) .job-cardtimelime_item {
   opacity: 1;
 
   -webkit-transform: translateX(0);
@@ -255,11 +248,12 @@ img {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-.-card_arrow {
+.job-card_arrow {
   height: 18px;
   width: 18px;
   margin-top: 20px;
-  background-color: #282828;
+  /* background-color: #282828; */
+  @apply bg-red-400;
 
   z-index: -1;
   position: absolute;
@@ -272,34 +266,29 @@ img {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-._item:nth-child(2n + 1) .-card_arrow {
+.timelime_item:nth-child(2n + 1) .job-card_arrow {
   margin-left: calc(-18px / 2);
   margin-right: calc(-18px / 2);
 }
-._item:nth-child(2n) .-card_arrow {
+.timelime_item:nth-child(2n) .job-card_arrow {
   margin-left: -10px;
 
   right: auto;
   left: 0;
 }
-.-card_img {
+.job-card_img {
   width: 100%;
 }
-.-card_info {
+.job-card_info {
   padding: 20px 30px;
 }
-.-card_title {
-  display: none;
+.job-card_title {
+  /* display: none; */
   margin: 10px 0 0;
 
-  font-family: "ESL Legend", sans-serif;
   font-weight: bold;
   font-size: 28px;
   color: #ff0;
 }
-.-card_desc {
-  line-height: 1.45;
-
-  font-size: 16px;
-  color: #fff;
+.job-card_description {
 }

@@ -5,7 +5,7 @@ import { jobs } from "./data/jobs";
 function App() {
   return (
     <>
-      <header className="site-header mb-8">
+      <header className="mb-8 site-header">
         <h1 className="site-title">Thomas Iwainski</h1>
         <p className="-mt-6">Software Engineer</p>
       </header>
@@ -65,19 +65,20 @@ function App() {
           </p>
         </div>
       </section>
-      <section className="ag-section">
-        <div className="ag-format-container">
-          <div className="js-timeline ">
-            <div className="js-timeline_line _line">
-              <div className="js-timeline_line-progress _line-progress"></div>
+      <section>
+        <div className="timeline-format-container">
+          <div className="js-timeline timeline">
+            <div className="js-timeline_line timelime_line">
+              <div className="js-timeline_line-progress timelime_line-progress"></div>
             </div>
             <div className="_list">
-              <p>
+              {/*  <p>
                 Timeline from here:
-                <a href="https://codepen.io/alvarotrigo/pen/yLzBJaN">
+               <a href="https://codepen.io/alvarotrigo/pen/yLzBJaN">
                   https://codepen.io/alvarotrigo/pen/yLzBJaN
                 </a>
-              </p>
+                <p>https://www.youtube.com/watch?v=vPRdY87_SH0</p> 
+              </p>*/}
               {jobs.map((job, index) => (
                 <TimelineItem timeline={job} isAlternate={index % 2 !== 0} />
               ))}
