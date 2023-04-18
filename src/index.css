@@ -36,9 +36,7 @@
 .site-header {
   @apply text-center;
 }
-.site-header > p {
-  @apply text-lg;
-}
+
 .site-title {
   @apply text-9xl font-corinthia;
 }

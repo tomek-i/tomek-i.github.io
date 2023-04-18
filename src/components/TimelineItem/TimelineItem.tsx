@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Timeline } from "../../types";
 import { JobCard } from "../JobCard/JobCard";
 import { JobTimelineItemMeta } from "./JobTimelineItemMeta";
@@ -9,6 +10,12 @@ interface TimelineItemProps {
   timeline: Timeline;
 }
 export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
+  /* 
+  Timeline from here:
+    https://codepen.io/alvarotrigo/pen/yLzBJaN
+    https://www.youtube.com/watch?v=vPRdY87_SH0
+*/
+
   return (
     <TimelineItemContext.Provider value={{ timeline }}>
       <div className="js-timeline_item timelime_item">
@@ -41,6 +48,14 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
               <JobCard.Title />
               <JobCard.Description />
               <JobCard.Responsibilities />
+              <Link
+                to={timeline.job.caseStudy}
+                className={
+                  "px-4 py-2 border rounded my-4 block text-center hover:bg-white hover:text-black"
+                }
+              >
+                Case Study
+              </Link>
             </JobCard.Info>
           }
         />

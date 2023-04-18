@@ -1,91 +1,32 @@
-import React from "react";
-import { TimelineItem } from "./components/TimelineItem/TimelineItem";
-import { jobs } from "./data/jobs";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Layout } from "./layouts/default";
+import { WarburnEstatePage } from "./pages/CaseStudies/warburn-estate";
+import { HomePage } from "./pages/home";
+import { FourmationPage } from "./pages/CaseStudies/4mation";
+import { BusinessActsPage } from "./pages/CaseStudies/business-acts";
+import { VeritechPage } from "./pages/CaseStudies/veritech";
+import { GapYearPage } from "./pages/CaseStudies/gap-year";
+import { BundeswehrPage } from "./pages/CaseStudies/bundeswehr";
 
 function App() {
   return (
     <>
-      <header className="mb-8 site-header">
-        <h1 className="site-title">Thomas Iwainski</h1>
-        <p className="-mt-6">Software Engineer</p>
-      </header>
-
-      <section className="about-me diagonal">
-        <div className="wrapper">
-          <h2 className="section-title">About</h2>
-          <p>
-            Hi, I'm <strong>Thomas Iwainski</strong>, a software developer based
-            in Australia. Originally from Poland, I moved to Germany at a young
-            age and pursued my passion for computers with a three-year course at
-            Rheinische Akademie Köln in Germany.
-          </p>
-          <p>
-            Since then, I have acquired over{" "}
-            <strong>{new Date().getFullYear() - 2009}</strong> years of
-            experience in the software development industry. My expertise lies
-            in <strong>C# .NET, TypeScript, React, Node.js, MSSQL</strong>.
-            Throughout my career I have worked with different techstacks,{" "}
-            <strong>
-              Python, Django, Express, Strapi, Angular, PHP, Laravel, Wordpress,
-              Terraform.
-            </strong>
-          </p>
-          <p>
-            In 2009, I made Australia my home and became a citizen soon after.
-            When I'm not coding, you can find me{" "}
-            <strong>still coding 😅, at the beach or traveling</strong>.
-          </p>
-          <p>
-            If you're interested in working with me, please don't hesitate to{" "}
-            <a href="#contact">reach out</a>.
-          </p>
-        </div>
-      </section>
-
-      <section className="">
-        <div className="wrapper">
-          <h2 className="section-title">section 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum neque
-            velit saepe hic blanditiis maxime ipsam assumenda consectetur,
-            voluptatibus libero incidunt recusandae tenetur vel deserunt, non
-            eveniet, fuga alias culpa!
-          </p>
-        </div>
-      </section>
-
-      <section className="spikes">
-        <div className="wrapper">
-          <h2 className="section-title">section 3</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
-            odio harum dolor at perferendis libero illo debitis nihil laboriosam
-            minus, eaque quaerat dolorum. Deserunt quos necessitatibus nulla,
-            enim tempore dolor.
-          </p>
-        </div>
-      </section>
-      <section>
-        <div className="timeline-format-container">
-          <div className="js-timeline timeline">
-            <div className="js-timeline_line timelime_line">
-              <div className="js-timeline_line-progress timelime_line-progress"></div>
-            </div>
-            <div className="_list">
-              {/*  <p>
-                Timeline from here:
-               <a href="https://codepen.io/alvarotrigo/pen/yLzBJaN">
-                  https://codepen.io/alvarotrigo/pen/yLzBJaN
-                </a>
-                <p>https://www.youtube.com/watch?v=vPRdY87_SH0</p> 
-              </p>*/}
-              {jobs.map((job, index) => (
-                <TimelineItem timeline={job} isAlternate={index % 2 !== 0} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="case-studies/">
+              <Route path="4mation" element={<FourmationPage />} />
+              <Route path="warburn-estate" element={<WarburnEstatePage />} />
+              <Route path="veritech" element={<VeritechPage />} />
+              <Route path="gap-year" element={<GapYearPage />} />
+              <Route path="business-acts" element={<BusinessActsPage />} />
+              <Route path="bundeswehr" element={<BundeswehrPage />} />
+            </Route>
+            <Route path="*" element={<div> Ooops 404 </div>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

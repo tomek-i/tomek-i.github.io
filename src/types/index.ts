@@ -1,4 +1,7 @@
-import { ReactNode } from "react";
+export type Project = {
+  name: string;
+  description: string;
+};
 
 export type Job = {
   image: string;
@@ -7,6 +10,7 @@ export type Job = {
   role?: string;
   description?: string;
   responsibilities?: string[];
+  caseStudy: string;
 };
 
 export type Timeline = {
