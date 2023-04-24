@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import { Timeline } from "../../types";
-import { JobCard } from "../JobCard/JobCard";
-import { JobTimelineItemMeta } from "./JobTimelineItemMeta";
-import { JobTimelineItemPoint } from "./JobTimelineItemPoint";
-import { TimelineItemContext } from "./useTimelineItemContext";
+import { Link } from 'react-router-dom';
+import { Timeline } from '../../types';
+import { JobCard } from '../JobCard/JobCard';
+import { JobTimelineItemMeta } from './JobTimelineItemMeta';
+import { JobTimelineItemPoint } from './JobTimelineItemPoint';
+import { TimelineItemContext } from './useTimelineItemContext';
 
 interface TimelineItemProps {
   isAlternate: boolean;
@@ -42,6 +42,7 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
         </div>
         <JobCard
           job={timeline.job}
+          company={timeline.company}
           image={<JobCard.Image />}
           info={
             <JobCard.Info>
@@ -49,9 +50,9 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
               <JobCard.Description />
               <JobCard.Responsibilities />
               <Link
-                to={timeline.job.caseStudy}
+                to={`${timeline.company.name}`}
                 className={
-                  "px-4 py-2 border rounded my-4 block text-center hover:bg-white hover:text-black"
+                  'px-4 py-2 border rounded my-4 block text-center hover:bg-white hover:text-black'
                 }
               >
                 Case Study

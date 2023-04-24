@@ -1,21 +1,22 @@
-import { ReactNode } from "react";
-import { Job } from "../../types";
-import { JobCardDescription } from "./JobCardDescription";
-import { JobCardImage } from "./JobCardImage";
-import { JobCardInfo } from "./JobCardInfo";
-import { JobCardResponsibilities } from "./JobCardResponsibilities";
-import { JobCardTitle } from "./JobCardTitle";
-import { JobCardContext } from "./useCardContext";
+import { ReactNode } from 'react';
+import { Job, Company } from '../../types';
+import { JobCardDescription } from './JobCardDescription';
+import { JobCardImage } from './JobCardImage';
+import { JobCardInfo } from './JobCardInfo';
+import { JobCardResponsibilities } from './JobCardResponsibilities';
+import { JobCardTitle } from './JobCardTitle';
+import { JobCardContext } from './useCardContext';
 
 interface JobCardProps {
   job: Job;
+  company: Company;
   image?: ReactNode;
   info?: ReactNode;
 }
 
-export function JobCard({ job, image, info }: JobCardProps) {
+export function JobCard({ job, company, image, info }: JobCardProps) {
   return (
-    <JobCardContext.Provider value={{ job }}>
+    <JobCardContext.Provider value={{ job, company }}>
       <div className="job-cardtimelime_item">
         <div className="job-card_inner">
           {image}

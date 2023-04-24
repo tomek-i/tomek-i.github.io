@@ -1,10 +1,10 @@
-import { useState } from "react";
-import { AboutMe } from "../components/AboutMe/AboutMe";
-import { ContactForm } from "../components/ContactForm/ContactForm";
-import { Modal } from "../components/Modal/Modal";
-import { Section } from "../components/Section/Section";
-import { TimelineItem } from "../components/TimelineItem/TimelineItem";
-import { jobs } from "../data/jobs";
+import { useState } from 'react';
+import { AboutMe } from '../components/AboutMe/AboutMe';
+import { ContactForm } from '../components/ContactForm/ContactForm';
+import { Modal } from '../components/Modal/Modal';
+import { Section } from '../components/Section/Section';
+import { TimelineItem } from '../components/TimelineItem/TimelineItem';
+import { jobs } from '../data/jobs';
 
 interface HomePageProps {}
 export const HomePage: React.FC<HomePageProps> = () => {
@@ -50,7 +50,11 @@ export const HomePage: React.FC<HomePageProps> = () => {
             </div>
             <div className="_list">
               {jobs.map((job, index) => (
-                <TimelineItem timeline={job} isAlternate={index % 2 !== 0} />
+                <TimelineItem
+                  timeline={job}
+                  isAlternate={index % 2 !== 0}
+                  key={job.company.name + index}
+                />
               ))}
             </div>
           </div>
