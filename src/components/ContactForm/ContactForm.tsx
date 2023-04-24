@@ -1,29 +1,49 @@
-import { useForm } from "react-hook-form";
+import { useForm, useFormState } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 
 interface ContactFormProps {
   onCancelClick: () => void;
 }
+//TODO: read https://www.carlrippon.com/successful-submission-in-react-hook-form/
 export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
   type FormValues = {
     name: string;
     email: string;
     content: string;
   };
+  const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting, isSubmitted, isSubmitSuccessful },
   } = useForm<FormValues>();
 
-  const onSubmit = async (data: any) => {
-    const { name, email, subject, message } = data;
-
-    //TODO: send email
-    console.log("Name: ", name);
-    console.log("Email: ", email);
-    console.log("Subject: ", subject);
-    console.log("Message: ", message);
+  const onSubmit = async (data: FormValues) => {
+    if (!process.env.REACT_APP_API_EMAILJS_SERVICEID) {
+      throw Error('Secret not set API_EMAILJS_SERVICEID');
+    }
+    if (!process.env.REACT_APP_API_EMAILJS_TEMPLATEID) {
+      throw Error('Secret not set API_EMAILJS_TEMPLATEID');
+    }
+    if (!process.env.REACT_APP_API_EMAILJS_PUBLIC) {
+      throw Error('Secret not set API_EMAILJS_PUBLIC');
+    }
+    console.log({ data, isSubmitting });
+    await delay(3000);
+    console.log({ data, isSubmitting });
+    // emailjs
+    //   .send('portfolio', 'template_j2in6bn', data, 'tMLTafXkLE3sJd4Jg')
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       //TODO: display toast
+    //       //TODO: close modal
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
 
   return (
@@ -38,11 +58,12 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
       <div>
         <input
           type="text"
-          {...register("name", {
-            required: { value: true, message: "Please enter your name" },
+          readOnly={isSubmitting}
+          {...register('name', {
+            required: { value: true, message: 'Please enter your name' },
             maxLength: {
               value: 30,
-              message: "Please use 30 characters or less",
+              message: 'Please use 30 characters or less',
             },
           })}
           className="w-full p-2 border rounded"
@@ -55,7 +76,8 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
       <div>
         <input
           type="email"
-          {...register("email", {
+          readOnly={isSubmitting}
+          {...register('email', {
             required: true,
             pattern:
               /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
@@ -72,7 +94,8 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
 
       <textarea
         rows={3}
-        {...register("content", {
+        readOnly={isSubmitting}
+        {...register('content', {
           required: true,
         })}
         className="p-2 border rounded"
@@ -83,6 +106,9 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
       )}
 
       <div className="flex">
+        {isSubmitted && (
+          <div className="success">Form submitted successfully</div>
+        )}
         <button
           className="px-4 py-2 mr-auto border rounded hover:bg-white hover:text-black"
           type="button"
@@ -91,6 +117,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
           Cancel
         </button>
         <button
+          disabled={isSubmitting}
           className="px-4 py-2 border rounded hover:bg-white hover:text-black"
           type="submit"
         >
