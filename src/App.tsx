@@ -1,12 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout } from './layouts/default';
-import { WarburnEstatePage } from './pages/CaseStudies/warburn-estate';
 import { HomePage } from './pages/home';
-import { FourmationPage } from './pages/CaseStudies/4mation';
-import { BusinessActsPage } from './pages/CaseStudies/business-acts';
-import { VeritechPage } from './pages/CaseStudies/veritech';
-import { GapYearPage } from './pages/CaseStudies/gap-year';
-import { BundeswehrPage } from './pages/CaseStudies/bundeswehr';
 import { useEffect, useState } from 'react';
 import fm from 'front-matter';
 import { Meta } from './types';
