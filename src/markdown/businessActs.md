@@ -1,6 +1,6 @@
 ---
 job:
-    summary: TODO:  some short summary
+    summary: "TODO  some short summary"
     image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
     dates: 
         start: 10/06/1986
@@ -8,8 +8,8 @@ job:
 
 company: 
     name: BusinessActs
-    website: TODO:  https:/[...].com.au
-    description: TODO:  some description of the company
+    website: "TODO  https:/[...].com.au"
+    description: "TODO  some description of the company"
 
 tags: []
 ---

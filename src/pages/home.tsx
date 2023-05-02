@@ -5,12 +5,16 @@ import { Modal } from '../components/Modal/Modal';
 import { Section } from '../components/Section/Section';
 import { TimelineItem } from '../components/TimelineItem/TimelineItem';
 import { jobs } from '../data/jobs';
+import { Helmet } from 'react-helmet';
 
 interface HomePageProps {}
 export const HomePage: React.FC<HomePageProps> = () => {
   const [showModal, setShowModal] = useState(true);
   return (
     <>
+      <Helmet>
+        <script src="./timeline.js" type="text/javascript"></script>
+      </Helmet>
       {/* //TODO: make compaund component */}
       <Modal show={showModal} setShow={setShowModal} title="Contact">
         <ContactForm onCancelClick={() => setShowModal(false)} />

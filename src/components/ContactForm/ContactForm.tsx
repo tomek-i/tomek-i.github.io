@@ -29,21 +29,17 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
     if (!process.env.REACT_APP_API_EMAILJS_PUBLIC) {
       throw Error('Secret not set API_EMAILJS_PUBLIC');
     }
-    console.log({ data, isSubmitting });
-    await delay(3000);
-    console.log({ data, isSubmitting });
-    // emailjs
-    //   .send('portfolio', 'template_j2in6bn', data, 'tMLTafXkLE3sJd4Jg')
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //       //TODO: display toast
-    //       //TODO: close modal
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .send('portfolio', 'template_j2in6bn', data, 'tMLTafXkLE3sJd4Jg')
+      .then(
+        (result) => {
+          //TODO: display toast
+          //TODO: close modal
+        },
+        (error) => {
+          console.error(error.text);
+        }
+      );
   };
 
   return (
