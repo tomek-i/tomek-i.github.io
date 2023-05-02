@@ -10,12 +10,13 @@ import { jobs } from '../data/jobs';
 
 interface HomePageProps {}
 export const HomePage: React.FC<HomePageProps> = () => {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <Helmet>
         <script src="./timeline.js" type="text/javascript"></script>
       </Helmet>
+
       {/* //TODO: make compaund component */}
       <Modal show={showModal} setShow={setShowModal} title="Contact">
         <ContactForm onCancelClick={() => setShowModal(false)} />

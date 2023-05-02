@@ -43,3 +43,8 @@ export type Timeline = {
   job: Job;
   tags: string[];
 };
+
+export interface Post {
+  content: string;
+  attributes: Meta;
+}
