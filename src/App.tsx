@@ -1,11 +1,12 @@
+import fm from 'front-matter';
+import { useEffect, useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import frontmatter from 'remark-frontmatter';
+
 import { Layout } from './layouts/default';
 import { HomePage } from './pages/home';
-import { useEffect, useState } from 'react';
-import fm from 'front-matter';
 import { Meta } from './types';
-import ReactMarkdown from 'react-markdown';
-import frontmatter from 'remark-frontmatter';
 
 interface Post {
   content: string;

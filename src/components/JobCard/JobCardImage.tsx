@@ -1,4 +1,4 @@
-import { useJobCardContext } from "./useCardContext";
+import { useJobCardContext } from './useCardContext';
 
 interface JobCardImageProps {
   width?: string;

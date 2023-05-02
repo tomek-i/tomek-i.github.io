@@ -1,15 +1,15 @@
 ---
 job:
-    summary: "TODO some short summary"
-    image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
-    dates: 
-        start: 10/06/1986
-        end: 11/06/1987
+  summary: 'TODO some short summary'
+  image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
+  dates:
+    start: 10/06/1986
+    end: 11/06/1987
 
-company: 
-    name: 4mation
-    website: https://www.4mation.com.au
-    description: some description of the company
+company:
+  name: 4mation
+  website: https://www.4mation.com.au
+  description: some description of the company
 tags: []
 ---
 

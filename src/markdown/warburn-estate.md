@@ -1,15 +1,15 @@
 ---
 job:
-    summary:  some short summary
-    image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
-    dates: 
-        start: 10/06/1986
-        end: 11/06/1987
+  summary: some short summary
+  image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
+  dates:
+    start: 10/06/1986
+    end: 11/06/1987
 
-company: 
-    name: Warburn Estate
-    website: https://www.warburnestate.com.au
-    description: Warburn Estate is a family owned Winery located in Griffith, NSW
+company:
+  name: Warburn Estate
+  website: https://www.warburnestate.com.au
+  description: Warburn Estate is a family owned Winery located in Griffith, NSW
 
 tags: [software development, automation, sacda]
 ---

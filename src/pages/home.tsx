@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
+
 import { AboutMe } from '../components/AboutMe/AboutMe';
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import { Modal } from '../components/Modal/Modal';
 import { Section } from '../components/Section/Section';
 import { TimelineItem } from '../components/TimelineItem/TimelineItem';
 import { jobs } from '../data/jobs';
-import { Helmet } from 'react-helmet';
 
 interface HomePageProps {}
 export const HomePage: React.FC<HomePageProps> = () => {

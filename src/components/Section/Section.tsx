@@ -1,4 +1,4 @@
-import { SectionTitle } from "./SectionTitle";
+import { SectionTitle } from './SectionTitle';
 
 interface SectionProps extends React.PropsWithChildren {
   className?: string;

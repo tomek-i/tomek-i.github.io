@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      fontFamily: { corinthia: ["Corinthia", ...defaultTheme.fontFamily.sans] },
+      fontFamily: { corinthia: ['Corinthia', ...defaultTheme.fontFamily.sans] },
     },
   },
   plugins: [],

@@ -70,7 +70,7 @@ section {
 }
 
 .diagonal::after {
-  content: "";
+  content: '';
   background-image: var(--background);
   position: absolute;
   z-index: -1;
@@ -89,14 +89,14 @@ section {
 
 .spikes::before,
 .spikes::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: var(--spike-height);
   background: var(--spike-color);
-  -webkit-mask-image: url("/public/triangle.svg");
+  -webkit-mask-image: url('/public/triangle.svg');
   -webkit-mask-size: var(--spike-width) var(--spike-height);
-  mask-image: url("/public/triangle.svg");
+  mask-image: url('/public/triangle.svg');
   mask-size: var(--spike-width) var(--spike-height);
 }
 

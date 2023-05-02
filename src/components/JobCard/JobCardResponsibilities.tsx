@@ -1,4 +1,4 @@
-import { useJobCardContext } from "./useCardContext";
+import { useJobCardContext } from './useCardContext';
 
 interface JobCardResponsibilitiesProps {}
 export const JobCardResponsibilities: React.FC<
@@ -13,7 +13,7 @@ export const JobCardResponsibilities: React.FC<
             <li>{item}</li>
           ))}
         </ul>
-      )}{" "}
+      )}{' '}
     </>
   );
 };

@@ -11,11 +11,11 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
           Rheinische Akademie Köln in Germany.
         </p>
         <p>
-          Since then, I have acquired over{" "}
+          Since then, I have acquired over{' '}
           <strong>{new Date().getFullYear() - 2009}</strong> years of experience
-          in the software development industry. My expertise lies in{" "}
+          in the software development industry. My expertise lies in{' '}
           <strong>C# .NET, TypeScript, React, Node.js, MSSQL</strong>.
-          Throughout my career I have worked with different techstacks,{" "}
+          Throughout my career I have worked with different techstacks,{' '}
           <strong>
             Python, Django, Express, Strapi, Angular, PHP, Laravel, Wordpress,
             Terraform.
@@ -23,11 +23,11 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
         </p>
         <p>
           In 2009, I made Australia my home and became a citizen soon after.
-          When I'm not coding, you can find me{" "}
+          When I'm not coding, you can find me{' '}
           <strong>still coding 😅, at the beach or traveling</strong>.
         </p>
         <p>
-          If you're interested in working with me, please don't hesitate to{" "}
+          If you're interested in working with me, please don't hesitate to{' '}
           <a href="#contact">reach out</a>.
         </p>
       </div>

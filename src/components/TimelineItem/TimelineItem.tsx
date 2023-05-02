@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import { Timeline } from '../../types';
 import { JobCard } from '../JobCard/JobCard';
 import { JobTimelineItemMeta } from './JobTimelineItemMeta';

@@ -1,15 +1,15 @@
 ---
 job:
-    summary: text
-    image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
-    dates: 
-        start: 10/06/1986
-        end: 11/06/1987
+  summary: text
+  image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
+  dates:
+    start: 10/06/1986
+    end: 11/06/1987
 
-company: 
-    name: Veritech Corporation Pty. Ltd.
-    website: https://www.veritechcorp.com.au/
-    description: Veritech is an IT consultancy and service company in Griffith, NSW.
+company:
+  name: Veritech Corporation Pty. Ltd.
+  website: https://www.veritechcorp.com.au/
+  description: Veritech is an IT consultancy and service company in Griffith, NSW.
 
 tags: [website, development, consultancy]
 ---

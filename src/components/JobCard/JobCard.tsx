@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
-import { Job, Company } from '../../types';
+
+import { Company, Job } from '../../types';
 import { JobCardDescription } from './JobCardDescription';
 import { JobCardImage } from './JobCardImage';
 import { JobCardInfo } from './JobCardInfo';

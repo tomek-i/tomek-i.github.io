@@ -1,4 +1,5 @@
 import { createContext, useContext } from 'react';
+
 import { Company, Job } from '../../types';
 
 export const JobCardContext = createContext<{
