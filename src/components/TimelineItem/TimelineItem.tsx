@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+import React from 'react';
 import { Timeline } from '../../types';
 import { JobCard } from '../JobCard/JobCard';
 import { JobTimelineItemMeta } from './JobTimelineItemMeta';
@@ -17,29 +18,24 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
     https://www.youtube.com/watch?v=vPRdY87_SH0
 */
 
+
+const metaComponent = (<div className="job-card_meta-box">
+<TimelineItem.Meta />
+</div>)
+
+const pointComponent = (<div className="js-timeline-job-card_point-box job-card_point-box">
+<TimelineItem.Point />
+</div>)
+
+const content = isAlternate ? [metaComponent,pointComponent] : [pointComponent,metaComponent]
+
   return (
     <TimelineItemContext.Provider value={{ timeline }}>
       <div className="js-timeline_item timelime_item">
         <div className="job-card_box">
-          {isAlternate ? (
-            <>
-              <div className="job-card_meta-box">
-                <TimelineItem.Meta />
-              </div>
-              <div className="js-timeline-job-card_point-box job-card_point-box">
-                <TimelineItem.Point />
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="js-timeline-job-card_point-box job-card_point-box">
-                <TimelineItem.Point />
-              </div>
-              <div className="job-card_meta-box">
-                <TimelineItem.Meta />
-              </div>
-            </>
-          )}
+          {content.map((item, index) => (
+      <React.Fragment key={index}>{item}</React.Fragment>
+    ))}
         </div>
         <JobCard
           job={timeline.job}
