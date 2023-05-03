@@ -1,0 +1,19 @@
+/**
+ * @file Test suite for the {{pascalCase name}} component.
+ */
+
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { mount, shallow } from 'enzyme';
+
+import { {{pascalCase name}} } from '../src/components/{{pascalCase name}}';
+
+describe('{{pascalCase name}} component', () => {
+  it('should render snapshot', () => {
+    const component = renderer.create(<{{pascalCase name}} />);
+
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+});
