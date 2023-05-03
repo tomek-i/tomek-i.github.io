@@ -2,7 +2,7 @@ import { useContactForm } from '../JobCard/useCardContext';
 
 interface AboutMeProps {}
 export const AboutMe: React.FC<AboutMeProps> = () => {
-  const { setShowContactFormModal, showContactFormModal } = useContactForm();
+  const { setShowContactFormModal } = useContactForm();
 
   return (
     <section className="about-me diagonal">

@@ -10,7 +10,7 @@ export const Post: React.FC<PostProps> = ({ post }) => {
   return (
     <>
       <span className="text-xl bg-red-400">
-        {JSON.stringify(post.attributes)}
+        {/* {JSON.stringify(post.attributes)} */}
       </span>
       <ReactMarkdown children={post.content} remarkPlugins={[frontmatter]} />
     </>

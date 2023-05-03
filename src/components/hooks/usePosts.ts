@@ -31,7 +31,7 @@ export const usePosts = () => {
       setPosts(results);
     };
     loadContent();
-  }, []);
+  }, []); //NOTE: adding the dependecny here will kill the process
 
   return { posts, isLoading };
 };

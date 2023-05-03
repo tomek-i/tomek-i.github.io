@@ -1,6 +1,6 @@
 interface IconProps {}
 
-export const MailIcon: React.FC<IconProps> = ({}) => {
+export const MailIcon: React.FC<IconProps> = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@ export const MailIcon: React.FC<IconProps> = ({}) => {
   );
 };
 
-export const GithubIcon: React.FC<IconProps> = ({}) => {
+export const GithubIcon: React.FC<IconProps> = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ export const GithubIcon: React.FC<IconProps> = ({}) => {
   );
 };
 
-export const LikedInIcon: React.FC<IconProps> = ({}) => {
+export const LikedInIcon: React.FC<IconProps> = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export const LikedInIcon: React.FC<IconProps> = ({}) => {
   );
 };
 
-export const StackoverflowIcon: React.FC<IconProps> = ({}) => {
+export const StackoverflowIcon: React.FC<IconProps> = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

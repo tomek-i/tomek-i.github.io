@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser';
-import { useForm, useFormState } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 interface ContactFormProps {
   onCancelClick: () => void;
@@ -11,12 +11,11 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
     email: string;
     content: string;
   };
-  const delay = (ms: number) => new Promise((res) => setTimeout(res, ms));
 
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting, isSubmitted, isSubmitSuccessful },
+    formState: { errors, isSubmitting, isSubmitted },
   } = useForm<FormValues>();
 
   const onSubmit = async (data: FormValues) => {
@@ -32,7 +31,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
     emailjs
       .send('portfolio', 'template_j2in6bn', data, 'tMLTafXkLE3sJd4Jg')
       .then(
-        (result) => {
+        (_result) => {
           //TODO: display toast
           //TODO: close modal
         },
