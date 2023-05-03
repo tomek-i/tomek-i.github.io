@@ -1,5 +1,9 @@
+import { useContactForm } from '../JobCard/useCardContext';
+
 interface AboutMeProps {}
 export const AboutMe: React.FC<AboutMeProps> = () => {
+  const { setShowContactFormModal, showContactFormModal } = useContactForm();
+
   return (
     <section className="about-me diagonal">
       <div className="wrapper">
@@ -28,7 +32,10 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
         </p>
         <p>
           If you're interested in working with me, please don't hesitate to{' '}
-          <a href="#contact">reach out</a>.
+          <button onClick={() => setShowContactFormModal(true)}>
+            <span className="underline underline-offset-4">reach out</span>
+          </button>
+          .
         </p>
       </div>
     </section>

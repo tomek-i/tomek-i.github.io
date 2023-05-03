@@ -1,26 +1,24 @@
-import { useState } from 'react';
 import { Helmet } from 'react-helmet';
 
 import { AboutMe } from '../components/AboutMe/AboutMe';
-import { ContactForm } from '../components/ContactForm/ContactForm';
-import { Modal } from '../components/Modal/Modal';
 import { Section } from '../components/Section/Section';
 import { TimelineItem } from '../components/TimelineItem/TimelineItem';
-import { jobs } from '../data/jobs';
+import { usePosts } from '../components/hooks/usePosts';
+
+// import { jobs } from '../data/jobs';
 
 interface HomePageProps {}
 export const HomePage: React.FC<HomePageProps> = () => {
-  const [showModal, setShowModal] = useState(false);
+  const { posts } = usePosts();
+  //TODO: see App.tsx, we need the posts there too and should refactor
   return (
     <>
+      {/* //TODO: helmet is outdated https://stackoverflow.com/questions/66045965/warning-using-unsafe-componentwillmount-in-strict-mode-is-not-recommended-upgr */}
       <Helmet>
-        <script src="./timeline.js" type="text/javascript"></script>
+        <script defer async src="./timeline.js" type="text/javascript"></script>
       </Helmet>
 
       {/* //TODO: make compaund component */}
-      <Modal show={showModal} setShow={setShowModal} title="Contact">
-        <ContactForm onCancelClick={() => setShowModal(false)} />
-      </Modal>
 
       <AboutMe />
 
@@ -55,13 +53,20 @@ export const HomePage: React.FC<HomePageProps> = () => {
               <div className="js-timeline_line-progress timelime_line-progress"></div>
             </div>
             <div className="_list">
-              {jobs.map((job, index) => (
+              {posts?.map((post, index) => (
+                <TimelineItem
+                  timeline={post.attributes}
+                  isAlternate={index % 2 !== 0}
+                  key={post.attributes.company.name + 2 + index}
+                />
+              ))}
+              {/* {jobs.map((job, index) => (
                 <TimelineItem
                   timeline={job}
                   isAlternate={index % 2 !== 0}
                   key={job.company.name + index}
                 />
-              ))}
+              ))} */}
             </div>
           </div>
         </div>

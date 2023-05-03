@@ -1,60 +1,42 @@
-import fm from 'front-matter';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import { ShowContactFormModal } from './components/JobCard/useCardContext';
 import { Post } from './components/Post';
+import { usePosts } from './components/hooks/usePosts';
 import { Layout } from './layouts/default';
 import { HomePage } from './pages/home';
-import { Post as PostType } from './types';
 
 function App() {
-  const [posts, setPosts] = useState<PostType[]>();
-  const importAll = (r: any) => r.keys().map(r);
-  const markdownFiles = importAll(
-    (require as any).context('./markdown', false, /\.md$/)
-  );
+  const { posts } = usePosts();
+  //TODO: add context for posts OR add a local cache with timestamp before re-fetching online
 
-  useEffect(() => {
-    const loadContent = async () => {
-      const results = await Promise.all<PostType[]>(
-        markdownFiles.map(async (file: any) => {
-          return await fetch(file.default)
-            .then((res) => res.text())
-            .then((content) => {
-              const attributes = fm(content).attributes;
-              return {
-                content,
-                attributes,
-              };
-            });
-        })
-      );
-      setPosts(results);
-    };
-    loadContent();
-  }, []);
-
+  const [showContactFormModal, setShowContactFormModal] = useState(false);
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<HomePage />} />
-            {posts && (
-              <Route path="case-studies/">
-                {posts.map((post) => (
-                  <Route
-                    key={post.attributes.company.name}
-                    path={post.attributes.company.name}
-                    element={<Post post={post} />}
-                  />
-                ))}
-              </Route>
-            )}
-            <Route path="*" element={<div> Ooops 404 </div>} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <ShowContactFormModal.Provider
+        value={{ showContactFormModal, setShowContactFormModal }}
+      >
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<HomePage />} />
+              {posts && (
+                <Route path="case-studies/">
+                  {posts.map((post) => (
+                    <Route
+                      key={post.attributes.company.name}
+                      path={post.attributes.company.name}
+                      element={<Post post={post} />}
+                    />
+                  ))}
+                </Route>
+              )}
+              <Route path="*" element={<div> Ooops 404 </div>} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </ShowContactFormModal.Provider>
     </>
   );
 }

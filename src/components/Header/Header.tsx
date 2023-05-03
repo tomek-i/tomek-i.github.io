@@ -4,9 +4,12 @@ import {
   MailIcon,
   StackoverflowIcon,
 } from '../Icons/SVGs';
+import { useContactForm } from '../JobCard/useCardContext';
 
 interface HeadingProps {}
 export const Heading: React.FC<HeadingProps> = () => {
+  const { setShowContactFormModal, showContactFormModal } = useContactForm();
+
   //TODO: add from env file or config file instead
   return (
     <header className="mb-8 site-header">
@@ -32,7 +35,9 @@ export const Heading: React.FC<HeadingProps> = () => {
 
         <button
           onClick={() => {
-            window.location.href = 'mailto:mail@example.org';
+            console.log({ showContactFormModal });
+            setShowContactFormModal(true);
+            // window.location.href = 'mailto:mail@example.org';
           }}
         >
           <MailIcon />

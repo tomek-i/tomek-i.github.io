@@ -16,3 +16,18 @@ export function useJobCardContext() {
 
   return context;
 }
+
+//////////
+
+export const ShowContactFormModal = createContext<{
+  showContactFormModal: boolean;
+  setShowContactFormModal: React.Dispatch<React.SetStateAction<boolean>>;
+} | null>(null);
+
+export function useContactForm() {
+  const context = useContext(ShowContactFormModal);
+  if (!context)
+    throw new Error('must be part of ShowContactFormModal Provider');
+
+  return context;
+}
