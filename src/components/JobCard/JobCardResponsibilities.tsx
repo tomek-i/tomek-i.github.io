@@ -10,7 +10,7 @@ export const JobCardResponsibilities: React.FC<
       {job.responsibilities && (
         <ul className="text-left list-disc">
           {job.responsibilities?.map((item) => (
-            <li>{item}</li>
+            <li key={item}>{item}</li>
           ))}
         </ul>
       )}{' '}
