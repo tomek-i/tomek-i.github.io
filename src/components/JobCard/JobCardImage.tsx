@@ -12,6 +12,7 @@ export const JobCardImage: React.FC<JobCardImageProps> = ({
 }) => {
   const { job } = useJobCardContext();
 
+  //TODO: improve image handling, lazy loading etc
   return (
     <div className="job-card_img-box">
       <img

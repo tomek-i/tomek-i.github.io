@@ -13,9 +13,11 @@ export const Heading: React.FC<HeadingProps> = () => {
   //TODO: add from env file or config file instead
   return (
     <header className="mb-8 site-header">
+      {/* TODO: make configurable through some settings file */}
       <h1 className="site-title">Thomas Iwainski</h1>
       <p className="-mt-6">Software Engineer</p>
 
+{/* TODO: shoud be comming from a setting.json file or something like that */}
       <p className="flex justify-center mx-auto space-x-4 text-xs">
         <a rel="nofollow" href="https://github.com/tomek-i">
           <span className="cursor-pointer">
@@ -37,7 +39,6 @@ export const Heading: React.FC<HeadingProps> = () => {
           onClick={() => {
             console.log({ showContactFormModal });
             setShowContactFormModal(true);
-            // window.location.href = 'mailto:mail@example.org';
           }}
         >
           <MailIcon />

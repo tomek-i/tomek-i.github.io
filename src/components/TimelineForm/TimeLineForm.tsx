@@ -1,6 +1,9 @@
 import { Timeline } from '../../types';
 import { useForm } from '../hooks/useFormHook';
 
+//TODO: implement form to create content, that then uses github t/ gh-pages (npm) to push the changes / new files to the repo
+//TODO: for the above we need some admin route maybe and or github oauth which we need
+
 interface TimelineFormProps {}
 export const TimelineForm: React.FC<TimelineFormProps> = () => {
   const cb = () => {

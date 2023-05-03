@@ -29,11 +29,16 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
       throw Error('Secret not set API_EMAILJS_PUBLIC');
     }
     emailjs
-      .send('portfolio', 'template_j2in6bn', data, 'tMLTafXkLE3sJd4Jg')
+      .send(
+        process.env.REACT_APP_API_EMAILJS_SERVICEID,
+        process.env.REACT_APP_API_EMAILJS_TEMPLATEID,
+        data,
+        process.env.REACT_APP_API_EMAILJS_PUBLIC
+      )
       .then(
         (_result) => {
-          //TODO: display toast
-          //TODO: close modal
+          //TODO: display a toast for success
+          //TODO: close modal automatically
         },
         (error) => {
           console.error(error.text);

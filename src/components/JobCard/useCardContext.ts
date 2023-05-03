@@ -2,6 +2,9 @@ import { createContext, useContext } from 'react';
 
 import { Company, Job } from '../../types';
 
+
+//TODO: rename file name 
+
 export const JobCardContext = createContext<{
   job: Job;
   company: Company;
@@ -19,6 +22,7 @@ export function useJobCardContext() {
 
 //////////
 
+//TODO: move to own file
 export const ShowContactFormModal = createContext<{
   showContactFormModal: boolean;
   setShowContactFormModal: React.Dispatch<React.SetStateAction<boolean>>;

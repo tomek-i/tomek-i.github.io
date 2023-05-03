@@ -8,6 +8,8 @@ export const usePosts = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const importAll = (r: any) => r.keys().map(r);
+
+  //TODO: this folder will change as there is a todo to move the markdown files
   const markdownFiles = importAll(
     (require as any).context('./../../markdown', false, /\.md$/)
   );

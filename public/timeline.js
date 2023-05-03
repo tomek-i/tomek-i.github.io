@@ -38,7 +38,7 @@
 
 
           //TODO: can be probably shortened
-        }, 1000);
+        }, 2000);
 
     
 
