@@ -5,6 +5,9 @@ job:
   dates:
     start: 10/06/1986
     end: 11/06/1987
+  responsibilities: [abc, def, g e h]
+  role: 'Software Engineer'
+  skills:
 
 company:
   name: Veritech Corporation Pty. Ltd.

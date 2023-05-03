@@ -5,6 +5,20 @@ job:
   dates:
     start: 10/06/1986
     end: 11/06/1987
+  responsibilities: [abc, def, g e h]
+  role: 'Software Engineer'
+  skills:
+    [
+      MsSQL,
+      Data Integration,
+      GS1,
+      Machine Data,
+      JavaScript,
+      C#,
+      .NET Framework,
+      Software Development,
+      Network Administration,
+    ]
 
 company:
   name: Warburn Estate
