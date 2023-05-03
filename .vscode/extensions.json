@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "heybourn.headwind",
+    "yzhang.markdown-all-in-one",
+    "csstools.postcss",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "wayou.vscode-todo-highlight",
+    "redhat.vscode-yaml"
+  ]
+}
