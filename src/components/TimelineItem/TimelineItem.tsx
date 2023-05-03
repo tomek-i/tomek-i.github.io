@@ -1,6 +1,6 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-import React from 'react';
 import { Timeline } from '../../types';
 import { JobCard } from '../JobCard/JobCard';
 import { JobTimelineItemMeta } from './JobTimelineItemMeta';
@@ -39,7 +39,8 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
       <div className="js-timeline_item timelime_item">
         <div className="job-card_box">
           {content.map((item, index) => (
-            <React.Fragment key={item.key}>{item}</React.Fragment>
+            //TODO: is there a bettr way to use key and not rely on index?
+            <React.Fragment key={index}>{item}</React.Fragment>
           ))}
         </div>
         <JobCard
