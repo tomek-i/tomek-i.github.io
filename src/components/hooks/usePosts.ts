@@ -1,7 +1,7 @@
 import fm from 'front-matter';
 import { useEffect, useState } from 'react';
 
-import { Post as PostType } from './../../types';
+import { Meta, Post as PostType } from './../../types';
 
 export const usePosts = () => {
   const [posts, setPosts] = useState<PostType[]>();
@@ -16,19 +16,26 @@ export const usePosts = () => {
   useEffect(() => {
     const loadContent = async () => {
       setIsLoading(true);
-      const results = await Promise.all<PostType[]>(
+      let results = await Promise.all<PostType[]>(
         markdownFiles.map(async (file: any) => {
           return await fetch(file.default)
             .then((res) => res.text())
             .then((content) => {
-              const attributes = fm(content).attributes;
+              const attributes = fm(content).attributes as Meta;
               return {
                 content,
                 attributes,
               };
             });
         })
+      ).then((results) =>
+        results.sort(
+          (a, b) =>
+            Number(new Date(b.attributes.job.dates.start)) -
+            Number(new Date(a.attributes.job.dates.start))
+        )
       );
+
       setIsLoading(false);
       setPosts(results);
     };
