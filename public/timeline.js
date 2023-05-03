@@ -1,5 +1,6 @@
 (function ($) {
   $(function () {
+    
     $(window).on('scroll', function () {
       fnOnScroll();
     });
@@ -17,6 +18,29 @@
       agHeight = $(window).height(),
       f = -1,
       agFlag = false;
+
+
+      //TODO: is there a better way - this is to avoid issues with react where not all items are available yet
+      setTimeout(
+        function() 
+        {
+          //TODO: only load what is necessary
+
+          agTimeline = $('.js-timeline');
+          agTimelineLine = $('.js-timeline_line');
+          agTimelineLineProgress = $('.js-timeline_line-progress');
+          agTimelinePoint = $('.js-timeline-job-card_point-box');
+          agTimelineItem = $('.js-timeline_item');
+          agOuterHeight = $(window).outerHeight();
+          agHeight = $(window).height();
+          f = -1;
+          agFlag = false;
+
+
+          //TODO: can be probably shortened
+        }, 1000);
+
+    
 
     function fnOnScroll() {
       agPosY = $(window).scrollTop();
@@ -70,4 +94,5 @@
       agFlag = true;
     }
   });
+
 })(jQuery);
