@@ -3,7 +3,7 @@ job:
   summary: 'TODO  some short summary'
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
-    start: 10/06/1986
+    start: 10/06/1980
     end: 11/06/1987
   skills:
   responsibilities: [abc, def, g e h]
