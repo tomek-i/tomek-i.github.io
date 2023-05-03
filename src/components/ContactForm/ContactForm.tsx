@@ -41,7 +41,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
           //TODO: close modal automatically
         },
         (error) => {
-          console.error(error.text);
+          //TODO: log error
         }
       );
   };

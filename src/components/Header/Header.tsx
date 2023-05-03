@@ -8,7 +8,7 @@ import { useContactForm } from '../JobCard/useCardContext';
 
 interface HeadingProps {}
 export const Heading: React.FC<HeadingProps> = () => {
-  const { setShowContactFormModal, showContactFormModal } = useContactForm();
+  const { setShowContactFormModal } = useContactForm();
 
   //TODO: add from env file or config file instead
   return (
@@ -17,7 +17,7 @@ export const Heading: React.FC<HeadingProps> = () => {
       <h1 className="site-title">Thomas Iwainski</h1>
       <p className="-mt-6">Software Engineer</p>
 
-{/* TODO: shoud be comming from a setting.json file or something like that */}
+      {/* TODO: shoud be comming from a setting.json file or something like that */}
       <p className="flex justify-center mx-auto space-x-4 text-xs">
         <a rel="nofollow" href="https://github.com/tomek-i">
           <span className="cursor-pointer">
@@ -37,7 +37,6 @@ export const Heading: React.FC<HeadingProps> = () => {
 
         <button
           onClick={() => {
-            console.log({ showContactFormModal });
             setShowContactFormModal(true);
           }}
         >

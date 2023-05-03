@@ -7,6 +7,7 @@ import { useForm } from '../hooks/useFormHook';
 interface TimelineFormProps {}
 export const TimelineForm: React.FC<TimelineFormProps> = () => {
   const cb = () => {
+    // eslint-disable-next-line no-console
     console.log('form callback', { values });
   };
   const { values, handleChange, handleSubmit } = useForm<Timeline>(cb);

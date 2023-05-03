@@ -18,24 +18,29 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
     https://www.youtube.com/watch?v=vPRdY87_SH0
 */
 
+  const metaComponent = (
+    <div className="job-card_meta-box">
+      <TimelineItem.Meta />
+    </div>
+  );
 
-const metaComponent = (<div className="job-card_meta-box">
-<TimelineItem.Meta />
-</div>)
+  const pointComponent = (
+    <div className="js-timeline-job-card_point-box job-card_point-box">
+      <TimelineItem.Point />
+    </div>
+  );
 
-const pointComponent = (<div className="js-timeline-job-card_point-box job-card_point-box">
-<TimelineItem.Point />
-</div>)
-
-const content = isAlternate ? [metaComponent,pointComponent] : [pointComponent,metaComponent]
+  const content = isAlternate
+    ? [metaComponent, pointComponent]
+    : [pointComponent, metaComponent];
 
   return (
     <TimelineItemContext.Provider value={{ timeline }}>
       <div className="js-timeline_item timelime_item">
         <div className="job-card_box">
           {content.map((item, index) => (
-      <React.Fragment key={index}>{item}</React.Fragment>
-    ))}
+            <React.Fragment key={item.key}>{item}</React.Fragment>
+          ))}
         </div>
         <JobCard
           job={timeline.job}

@@ -33,7 +33,9 @@ export const usePosts = () => {
       setPosts(results);
     };
     loadContent();
-  }, []); //NOTE: adding the dependecny here will kill the process
+    // NOTE: adding the dependecny here will kill the process
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return { posts, isLoading };
 };
