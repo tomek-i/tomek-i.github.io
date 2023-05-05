@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom';
 
 import { ContactForm } from '../components/ContactForm/ContactForm';
+import { useContactForm } from '../components/ContactForm/useContactForm';
 import { Heading } from '../components/Header/Header';
-import { useContactForm } from '../components/JobCard/useCardContext';
 import { Modal } from '../components/Modal/Modal';
 
 export const Layout = () => {

@@ -1,10 +1,10 @@
+import { useContactForm } from '../ContactForm/useContactForm';
 import {
   GithubIcon,
   LikedInIcon,
   MailIcon,
   StackoverflowIcon,
 } from '../Icons/SVGs';
-import { useContactForm } from '../JobCard/useCardContext';
 
 interface HeadingProps {}
 export const Heading: React.FC<HeadingProps> = () => {
@@ -15,7 +15,7 @@ export const Heading: React.FC<HeadingProps> = () => {
     <header className="mb-8 site-header">
       {/* TODO: make configurable through some settings file */}
       <h1 className="site-title">Thomas Iwainski</h1>
-      <p className="-mt-6">Software Engineer</p>
+      <p className="-mt-6">Senior Software Engineer</p>
 
       {/* TODO: shoud be comming from a setting.json file or something like that */}
       <p className="flex justify-center mx-auto space-x-4 text-xs">

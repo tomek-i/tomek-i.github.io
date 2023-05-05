@@ -1,11 +1,18 @@
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 
+import { useContactForm } from './useContactForm';
+
+const notifySuccess = () => toast('Email sent.');
+const notifyError = () => toast('There was an issue sending the email.');
 interface ContactFormProps {
   onCancelClick: () => void;
 }
 //TODO: read https://www.carlrippon.com/successful-submission-in-react-hook-form/
 export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
+  const { setShowContactFormModal } = useContactForm();
+
   type FormValues = {
     name: string;
     email: string;
@@ -37,13 +44,14 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
       )
       .then(
         (_result) => {
-          //TODO: display a toast for success
-          //TODO: close modal automatically
+          notifySuccess();
         },
-        (error) => {
-          //TODO: log error
+        (_error) => {
+          notifyError();
+          //TODO: add logging
         }
-      );
+      )
+      .finally(() => setShowContactFormModal(false));
   };
 
   return (

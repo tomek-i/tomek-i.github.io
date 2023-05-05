@@ -11,7 +11,7 @@ export const usePosts = () => {
 
   //TODO: this folder will change as there is a todo to move the markdown files
   const markdownFiles = importAll(
-    (require as any).context('./../../markdown', false, /\.md$/)
+    (require as any).context(process.env.REACT_APP_CONTENT_PATH, false, /\.md$/)
   );
   useEffect(() => {
     const loadContent = async () => {
@@ -40,7 +40,8 @@ export const usePosts = () => {
       setPosts(results);
     };
     loadContent();
-    // NOTE: adding the dependecny here will kill the process
+    // NOTE: adding the dependecny here will kill the process, probably need to useRef ?
+    // TODO: follow above note and add useRef based on this article: https://brandoncc.dev/blog/how-to-deal-with-circular-dependencies-in-react-hooks/
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
