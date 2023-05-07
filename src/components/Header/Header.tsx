@@ -10,14 +10,13 @@ interface HeadingProps {}
 export const Heading: React.FC<HeadingProps> = () => {
   const { setShowContactFormModal } = useContactForm();
 
-  //TODO: add from env file or config file instead
+  //TODO: it would be good if the below information is pulled from some configuration file
+
   return (
     <header className="mb-8 site-header">
-      {/* TODO: make configurable through some settings file */}
       <h1 className="site-title">Thomas Iwainski</h1>
       <p className="-mt-6">Senior Software Engineer</p>
 
-      {/* TODO: shoud be comming from a setting.json file or something like that */}
       <p className="flex justify-center mx-auto space-x-4 text-xs">
         <a rel="nofollow" href="https://github.com/tomek-i">
           <span className="cursor-pointer">

@@ -2,6 +2,7 @@ import { createContext, useContext } from 'react';
 
 import { Timeline } from '../../types';
 
+//TODO: extarct context to context folder
 export const TimelineItemContext = createContext<{ timeline: Timeline } | null>(
   null
 );

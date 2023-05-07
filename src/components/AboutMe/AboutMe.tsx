@@ -5,13 +5,9 @@ interface AboutMeProps {}
 export const AboutMe: React.FC<AboutMeProps> = () => {
   const { setShowContactFormModal } = useContactForm();
 
-  //TODO: get content from markdown file instead
-  //TODO: allow some modifiation of look / feel through frontmatter eg. diagonal css class
-
-  //TODO: replace fully with <Section> and wrapper / title  as seen in home.tsx
   return (
     <Section className="about-me diagonal">
-      <div className="wrapper">
+      <Section.Wrapper>
         <h2 className="section-title">About</h2>
         <p>
           Hi, I'm <strong>Thomas Iwainski</strong>, a software developer based
@@ -42,7 +38,7 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
           </button>
           .
         </p>
-      </div>
+      </Section.Wrapper>
     </Section>
   );
 };

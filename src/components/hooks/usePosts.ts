@@ -9,7 +9,6 @@ export const usePosts = () => {
 
   const importAll = (r: any) => r.keys().map(r);
 
-  //TODO: this folder will change as there is a todo to move the markdown files
   const markdownFiles = importAll(
     (require as any).context(process.env.REACT_APP_CONTENT_PATH, false, /\.md$/)
   );
