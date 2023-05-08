@@ -8,6 +8,8 @@ import { Modal } from '../components/Modal/Modal';
 export const Layout = () => {
   const { setShowContactFormModal, showContactFormModal } = useContactForm();
 
+  // TODO: add some konami code feature :-)
+
   return (
     <>
       <nav>

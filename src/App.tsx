@@ -51,7 +51,15 @@ function App() {
                   </div>
                 }
               />
-              <Route path="*" element={<div> Ooops 404 </div>} />
+              <Route
+                path="*"
+                element={
+                  <div>
+                    Ooops 404 <br /> TODO: add proper 404 page handler with some
+                    image, something fun.
+                  </div>
+                }
+              />
             </Route>
           </Routes>
         </BrowserRouter>
