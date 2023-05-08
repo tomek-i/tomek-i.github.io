@@ -28,7 +28,7 @@ company:
 tags: [software development, automation, sacda]
 ---
 
-As a Software Developer at a winery, I transformed the way the company operates by automating manual processes and digitizing data for better insights. By setting up and maintaining networks, I enabled seamless communication between teams and facilitated collaboration. I also had the opportunity to research, design and write new software programs that met the unique needs of the organization.
+As a Software Engineer at a winery, I transformed the way the company operates by automating manual processes and digitizing data for better insights. By setting up and maintaining networks, I enabled seamless communication between teams and facilitated collaboration. I also had the opportunity to research, design and write new software programs that met the unique needs of the organization.
 
 Working closely with users and managers, I developed software solutions that drove significant improvements in productivity and efficiency. Through my efforts, I was able to make machine data and key company information more accessible, leading to better reporting and data-driven decision-making.
 

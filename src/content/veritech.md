@@ -5,7 +5,14 @@ job:
   dates:
     start: 10/06/1982
     end: 11/06/1987
-  responsibilities: [abc, def, g e h]
+  responsibilities:
+    [
+      website development,
+      consultancy,
+      networking,
+      desktop support,
+      software development,
+    ]
   role: 'Software Engineer'
   skills:
 
@@ -19,6 +26,6 @@ tags: [website, development, consultancy]
 
 As an IT professional, I specialized in server and network development and maintenance, as well as website development. I worked closely with clients to understand their unique requirements and developed custom IT and network solutions to meet their needs.
 
-By leveraging my expertise in server and network development, I was able to create robust and reliable systems that helped clients improve their operations and increase efficiency. Additionally, I was involved in website development, creating engaging and user-friendly sites that helped clients enhance their online presence.
+I was managing over 30 website clients which were hosted by us or we maintained their hosting on their behalf. Responsibilities included regular maintenance checks and upgrades to ensure security, content updates, redesigning the website or extending its functionality.
 
-Throughout my career, I have been passionate about using technology to solve complex problems and improve business outcomes. I take pride in delivering high-quality IT solutions that meet the specific needs of each client, and I'm always eager to learn and stay up-to-date with the latest trends and advancements in the field.
+The websites were build on Wordpress and Joomla.s

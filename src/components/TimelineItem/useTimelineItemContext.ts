@@ -1,11 +1,7 @@
-import { createContext, useContext } from 'react';
+import { useContext } from 'react';
 
-import { Timeline } from '../../types';
+import { TimelineItemContext } from '../../context';
 
-//TODO: extarct context to context folder
-export const TimelineItemContext = createContext<{ timeline: Timeline } | null>(
-  null
-);
 export function useTimelineContext() {
   const context = useContext(TimelineItemContext);
   if (!context)

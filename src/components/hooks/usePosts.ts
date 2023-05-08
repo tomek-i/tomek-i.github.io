@@ -1,7 +1,11 @@
 import fm from 'front-matter';
 import { useEffect, useState } from 'react';
 
+import { desc } from '../../utility';
 import { Meta, Post as PostType } from './../../types';
+
+// TODO: use injection to allow fethcing posts from local content folder or via API
+// TODO: do the same for projects
 
 export const usePosts = () => {
   const [posts, setPosts] = useState<PostType[]>();
@@ -9,9 +13,11 @@ export const usePosts = () => {
 
   const importAll = (r: any) => r.keys().map(r);
 
+  //TODO: the following code does not support folders which makes it hard to organise content eg. work vs projects. Need to find some solutions to load projects and or abe to separate them somehow
   const markdownFiles = importAll(
     (require as any).context(process.env.REACT_APP_CONTENT_PATH, false, /\.md$/)
   );
+
   useEffect(() => {
     const loadContent = async () => {
       setIsLoading(true);
@@ -27,13 +33,7 @@ export const usePosts = () => {
               };
             });
         })
-      ).then((results) =>
-        results.sort(
-          (a, b) =>
-            Number(new Date(b.attributes.job.dates.start)) -
-            Number(new Date(a.attributes.job.dates.start))
-        )
-      );
+      ).then((results) => results.sort(desc));
 
       setIsLoading(false);
       setPosts(results);

@@ -1,6 +1,51 @@
-# Getting Started with Create React App
+# CareerHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CareerHub is a dynamic and interactive personal or organizational website built using React and Typescript.
+
+With a minimalist design, CareerHub allows you to showcase your career path in a timeline format, providing detailed information about your education, work history, and professional achievements. With the ability to add case studies, contact information, and links to your social media profiles, CareerHub gives you the tools to create a comprehensive online portfolio that reflects your professional identity.
+
+It is hosted directly from your Github repository, and its use of Markdown files makes editing and customization simple and easy.
+
+**Key features:**
+
+- Timeline format to showcase your career path
+- Ability to add case studies, contact information, and links to social media profiles
+- Hosted directly from your Github repository
+- Use of Markdown files for easy editing and customization
+
+With CareerHub, you can create a professional, dynamic, and engaging online presence to showcase your career path and professional accomplishments.
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+# Getting Started
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/tomek-i/tomek-i.github.io
+```
+
+Go to the project directory
+
+```bash
+  cd tomek-i.github.io
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
 
 ## Available Scripts
 
@@ -8,39 +53,96 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
 You will also see any lint errors in the console.
+
+> **_NOTE:_** You will need to setup your environent variables in a `.env` file. Please see the [Environment Variables](#environment-variables) section of this document.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
+See the section about [running tests](#tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](#deployment) for more information.
 
-### `npm run eject`
+### `npm run check`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+TODO: runs dependency check to filter out unused packages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `npm run plop`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+TODO: runs templates, currently only component setup to quickly create new components, stories and test.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `npm run deploy`
 
-## Learn More
+TODO: deploys to your github account
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `npm run format`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+TODO: runs prettier on the files, needs to have prettier installed globaly (test? maybe make npx dependency) and check if npx will read the local config file
+
+### `npm run lint`
+
+TODO: runs linter to check the code
+
+### `npm run coverage`
+
+TODO: runs tests (see test) and create coverage report (see test-coverage)
+
+## Tests
+
+TODO: write something about tests
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your `.env` file.
+
+| Key                      | Description                                                      |
+| ------------------------ | ---------------------------------------------------------------- |
+| `REACT_APP_CONTENT_PATH` | The path to the content folder containign all the `\*.md` files. |
+
+There are some optional environment variables that are used with 3rd party ntegrations. To find out more about these please see the [3rd Party integration](#3rd-party-integrations) section.
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+```
+
+TODO: this is incomplete, needs more information and steps to deploy to github pages using `gh-pages` npm package.
+
+## 3rd Party integrations
+
+### EmailJS
+
+This service is used to send out emails using the "contact me" form. For more information please visit [EmailJS](https://www.emailjs.com)
+
+You will need to add the following envrionment variables to your `.env` file if you want to use email as a contact option.
+
+| Key                                 | Description                                                               |
+| ----------------------------------- | ------------------------------------------------------------------------- |
+| `REACT_APP_API_EMAILJS_PUBLIC`      | The public key provided by EmailJS service.                               |
+| `REACT_APP_API_EMAILJS_SERVICE_ID`  | The service ID provided by EmailJS service.                               |
+| `REACT_APP_API_EMAILJS_TEMPLATE_ID` | The template to use when an email is being sent / forwarded from EmailJS. |
+
+## Roadmap
+
+Below is a collection of ideas and or other features to extend the functionality of this little app.
+
+- TODO: add items to roadmap
+- Write tests for the different components using enzyme / jest or some other framework
+- write unit tests for functio
+- add storybooks to the repo and configure the components

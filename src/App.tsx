@@ -18,6 +18,7 @@ function App() {
       <ShowContactFormModal.Provider
         value={{ showContactFormModal, setShowContactFormModal }}
       >
+        {/* TODO: separate this out into routes, so it is easier to find within the app structure */}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
@@ -33,6 +34,23 @@ function App() {
                   ))}
                 </Route>
               )}
+              <Route
+                path="career"
+                element={<div> TODO: add career page </div>}
+              />
+              <Route
+                path="projects"
+                element={<div> TODO: add projects page </div>}
+              />
+              <Route
+                path="contact"
+                element={
+                  <div>
+                    TODO: add contact page which will the contact form and some
+                    spill and other contact cards liek scial media etc.
+                  </div>
+                }
+              />
               <Route path="*" element={<div> Ooops 404 </div>} />
             </Route>
           </Routes>

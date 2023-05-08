@@ -20,13 +20,6 @@ export type Company = {
   };
 };
 
-export type Meta = {
-  company: Company;
-  job: Job;
-
-  tags: string[];
-};
-
 export type Job = {
   summary: string;
   image: string;
@@ -38,6 +31,12 @@ export type Job = {
   responsibilities: string[];
 };
 
+//TODO: refactor as Meta and Timeline now are the same, see which one is more appropiate
+export type Meta = {
+  company: Company;
+  job: Job;
+  tags: string[];
+};
 export type Timeline = {
   company: Company;
   job: Job;
@@ -46,5 +45,6 @@ export type Timeline = {
 
 export interface Post {
   content: string;
+  //TODO: rename `attributes` to meta and use Post<T> to pecify the type of the meta information
   attributes: Meta;
 }

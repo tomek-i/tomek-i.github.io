@@ -1,12 +1,5 @@
 import { getConfig, getLocalConfig } from './config';
 
-jest.mock('./get-local.config', () => ({
-  getLocalConfig: () => ({ environment: 'local' }),
-}));
-jest.mock('./get-production.config', () => ({
-  getProductionConfig: () => ({ environment: 'production' }),
-}));
-
 describe('the configuration', () => {
   it('defaults to the local environment', () => {
     expect(getConfig({})).toHaveProperty('environment', 'local');

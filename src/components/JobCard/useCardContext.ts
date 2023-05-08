@@ -1,11 +1,6 @@
-import { createContext, useContext } from 'react';
+import { useContext } from 'react';
 
-import { Company, Job } from '../../types';
-
-export const JobCardContext = createContext<{
-  job: Job;
-  company: Company;
-} | null>(null);
+import { JobCardContext } from '../../context';
 
 export function useJobCardContext() {
   const context = useContext(JobCardContext);

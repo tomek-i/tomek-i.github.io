@@ -46,6 +46,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
         </Section.Wrapper>
       </Section>
 
+      {/* TODO: separate this out as it can be a separate page called career where this component will be reused */}
       <Section className="overflow-hidden">
         <div className="timeline-format-container">
           <div className="js-timeline timeline">

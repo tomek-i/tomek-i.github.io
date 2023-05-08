@@ -6,6 +6,7 @@ import { Post as PostType } from '../../types';
 interface PostProps {
   post: PostType;
 }
+
 export const Post: React.FC<PostProps> = ({ post }) => {
   //TODO: incorporate and show some of the information stored in the attributes / meta
   return (

@@ -6,6 +6,8 @@ interface ModalProps extends React.PropsWithChildren {
   show: boolean;
   setShow: React.Dispatch<React.SetStateAction<boolean>>;
 }
+//TODO: use react portals to render the modal as per documentation here https://react.dev/reference/react-dom/createPortal#rendering-a-modal-dialog-with-a-portal and https://blog.logrocket.com/build-modal-with-react-portals/ and https://medium.com/@janevalencia/creating-modal-with-react-portals-a55c57bba1eb and https://react.school/ui/modal
+
 export const Modal: React.FC<ModalProps> = ({
   show = false,
   setShow,
@@ -13,6 +15,9 @@ export const Modal: React.FC<ModalProps> = ({
   children,
 }) => {
   if (!show) return null;
+
+  // TODO: extract components out like the timeline etc. or the job card, do this for content, header, and footer
+
   return (
     <>
       <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none text-slate-500 focus:outline-none">
@@ -35,6 +40,8 @@ export const Modal: React.FC<ModalProps> = ({
 
             {children}
 
+            {/* TODO: extract out as footer component that can be used for the modal */}
+
             {/*footer*/}
             {/* <div className="flex items-center justify-end p-6 border-t border-solid rounded-b border-slate-200">
               <button
@@ -55,6 +62,7 @@ export const Modal: React.FC<ModalProps> = ({
           </div>
         </div>
       </div>
+      {/* TODO: extract out as Overlay component */}
       <div className="fixed inset-0 z-40 bg-black opacity-40"></div>
     </>
   );
