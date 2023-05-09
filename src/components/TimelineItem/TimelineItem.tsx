@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { TimelineItemContext } from '../../context';
 import { Timeline } from '../../types';
 import { JobCard } from '../JobCard/JobCard';
 import { JobTimelineItemMeta } from './JobTimelineItemMeta';
 import { JobTimelineItemPoint } from './JobTimelineItemPoint';
-import { TimelineItemContext } from './useTimelineItemContext';
 
 interface TimelineItemProps {
   isAlternate: boolean;

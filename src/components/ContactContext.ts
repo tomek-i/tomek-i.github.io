@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { JobCardContext } from './JobCard/useCardContext';
+import { JobCardContext } from '../context';
 
 export function useJobCardContext() {
   const context = useContext(JobCardContext);

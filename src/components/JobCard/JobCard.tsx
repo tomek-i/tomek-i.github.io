@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
 
+import { JobCardContext } from '../../context';
 import { Company, Job } from '../../types';
 import { JobCardDescription } from './JobCardDescription';
 import { JobCardImage } from './JobCardImage';
 import { JobCardInfo } from './JobCardInfo';
 import { JobCardResponsibilities } from './JobCardResponsibilities';
 import { JobCardTitle } from './JobCardTitle';
-import { JobCardContext } from './useCardContext';
 
 interface JobCardProps {
   job: Job;
