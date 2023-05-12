@@ -1,18 +1,18 @@
 ---
 job:
-  summary: 'TODO  some short summary'
+  summary: 'As a Junior Software developer I was working on smaller plugins and integrations with SuperOffice CRM.'
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
     start: 10/06/1980
     end: 11/06/1987
   skills:
-  responsibilities: [abc, def, g e h]
+  responsibilities: [software development, def, g e h]
   role: 'Software Engineer'
 
 company:
   name: BusinessActs
   website: 'TODO  https:/[...].com.au'
-  description: 'TODO  some description of the company'
+  description: 'BusinessActs is software development compay in Cologne, Germany focusing in SuperOffice CRM.'
 
 tags: []
 ---
