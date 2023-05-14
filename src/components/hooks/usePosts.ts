@@ -29,6 +29,8 @@ export const usePosts = () => {
 
   const importAll = (r: any) => r.keys().map(r);
 
+  if (!process.env.REACT_APP_CONTENT_PATH)
+    throw new Error('REACT_APP_CONTENT_PATH not set');
   //TODO: the following code does not support folders which makes it hard to organise content eg. work vs projects. Need to find some solutions to load projects and or abe to separate them somehow
   const markdownFiles = importAll(
     (require as any).context(process.env.REACT_APP_CONTENT_PATH, false, /\.md$/)
