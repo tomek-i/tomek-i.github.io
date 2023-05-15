@@ -1,0 +1,343 @@
+TODO: add tracking with "react-tracking" from https://github.com/nytimes/react-tracking which sends info to console this can be dispatched to somewhere else like app insight or sentry or whatever
+TODO: trackign ideas: Device type - Track the type of device a user is accessing the page from
+```
+function trackDeviceType() {
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const deviceType = isMobile ? 'mobile' : 'desktop';
+  // send tracking event to server or third-party service
+}
+```
+
+Error tracking - Track when errors occur on the page
+
+```
+window.addEventListener('error', event => {
+  const error = event.error;
+  // send error tracking event to server or third-party service
+});
+```
+
+Scroll Depth:
+function trackScrollDepth() {
+  const windowHeight = window.innerHeight;
+  window.addEventListener('scroll', () => {
+    const scrollDepth = window.scrollY + windowHeight;
+    // send tracking event to server or third-party service
+  });
+}
+
+
+Browser information - Track information about the user's browser
+function trackBrowserInformation() {
+  const browserName = navigator.userAgent;
+  const browserVersion = navigator.appVersion;
+  // send tracking event to server or third-party service
+}
+
+user location:
+function trackUserLocation() {
+  navigator.geolocation.getCurrentPosition(position => {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    // send tracking event to server or third-party service
+  });
+}
+
+
+time spent on page:
+function trackTimeSpentOnPage() {
+  const startTime = new Date().getTime();
+  window.addEventListener('unload', () => {
+    const endTime = new Date().getTime();
+    const timeSpent = endTime - startTime;
+    // send tracking event to server or third-party service
+  });
+}
+
+clicks: function trackClick(elementId) {
+  const element = document.getElementById(elementId);
+  element.addEventListener('click', () => {
+    // send tracking event to server or third-party service
+  });
+}
+
+
+heatmmap:
+
+To track a heatmap, you would need to capture user interactions on your website or app and record them as data points. Then, you would aggregate the data points and visualize them as a heatmap to show which areas of your site are receiving the most user activity.
+
+Here's a basic example of how you could track mouse clicks on your site and record them as data points:
+
+function trackHeatmapClick(event: MouseEvent) {
+  const x = event.clientX;
+  const y = event.clientY;
+  // send tracking event to server or third-party service with x and y coordinates
+}
+
+function App() {
+  useEffect(() => {
+    document.addEventListener('click', trackHeatmapClick);
+    return () => {
+      document.removeEventListener('click', trackHeatmapClick);
+    };
+  }, []);
+
+  return (
+    // your app code here
+  );
+}
+
+In this example, we're using the document.addEventListener method to listen for click events on the entire page. When a click event occurs, we call the trackHeatmapClick function and pass in the MouseEvent object. We then extract the X and Y coordinates of the click event using the clientX and clientY properties, respectively, and send them to the server or third-party service for tracking.
+
+Once you have collected enough data points, you can use a heatmap library to visualize the data. Here's an example of how you co
+
+
+import heatmap from 'heatmap.js';
+
+function createHeatmap(dataPoints: { x: number; y: number }[]) {
+  const container = document.getElementById('heatmap-container');
+  const heatmapInstance = heatmap.create({
+    container,
+    radius: 25,
+  });
+  heatmapInstance.setData({
+    data: dataPoints.map(point => ({
+      x: point.x,
+      y: point.y,
+      value: 1,
+    })),
+    max: 1,
+  });
+}
+
+function App() {
+  const [dataPoints, setDataPoints] = useState<{ x: number; y: number }[]>([]);
+
+  useEffect(() => {
+    // fetch data points from server or third-party service
+    setDataPoints([...]); // assume we have an array of data points here
+  }, []);
+
+  useEffect(() => {
+    createHeatmap(dataPoints);
+  }, [dataPoints]);
+
+  return (
+    <div id="heatmap-container" style={{ width: '100%', height: '500px' }}></div>
+  );
+}
+
+In this example, we're using the heatmap.js library to create a heatmap visualization based on the data points. We first create a heatmapInstance object and pass in the container element where the heatmap should be displayed, as well as some configuration options like the radius of each data point. We then format our data points as an array of { x, y, value } objects and pass them to the setData method of the heatmapInstance. Finally, we render the container element where the heatmap should be displayed, which in this case is a div element with an ID of heatmap-container.
+
+
+////////////////
+
+
+There are many properties and methods available on the window and document objects in JavaScript that can be used to retrieve information about the user's browser and behavior. Here are a few examples:
+
+Browser Information: You can retrieve information about the user's browser, including the browser name, version, and platform, using the navigator object.
+typescript
+Copy code
+console.log(navigator.userAgent); // logs the user agent string, which includes the browser name and version
+console.log(navigator.platform); // logs the platform the browser is running on
+Screen and Viewport Information: You can retrieve information about the user's screen and viewport size, which can be useful for optimizing the layout of your site or app.
+typescript
+Copy code
+console.log(window.innerWidth); // logs the width of the viewport in pixels
+console.log(window.innerHeight); // logs the height of the viewport in pixels
+console.log(screen.width); // logs the width of the screen in pixels
+console.log(screen.height); // logs the height of the screen in pixels
+User Interaction Information: You can track user interactions with your site or app, including mouse clicks, keystrokes, and scroll events.
+typescript
+Copy code
+document.addEventListener('click', event => {
+  // track click event
+});
+
+document.addEventListener('keydown', event => {
+  // track keystroke event
+});
+
+document.addEventListener('scroll', event => {
+  // track scroll event
+});
+Timing Information: You can measure how long it takes for your site or app to load, as well as how long it takes for specific user interactions to complete.
+typescript
+Copy code
+console.log(performance.timing.domContentLoadedEventStart - performance.timing.navigationStart); // logs the time it takes for the DOM content to be loaded
+console.log(performance.timing.loadEventStart - performance.timing.navigationStart); // logs the time it takes for the page to fully load
+Network Information: You can track network requests made by your site or app, including HTTP requests, AJAX requests, and WebSocket connections.
+typescript
+Copy code
+performance.getEntriesByType('resource').forEach(entry => {
+  // track network request
+});
+These are just a few examples of the many properties and methods available on the window and document objects in JavaScript that can be used for analytics and tracking purposes. It's important to be mindful of user privacy and security concerns when implementing analytics tools, and to follow best practices for data collection and storage.
+
+
+
+
+
+
+
+
+
+Sure! Here are some additional examples of information you can retrieve from the `window` and `document` objects in JavaScript:
+
+6. User Location Information: You can retrieve the user's geographic location, if the user has granted permission to do so.
+
+```typescript
+navigator.geolocation.getCurrentPosition(position => {
+  // track user location
+});
+```
+
+7. User Language Information: You can retrieve the user's preferred language, which can be useful for localizing your site or app.
+
+```typescript
+console.log(navigator.language); // logs the user's preferred language
+```
+
+8. Cookie Information: You can retrieve information about cookies that have been set by your site or app, including the cookie name, value, and expiration date.
+
+```typescript
+console.log(document.cookie); // logs all cookies set for the current site or app
+```
+
+9. Device Information: You can retrieve information about the user's device, including the device type, orientation, and battery level.
+
+```typescript
+console.log(navigator.userAgent); // logs the user agent string, which can be used to infer the device type
+console.log(screen.orientation.type); // logs the orientation of the screen (portrait or landscape)
+console.log(navigator.getBattery()?.level); // logs the current battery level of the device (if available)
+```
+
+10. User Behavior Information: You can track how users interact with specific elements on your site or app, such as form submissions, button clicks, or link clicks.
+
+```typescript
+document.querySelectorAll('button').forEach(button => {
+  button.addEventListener('click', event => {
+    // track button click event
+  });
+});
+
+document.querySelector('form').addEventListener('submit', event => {
+  // track form submission event
+});
+```
+
+11. Error Information: You can track errors that occur on your site or app, including JavaScript errors, network errors, and server-side errors.
+
+```typescript
+window.addEventListener('error', event => {
+  // track error event
+});
+```
+
+12. Storage Information: You can track changes to storage mechanisms such as cookies, local storage and session storage.
+
+```typescript
+window.addEventListener('storage', event => {
+  // track storage change event
+});
+```
+
+13. Referrer Information: You can track where the user came from before landing on your site or app.
+
+```typescript
+console.log(document.referrer); // logs the URL of the referring site
+```
+
+14. Timing Information: You can track how long it takes for specific user interactions to complete, as well as how long it takes for specific resources to load.
+
+```typescript
+console.time('button-click');
+document.querySelector('button').addEventListener('click', event => {
+  console.timeEnd('button-click'); // logs the time it took for the button to be clicked
+});
+
+console.time('image-load');
+const image = new Image();
+image.src = 'path/to/image.jpg';
+image.addEventListener('load', event => {
+  console.timeEnd('image-load'); // logs the time it took for the image to load
+});
+```
+
+15. Ad Blocker Detection: You can check whether the user has an ad blocker enabled, which can impact the effectiveness of advertising and tracking tools.
+
+```typescript
+const adTest = document.createElement('div');
+adTest.innerHTML = '&nbsp;';
+adTest.className = 'adsbox';
+document.body.appendChild(adTest);
+
+if (adTest.offsetHeight === 0) {
+  // ad blocker detected
+}
+
+document.body.removeChild(adTest);
+```
+
+These are just a few additional examples of the many properties and methods available on the `window` and `document` objects in JavaScript that can be used for analytics and tracking purposes. Remember to use these tools responsibly and with respect for user privacy and security concerns.
+
+
+
+Sure, here are some more examples of information you can retrieve from the `window` and `document` objects in JavaScript:
+
+16. Network Information: You can retrieve information about the user's network connection, such as the type of network (e.g. Wi-Fi, cellular), the effective connection type (e.g. slow 2G, 3G, 4G, 5G), and the current bandwidth estimate.
+
+```typescript
+console.log(navigator.connection.type); // logs the type of network connection (e.g. wifi, cellular)
+console.log(navigator.connection.effectiveType); // logs the effective connection type (e.g. 4g)
+console.log(navigator.connection.downlink); // logs the current bandwidth estimate in megabits per second (Mbps)
+```
+
+17. Media Devices Information: You can retrieve information about the user's media devices, such as cameras and microphones, and track when they are being used.
+
+```typescript
+navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+  .then(stream => {
+    // track media device usage
+  })
+  .catch(error => {
+    // handle errors
+  });
+```
+
+18. Performance Information: You can track performance metrics for your site or app, such as page load times, resource timings, and frame rates.
+
+```typescript
+console.log(performance.timing.loadEventEnd - performance.timing.navigationStart); // logs the page load time in milliseconds
+console.log(performance.getEntriesByType('resource')); // logs timing information for all resources loaded on the page
+console.log(performance.getEntriesByType('frame')); // logs timing information for all frames on the page
+```
+
+19. Speech Recognition Information: You can track when the user is using speech recognition on your site or app.
+
+```typescript
+const recognition = new SpeechRecognition();
+recognition.start();
+
+recognition.addEventListener('start', event => {
+  // track speech recognition start event
+});
+
+recognition.addEventListener('end', event => {
+  // track speech recognition end event
+});
+```
+
+20. Keyboard Information: You can track when the user types on their keyboard, including which keys are pressed and when they are released.
+
+```typescript
+document.addEventListener('keydown', event => {
+  // track keydown event
+});
+
+document.addEventListener('keyup', event => {
+  // track keyup event
+});
+```
+
+These are just a few more examples of the many properties and methods available on the `window` and `document` objects in JavaScript that can be used for analytics and tracking purposes. Remember to use these tools responsibly and with respect for user privacy and security concerns.
