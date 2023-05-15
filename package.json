@@ -1,6 +1,11 @@
 {
   "name": "tomek-i.github.io",
   "version": "0.1.0",
+  "author": {
+    "email": "tomek.iwainski@gmail.com",
+    "name": "Tomek Iwainski",
+    "url": "https://tomek.au"
+  },
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
