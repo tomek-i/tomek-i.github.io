@@ -79,7 +79,10 @@
     "check": "npx depcheck",
     "plop": "plop",
     "format": "prettier --write \"src/**/*.+(js|jsx|tsx|ts|json|css|md)\"",
-    "lint": "eslint \"src/**/*.+(js|jsx|ts|tsx)\""
+    "lint": "eslint \"src/**/*.+(js|jsx|ts|tsx)\"",
+    "lint2": "npx eslint \"src/**/*.+(js|jsx|ts|tsx)\"",
+    "coverage1": "npm run test -- --env=jsdom --watchAll=false --coverage",
+    "coverage2": "npx jest --coverage"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
