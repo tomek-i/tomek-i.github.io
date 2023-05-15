@@ -7,6 +7,8 @@
     "url": "https://tomek.au"
   },
   "private": true,
+  "description": "",
+  "keywords": [],
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@emailjs/browser": "^3.11.0",
