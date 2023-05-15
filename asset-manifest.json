@@ -1,19 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.99b8fa7f.css",
-    "main.js": "/static/js/main.e97394d1.js",
-    "static/posts/4mation.md": "/static/posts/4mation.md",
-    "static/posts/warburn-estate.md": "/static/posts/warburn-estate.md",
-    "static/posts/businessActs.md": "/static/posts/businessActs.md",
-    "static/posts/veritech.md": "/static/posts/veritech.md",
-    "index.html": "/index.html",
-    "static/posts/ssw.md": "/static/posts/ssw.md",
-    "static/media/triangle.svg": "/static/media/triangle.4dbf20502a9bf5c448ad.svg",
-    "main.99b8fa7f.css.map": "/static/css/main.99b8fa7f.css.map",
-    "main.e97394d1.js.map": "/static/js/main.e97394d1.js.map"
+    "main.css": "/tomek-i.github.io/static/css/main.c6ffec56.css",
+    "main.js": "/tomek-i.github.io/static/js/main.773f32eb.js",
+    "index.html": "/tomek-i.github.io/index.html",
+    "static/media/triangle.svg": "/tomek-i.github.io/static/media/triangle.4dbf20502a9bf5c448ad.svg",
+    "main.c6ffec56.css.map": "/tomek-i.github.io/static/css/main.c6ffec56.css.map",
+    "main.773f32eb.js.map": "/tomek-i.github.io/static/js/main.773f32eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.99b8fa7f.css",
-    "static/js/main.e97394d1.js"
+    "static/css/main.c6ffec56.css",
+    "static/js/main.773f32eb.js"
   ]
 }
