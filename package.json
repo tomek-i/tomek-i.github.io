@@ -1,18 +1,6 @@
 {
   "name": "tomek-i.github.io",
   "version": "0.1.0",
-  "author": {
-    "email": "tomek.iwainski@gmail.com",
-    "name": "Tomek Iwainski",
-    "url": "https://tomek.au"
-  },
-  "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/tomek-i/tomek-i.github.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tomek-i/tomek-i.github.io"
-  },
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -51,7 +39,6 @@
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
     "mini-css-extract-plugin": "^2.4.5",
-    "pino": "^8.12.1",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^6.2.1",
@@ -69,7 +56,6 @@
     "react-markdown": "^8.0.7",
     "react-refresh": "^0.11.0",
     "react-script-tag": "^1.1.2",
-    "react-tracking": "^9.3.1",
     "remark-frontmatter": "^4.0.1",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^4.0.0",
@@ -93,11 +79,15 @@
     "check": "npx depcheck",
     "plop": "plop",
     "format": "prettier --write \"src/**/*.+(js|jsx|tsx|ts|json|css|md)\"",
-    "lint": "npx eslint \"src/**/*.+(js|jsx|ts|tsx)\"",
-    "coverage1": "npm run test -- --env=jsdom --watchAll=false --coverage",
-    "coverage2": "npx jest --coverage"
+    "lint": "eslint \"src/**/*.+(js|jsx|ts|tsx)\""
   },
- 
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -116,7 +106,6 @@
     "@types/jest": "^27.5.2",
     "@types/react-helmet": "^6.1.6",
     "autoprefixer": "^10.4.14",
-    "gh-pages": "^5.0.0",
     "jest": "^27.5.1",
     "plop": "^3.1.2",
     "postcss": "^8.4.21",
