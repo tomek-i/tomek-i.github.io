@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/tomek-i.github.io/static/css/main.c6ffec56.css",
+    "main.js": "/tomek-i.github.io/static/js/main.c2bed157.js",
+    "static/posts/4mation.md": "/tomek-i.github.io/static/posts/4mation.md",
+    "static/posts/warburn-estate.md": "/tomek-i.github.io/static/posts/warburn-estate.md",
+    "static/posts/businessActs.md": "/tomek-i.github.io/static/posts/businessActs.md",
+    "static/posts/veritech.md": "/tomek-i.github.io/static/posts/veritech.md",
+    "index.html": "/tomek-i.github.io/index.html",
+    "static/posts/ssw.md": "/tomek-i.github.io/static/posts/ssw.md",
+    "static/media/triangle.svg": "/tomek-i.github.io/static/media/triangle.4dbf20502a9bf5c448ad.svg",
+    "main.c6ffec56.css.map": "/tomek-i.github.io/static/css/main.c6ffec56.css.map",
+    "main.c2bed157.js.map": "/tomek-i.github.io/static/js/main.c2bed157.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6ffec56.css",
+    "static/js/main.c2bed157.js"
+  ]
+}
