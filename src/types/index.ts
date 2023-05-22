@@ -69,6 +69,10 @@ export interface CodeStatsMachines {
   };
 }
 
+export interface CodeStatsLanguageLevel {
+  name: string;
+  level: number;
+}
 export interface CodeStatsResponse {
   dates: Map<string, number>; //OR :CodeStatsDates
   languages: CodeStatsLanguageExperience;
