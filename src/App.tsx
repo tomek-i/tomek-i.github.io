@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
+import { BrowserRouter } from 'react-router-dom';
 
-import { Post } from './components/Post';
+import { Routes } from './Routes';
 import { usePosts } from './components/hooks/usePosts';
 import { ShowContactFormModal } from './context';
-import { Layout } from './layouts/default';
-import { HomePage } from './pages/home';
 
 function App() {
   const { posts } = usePosts();
@@ -15,54 +14,12 @@ function App() {
   const [showContactFormModal, setShowContactFormModal] = useState(false);
   return (
     <>
+      <Toaster />
       <ShowContactFormModal.Provider
         value={{ showContactFormModal, setShowContactFormModal }}
       >
         {/* TODO: separate this out into routes, so it is easier to find within the app structure */}
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<HomePage />} />
-              {posts && (
-                <Route path="case-studies/">
-                  {posts.map((post) => (
-                    <Route
-                      key={post.attributes.company.name}
-                      path={post.attributes.company.name}
-                      element={<Post post={post} />}
-                    />
-                  ))}
-                </Route>
-              )}
-              <Route
-                path="career"
-                element={<div> TODO: add career page </div>}
-              />
-              <Route
-                path="projects"
-                element={<div> TODO: add projects page </div>}
-              />
-              <Route
-                path="contact"
-                element={
-                  <div>
-                    TODO: add contact page which will the contact form and some
-                    spill and other contact cards liek scial media etc.
-                  </div>
-                }
-              />
-              <Route
-                path="*"
-                element={
-                  <div>
-                    Ooops 404 <br /> TODO: add proper 404 page handler with some
-                    image, something fun.
-                  </div>
-                }
-              />
-            </Route>
-          </Routes>
-        </BrowserRouter>
+        <BrowserRouter>{Routes(posts)}</BrowserRouter>
       </ShowContactFormModal.Provider>
     </>
   );
