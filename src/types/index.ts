@@ -24,8 +24,8 @@ export type Job = {
   summary: string;
   image: string;
   dates: {
-    start: string;
-    end: string;
+    start: Date;
+    end: Date;
   };
   role: string;
   responsibilities: string[];
