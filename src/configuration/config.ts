@@ -1,5 +1,8 @@
 import { Level } from 'pino';
 
+import localConfig from './configs/config.local';
+import prodConfig from './configs/config.prod';
+
 export enum EnvironmentTypes {
   PRODUTION = 'production',
   LOCAL = 'local',
@@ -14,6 +17,9 @@ export type Environment =
 export interface Config {
   environment: Environment;
   logLevel: Level;
+  jobcard?: {
+    showImage?: boolean;
+  };
 }
 
 export interface ProcessVariables {
@@ -22,18 +28,30 @@ export interface ProcessVariables {
 }
 
 export const getLocalConfig = (processVariables: ProcessVariables): Config => {
-  return {
+  const current = {
     environment: EnvironmentTypes.LOCAL,
     logLevel: processVariables.LOG_LEVEL ?? 'debug',
+  };
+  return {
+    ...current,
+    ...localConfig,
   };
 };
 export const getProductionConfig = (
   processVariables: ProcessVariables
 ): Config => {
-  return {
+  const current = {
     environment: EnvironmentTypes.PRODUTION,
     logLevel: processVariables.LOG_LEVEL ?? 'error',
   };
+  return {
+    ...current,
+    ...prodConfig,
+  };
+};
+
+export const Config = () => {
+  return getConfig({ ENV: process.env.NODE_ENV });
 };
 
 export const getConfig = (processVariables: ProcessVariables): Config => {
