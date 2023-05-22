@@ -24,24 +24,10 @@ export const HomePage: React.FC<HomePageProps> = () => {
 
       <Section>
         <Section.Wrapper>
-          <Section.Title title="section 1" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum neque
-            velit saepe hic blanditiis maxime ipsam assumenda consectetur,
-            voluptatibus libero incidunt recusandae tenetur vel deserunt, non
-            eveniet, fuga alias culpa!
-          </p>
-        </Section.Wrapper>
-      </Section>
-
-      <Section className="spikes">
-        <Section.Wrapper>
-          <Section.Title title="section 3" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum neque
-            velit saepe hic blanditiis maxime ipsam assumenda consectetur,
-            voluptatibus libero incidunt recusandae tenetur vel deserunt, non
-            eveniet, fuga alias culpa!
+          <Section.Title title="Timeline" alignment="center" />
+          <p className="text-center">
+            Below you can find my career path in form of a timeline. Click on
+            the Details button for more information about each job and position.
           </p>
         </Section.Wrapper>
       </Section>
@@ -71,6 +57,18 @@ export const HomePage: React.FC<HomePageProps> = () => {
             </div>
           </div>
         </div>
+      </Section>
+
+      <Section className="spikes">
+        <Section.Wrapper>
+          <Section.Title title="section 3" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum neque
+            velit saepe hic blanditiis maxime ipsam assumenda consectetur,
+            voluptatibus libero incidunt recusandae tenetur vel deserunt, non
+            eveniet, fuga alias culpa!
+          </p>
+        </Section.Wrapper>
       </Section>
     </>
   );

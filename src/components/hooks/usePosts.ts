@@ -1,36 +1,8 @@
 import fm from 'front-matter';
 import { useEffect, useState } from 'react';
 
-import { desc } from '../../utility';
+import { desc, parseDateInAustralianFormat } from '../../utility';
 import { Meta, Post as PostType } from './../../types';
-
-class TagCount {
-  constructor(public tag: string, public count: number) {}
-}
-
-function parseDateInAustralianFormat(dateString: string): Date {
-  const options: Intl.DateTimeFormatOptions = {
-    day: 'numeric',
-    month: 'numeric',
-    year: 'numeric',
-  };
-  const formattedDateString = new Intl.DateTimeFormat('en-AU', options).format(
-    new Date(dateString)
-  );
-  return new Date(Date.parse(formattedDateString));
-}
-
-function countTags(posts: PostType[]): TagCount[] {
-  const tagCounts = new Map<string, number>();
-  for (const obj of posts) {
-    for (const tag of obj.attributes.tags) {
-      tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
-    }
-  }
-  return Array.from(tagCounts.entries()).map(
-    ([tag, count]) => new TagCount(tag, count)
-  );
-}
 
 // TODO: use injection to allow fethcing posts from local content folder or via API
 // TODO: do the same for projects
@@ -87,13 +59,15 @@ export const usePosts = () => {
         })
       ).then((results) =>
         results.sort((a, b) => {
-          return desc(a.attributes.job.dates.start, b.attributes.job.dates.end);
+          return desc(
+            a.attributes.job.dates.start,
+            b.attributes.job.dates.start
+          );
         })
       );
 
       setIsLoading(false);
       setPosts(results);
-      console.log({ tags: countTags(results) });
     };
     loadContent();
     // NOTE: adding the dependecny here will kill the process, probably need to useRef ?

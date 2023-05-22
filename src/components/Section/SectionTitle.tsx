@@ -1,6 +1,16 @@
 interface SectionTitleProps {
   title: string;
+  alignment?: 'left' | 'center';
 }
-export const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
-  return <h2 className="section-title">{title}</h2>;
+export const SectionTitle: React.FC<SectionTitleProps> = ({
+  title,
+  alignment,
+}) => {
+  return (
+    <h2
+      className={`section-title ${alignment === 'center' ? 'text-center' : ''}`}
+    >
+      {title}
+    </h2>
+  );
 };

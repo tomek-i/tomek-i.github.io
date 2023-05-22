@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { TimelineItemContext } from '../../context';
 import { Timeline } from '../../types';
+import { calculateTotalYears } from '../../utility';
 import { JobCard } from '../JobCard/JobCard';
 import { JobTimelineItemMeta } from './JobTimelineItemMeta';
 import { JobTimelineItemPoint } from './JobTimelineItemPoint';
@@ -26,7 +27,13 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
 
   const pointComponent = (
     <div className="js-timeline-job-card_point-box job-card_point-box">
-      <TimelineItem.Point />
+      <TimelineItem.Point>
+        {timeline.job.dates.end &&
+          `${calculateTotalYears(
+            timeline.job.dates.start,
+            timeline.job.dates.end
+          )}yrs`}
+      </TimelineItem.Point>
     </div>
   );
 
@@ -58,7 +65,7 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
                   'px-4 py-2 border rounded my-4 block text-center hover:bg-white hover:text-black'
                 }
               >
-                Case Study
+                Details
               </Link>
             </JobCard.Info>
           }
