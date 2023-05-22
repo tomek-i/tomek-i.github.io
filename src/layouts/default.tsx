@@ -9,6 +9,7 @@ export const Layout = () => {
   const { setShowContactFormModal, showContactFormModal } = useContactForm();
 
   // TODO: add some konami code feature :-)
+  // TODO: render modal at portal of bottom of page
 
   return (
     <>
