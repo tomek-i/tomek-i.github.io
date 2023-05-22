@@ -3,11 +3,11 @@ job:
   summary: 'TODO  some short summary'
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
-    start: 10/06/1986
+    start: 01/04/2023
 
 company:
   name: SSW
-  website: 'TODO https://www..com.au'
+  website: https://www.ssw.com.au
   description: TODO  some description of the company
 
 tags: []

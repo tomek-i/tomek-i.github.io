@@ -3,9 +3,9 @@ job:
   summary: 'TODO some short summary'
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
-    start: 10/06/1984
-    end: 11/06/1987
-  responsibilities: [abc, def, g e h]
+    start: 03/03/2021
+    end: 01/03/2023
+  responsibilities: []
   role: 'Software Engineer'
   skills:
     [
@@ -41,7 +41,19 @@ company:
     lat: 0
     long: 0
 
-tags: [tag1, tag2, tag3]
+tags:
+  [
+    'Full-Stack Development (JavaScript, TypeScript, Node.js, Express.js)',
+    Web Development (PHP,
+    WordPress),
+    Agile Development,
+    'Software Solutions (Legacy System Conversion, Serverless Architectures)',
+    Collaboration and Teamwork,
+    High-Quality Software,
+    Client Requirements,
+    Software Development Trends,
+    Problem Solving,
+  ]
 ---
 
 As a Full-Stack Developer, I was responsible for developing and maintaining web applications using a range of technologies, including PHP, WordPress, TypeScript, Strapi.js, Node.js, Express.js, Next.js, AngularJS, and JavaScript. Working in an Agile environment, I collaborated with other team members to develop and implement software solutions that met our clients' needs.

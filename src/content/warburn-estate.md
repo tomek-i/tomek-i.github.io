@@ -3,9 +3,9 @@ job:
   summary: some short summary
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
-    start: 10/06/1983
-    end: 11/06/1987
-  responsibilities: [abc, def, g e h]
+    start: 01/08/2014
+    end: 01/03/2021
+  responsibilities: []
   role: 'Software Engineer'
   skills:
     [
