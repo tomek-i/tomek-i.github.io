@@ -4,6 +4,10 @@
 
 :root {
   --body-bg: hsl(0, 0%, 13%);
+  --timeline-highlight-color: #ff0;
+  --timeline-default-color: #393935;
+
+  --jobcard-background-color: @apply bg-red-400;
 }
 
 @layer base {
@@ -46,7 +50,7 @@
 }
 
 .site-title {
-  @apply text-9xl font-corinthia;
+  @apply text-9xl font-corinthia cursor-default;
 }
 
 .section-title {
@@ -72,7 +76,7 @@
 
   font-weight: bold;
   font-size: 28px;
-  color: #ff0;
+  color: var(--timeline-highlight-color);
 }
 .job-card_description {
 }
@@ -81,13 +85,13 @@
   height: 50px;
   line-height: 50px;
   width: 50px;
-  border: 3px solid #ff0;
+  border: 3px solid var(--timeline-highlight-color);
   background-color: #1d1d1b;
-
+  transition: background-color 0.3s ease;
   text-align: center;
   font-size: 20px;
-  color: #fff;
-
+  /* color: #fff; */
+  color: #1d1d1b;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -97,7 +101,7 @@
 }
 .job-card_meta {
   /* margin: 10px 0 0; */
-  @apply text-3xl font-bold;
+  @apply text-xl font-bold;
 }
 .job-cardtimelime_item {
   display: inline-block;
@@ -161,7 +165,7 @@
 
 .spikes {
   --spike-width: 50px;
-  --spike-height: 10px;
+  --spike-height: 12px;
   --spike-color: var(--body-bg);
   position: relative;
   color: black;
@@ -216,7 +220,7 @@ img {
 
 .timelime_line {
   width: 2px;
-  background-color: #393935;
+  background-color: var(--timeline-default-color);
 
   position: absolute;
   top: 2px;
@@ -235,7 +239,7 @@ img {
 .timelime_line-progress {
   width: 100%;
   height: 20%;
-  background-color: #ff0;
+  background-color: var(--timeline-highlight-color);
 }
 
 .job-card_box {
@@ -249,15 +253,15 @@ img {
 }
 .job-card_point-box {
   display: inline-block;
-  margin: 0 14px 0 -28px;
+  margin: 0 14px 0 -25px;
 }
 .timelime_item:nth-child(2n) .job-card_point-box {
-  margin: 0 -28px 0 14px;
+  margin: 0 -25px 0 14px;
 }
 
 .js-timeline-active .job-card_point {
   color: #1d1d1b;
-  background-color: #ff0;
+  background-color: var(--timeline-highlight-color);
 }
 
 .timelime_item:nth-child(2n + 1) .job-cardtimelime_item {
