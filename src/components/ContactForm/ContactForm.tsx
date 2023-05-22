@@ -1,11 +1,13 @@
-import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 
 import { useContactForm } from './useContactForm';
 
 const notifySuccess = () => toast('Email sent.');
-const notifyError = () => toast('There was an issue sending the email.');
+const notifyError = () => {
+  console.log('toast');
+  toast('There was an issue sending the email.');
+};
 interface ContactFormProps {
   onCancelClick: () => void;
 }
@@ -26,38 +28,49 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
   } = useForm<FormValues>();
 
   const onSubmit = async (data: FormValues) => {
-    if (!process.env.REACT_APP_API_EMAILJS_SERVICEID) {
-      throw Error('Secret not set API_EMAILJS_SERVICEID');
-    }
-    if (!process.env.REACT_APP_API_EMAILJS_TEMPLATEID) {
-      throw Error('Secret not set API_EMAILJS_TEMPLATEID');
-    }
-    if (!process.env.REACT_APP_API_EMAILJS_PUBLIC) {
-      throw Error('Secret not set API_EMAILJS_PUBLIC');
-    }
-    emailjs
-      .send(
-        process.env.REACT_APP_API_EMAILJS_SERVICEID,
-        process.env.REACT_APP_API_EMAILJS_TEMPLATEID,
-        data,
-        process.env.REACT_APP_API_EMAILJS_PUBLIC
-      )
-      .then(
-        (_result) => {
-          notifySuccess();
-        },
-        (_error) => {
-          notifyError();
-          //TODO: add logging
-        }
-      )
-      .finally(() => setShowContactFormModal(false));
+    notifyError();
+    // if (!process.env.REACT_APP_API_EMAILJS_SERVICEID) {
+    //   throw Error('Secret not set API_EMAILJS_SERVICEID');
+    // }
+    // if (!process.env.REACT_APP_API_EMAILJS_TEMPLATEID) {
+    //   throw Error('Secret not set API_EMAILJS_TEMPLATEID');
+    // }
+    // if (!process.env.REACT_APP_API_EMAILJS_PUBLIC) {
+    //   throw Error('Secret not set API_EMAILJS_PUBLIC');
+    // }
+    // emailjs
+    //   .send(
+    //     process.env.REACT_APP_API_EMAILJS_SERVICEID,
+    //     process.env.REACT_APP_API_EMAILJS_TEMPLATEID,
+    //     data,
+    //     process.env.REACT_APP_API_EMAILJS_PUBLIC
+    //   )
+    //   .then(
+    //     (_result) => {
+    //       notifySuccess();
+    //     },
+    //     (_error) => {
+    //       notifyError();
+    //       //TODO: add logging
+    //     }
+    //   );
+    // .finally(() => setShowContactFormModal(false));
   };
 
   return (
     <form
       id="contact-form"
-      onSubmit={handleSubmit(onSubmit)}
+      onSubmit={(e) => {
+        e.preventDefault();
+        notifyError();
+        try {
+          handleSubmit(onSubmit);
+        } catch (error) {
+          //TODO log error message
+          console.error(error);
+          notifyError();
+        }
+      }}
       noValidate
       className="flex flex-col flex-auto p-6 space-y-4 w-[600px]"
     >
@@ -78,7 +91,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
           placeholder="Name"
         />
         {errors.name && (
-          <span className="errorMessage">{errors.name.message}</span>
+          <span className="text-sm text-red-400">{errors.name.message}</span>
         )}
       </div>
       <div>
@@ -94,7 +107,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
           placeholder="Email address"
         />
         {errors.email && (
-          <span className="errorMessage">
+          <span className="text-sm text-red-400">
             Please enter a valid email address
           </span>
         )}
@@ -110,13 +123,10 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
         placeholder="Message"
       />
       {errors.content && (
-        <span className="errorMessage">Please enter a message</span>
+        <span className="text-sm text-red-400">Please enter a message</span>
       )}
 
       <div className="flex">
-        {isSubmitted && (
-          <div className="success">Form submitted successfully</div>
-        )}
         <button
           className="px-4 py-2 mr-auto border rounded hover:bg-white hover:text-black"
           type="button"
