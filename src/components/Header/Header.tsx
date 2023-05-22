@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { useContactForm } from '../ContactForm/useContactForm';
 import {
   GithubIcon,
@@ -41,6 +43,9 @@ export const Heading: React.FC<HeadingProps> = () => {
         >
           <MailIcon />
         </button>
+        <Link to={`stats`}>
+          <button onClick={() => ''}>stats</button>
+        </Link>
       </p>
     </header>
   );
