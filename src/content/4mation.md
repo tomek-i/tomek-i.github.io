@@ -1,6 +1,6 @@
 ---
 job:
-  summary: 'TODO some short summary'
+  summary: As a Full-Stack Developer, I developed and maintained web applications using various technologies, converted legacy systems to modern architectures, collaborated with team members in an Agile environment, and delivered high-quality software solutions that met clients' needs and exceeded expectations while staying updated with industry trends.
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
     start: 03/03/2021
