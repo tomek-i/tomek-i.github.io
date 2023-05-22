@@ -1,15 +1,44 @@
-import { CodeStatsResponse } from '../types';
+import { CodeStatsLanguageLevel, CodeStatsResponse } from '../types';
 
-export const hello = () => {};
+const LEVEL_FACTOR = 0.025;
+const CODESTATS_URL = 'https://codestats.net/api/users/';
 
-const getStats = async (username: string) => {
-  const stats = (await fetch(
-    `https://codestats.net/api/users/${username}`
-  ).then(async (res) => await res.json())) as CodeStatsResponse;
+const calculateLevel = (xp?: number) => {
+  if (!xp) return 0;
 
-  console.log({ stats });
+  return Math.floor(LEVEL_FACTOR * Math.sqrt(xp));
 };
 
-export const CodeStats = {
+const getLevelPerLanguage = (
+  response: CodeStatsResponse,
+  exclude0: boolean = true
+): CodeStatsLanguageLevel[] => {
+  let data = Object.keys(response.languages).map((key) => {
+    return {
+      name: key,
+      level: CodeStatsService.calculateLevel(response.languages[key].xps),
+    };
+  });
+  if (exclude0) data = data.filter((item) => item.level > 0);
+  return data;
+};
+
+const getStats = async (username: string) => {
+  const url = `${CODESTATS_URL}${username}`;
+  try {
+    const stats = (await fetch(url).then(
+      async (res) => await res.json()
+    )) as CodeStatsResponse;
+
+    return stats;
+  } catch (error) {
+    console.error(error);
+  }
+  return null;
+};
+
+export const CodeStatsService = {
   getStats,
+  calculateLevel,
+  getLevelPerLanguage,
 };
