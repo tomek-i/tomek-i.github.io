@@ -22,7 +22,6 @@ const data = [
 const renderBarChar = (response?: CodeStatsResponse | null) => {
   if (!response) return <></>;
   let d = CodeStatsService.getLevelPerLanguage(response);
-  console.log({ d });
   return (
     <ResponsiveContainer width="100%" height={200}>
       <BarChart
