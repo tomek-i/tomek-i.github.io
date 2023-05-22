@@ -1,6 +1,6 @@
 ---
 job:
-  summary: text
+  summary: As a website manager, I effectively handled a diverse portfolio of 30+ clients, ensuring the smooth hosting, maintenance, security, and functionality enhancements of their Joomla and CMS-based websites, while maintaining strong client relationships and proactive security monitoring.
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
     start: 01/06/2010
