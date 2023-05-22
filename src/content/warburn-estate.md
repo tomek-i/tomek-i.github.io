@@ -1,6 +1,6 @@
 ---
 job:
-  summary: some short summary
+  summary: As a Software Engineer at a winery, I automated processes, digitized data, facilitated communication, and developed software solutions that improved productivity, efficiency, reporting, and data-driven decision-making, contributing to the winery's successful digital transformation.
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
     start: 01/08/2014
