@@ -16,7 +16,6 @@ const send = async function (level: pino.Level, logEvent: pino.LogEvent) {
     },
     body: JSON.stringify([logEvent]),
   });
-  console.log(response);
 };
 
 const logger = pino({
