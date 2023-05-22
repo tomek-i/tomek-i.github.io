@@ -6,7 +6,8 @@
     "name": "Tomek Iwainski",
     "url": "https://tomek.au"
   },
-  "private": true,
+  "homepage": "https://tomek-i.github.io",
+  "private": false,
   "description": "",
   "keywords": [],
   "dependencies": {
@@ -92,6 +93,8 @@
     "test": "node scripts/test.js",
     "check": "npx depcheck",
     "plop": "plop",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "format": "prettier --write \"src/**/*.+(js|jsx|tsx|ts|json|css|md)\"",
     "lint": "eslint \"src/**/*.+(js|jsx|ts|tsx)\"",
     "lint2": "npx eslint \"src/**/*.+(js|jsx|ts|tsx)\"",
@@ -123,6 +126,7 @@
     "@types/jest": "^27.5.2",
     "@types/react-helmet": "^6.1.6",
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^5.0.0",
     "jest": "^27.5.1",
     "plop": "^3.1.2",
     "postcss": "^8.4.21",
