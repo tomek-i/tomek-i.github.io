@@ -4,5 +4,6 @@ import { Config } from '../config';
 export default {
   jobcard: {
     showImage: false,
+    showDates: false,
   },
 } as Config;

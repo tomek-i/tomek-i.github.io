@@ -33,11 +33,6 @@ export const usePosts = () => {
               //TODO: is there a better way, the frontmatter reads it as string and we need to change it back to dates??
 
               // Create an object with the desired format options
-              const options: Intl.DateTimeFormatOptions = {
-                day: 'numeric',
-                month: 'numeric',
-                year: 'numeric',
-              };
 
               if (typeof attributes.job.dates.start === 'string') {
                 attributes.job.dates.start = parseDateInAustralianFormat(

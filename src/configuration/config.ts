@@ -19,6 +19,7 @@ export interface Config {
   logLevel: Level;
   jobcard?: {
     showImage?: boolean;
+    showDates?: boolean;
   };
 }
 
