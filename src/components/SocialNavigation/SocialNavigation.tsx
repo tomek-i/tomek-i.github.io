@@ -1,5 +1,6 @@
+import { SocialIcon } from 'react-social-icons';
+
 import { useContactForm } from '../ContactForm/useContactForm';
-import { GithubIcon, LikedInIcon, MailIcon, StackoverflowIcon } from '../Icons';
 
 interface SocialNavigationProps {}
 export const SocialNavigation: React.FC<SocialNavigationProps> = () => {
@@ -7,28 +8,46 @@ export const SocialNavigation: React.FC<SocialNavigationProps> = () => {
 
   return (
     <>
-      <a rel="nofollow" href="https://github.com/tomek-i">
+      <SocialIcon
+        url="https://github.com/tomek-i"
+        bgColor="transparent"
+        fgColor="#fff"
+        // style={{ height: 35, width: 35 }}
+      />
+      {/* <a rel="nofollow" href="https://github.com/tomek-i">
         <span className="cursor-pointer">
           <GithubIcon />
         </span>
-      </a>
-      <a rel="nofollow" href="https://www.linkedin.com/in/tomek-iw">
+      </a> */}
+      <SocialIcon
+        url="https://www.linkedin.com/in/tomek-iw"
+        bgColor="#222"
+        fgColor="#007FB1"
+      />
+      {/* <a rel="nofollow" href="https://www.linkedin.com/in/tomek-iw">
         <span className="cursor-pointer">
           <LikedInIcon />
         </span>
-      </a>
-      <a rel="nofollow" href="https://stackoverflow.com/users/4421557/tomek">
-        <span className="cursor-pointer">
-          <StackoverflowIcon />
-        </span>
-      </a>
+      </a> */}
+      <SocialIcon
+        url="https://stackoverflow.com/users/4421557/tomek"
+        fgColor="#ED803D"
+        bgColor="#222"
+      />
+      {/* <a rel="nofollow" href="https://stackoverflow.com/users/4421557/tomek">
+      <span className="cursor-pointer">
+      <StackoverflowIcon />
+    
+      </span>
+      </a> */}
 
       <button
         onClick={() => {
           setShowContactFormModal(true);
         }}
       >
-        <MailIcon />
+        <SocialIcon network="email" fgColor="#fff" bgColor="#222"></SocialIcon>
+        {/* <MailIcon /> */}
       </button>
     </>
   );
