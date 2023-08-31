@@ -1,25 +1,26 @@
 import { Route, Routes as Router } from 'react-router-dom';
 
 import { Post as PostComponent } from './components/Post';
+import { Config } from './configuration';
 import { Layout } from './layouts/default';
 import { ErrorPage } from './pages/error';
 import { HomePage } from './pages/home';
 import { StatsPage } from './pages/stats';
-import { Post } from './types';
+import { Frontmatter, Post } from './types';
 
 //TODO: create components instead
-export const Routes = (posts?: Post[]) => {
+export const Routes = (posts?: Post<Frontmatter>[]) => {
   const isDev = (process.env.NODE_ENV ?? 'production') !== 'production';
   return (
     <Router>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         {posts && (
-          <Route path="career/">
+          <Route path={Config().urls?.workDetails}>
             {posts.map((post) => (
               <Route
-                key={post.attributes.company.name}
-                path={post.attributes.company.name}
+                key={post.frontmatter.company.name}
+                path={post.frontmatter.company.name}
                 element={<PostComponent post={post} />}
               />
             ))}
@@ -30,7 +31,7 @@ export const Routes = (posts?: Post[]) => {
           <>
             <Route path="career" element={<div> TODO: add career page </div>} />
             <Route
-              path="projects"
+              path={Config().urls?.projectDetails}
               element={<div> TODO: add projects page </div>}
             />
             <Route

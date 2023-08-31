@@ -2,6 +2,7 @@ import { formatDate } from '../../utility';
 import { useTimelineContext } from './useTimelineItemContext';
 
 interface JobTimelineItemMetaProps {}
+
 export const JobTimelineItemMeta: React.FC<JobTimelineItemMetaProps> = () => {
   const { timeline } = useTimelineContext();
   return (

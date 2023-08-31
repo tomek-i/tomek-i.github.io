@@ -1,3 +1,4 @@
+import emailjs from 'emailjs-com';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 
@@ -28,32 +29,31 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
   } = useForm<FormValues>();
 
   const onSubmit = async (data: FormValues) => {
-    notifyError();
-    // if (!process.env.REACT_APP_API_EMAILJS_SERVICEID) {
-    //   throw Error('Secret not set API_EMAILJS_SERVICEID');
-    // }
-    // if (!process.env.REACT_APP_API_EMAILJS_TEMPLATEID) {
-    //   throw Error('Secret not set API_EMAILJS_TEMPLATEID');
-    // }
-    // if (!process.env.REACT_APP_API_EMAILJS_PUBLIC) {
-    //   throw Error('Secret not set API_EMAILJS_PUBLIC');
-    // }
-    // emailjs
-    //   .send(
-    //     process.env.REACT_APP_API_EMAILJS_SERVICEID,
-    //     process.env.REACT_APP_API_EMAILJS_TEMPLATEID,
-    //     data,
-    //     process.env.REACT_APP_API_EMAILJS_PUBLIC
-    //   )
-    //   .then(
-    //     (_result) => {
-    //       notifySuccess();
-    //     },
-    //     (_error) => {
-    //       notifyError();
-    //       //TODO: add logging
-    //     }
-    //   );
+    if (!process.env.REACT_APP_API_EMAILJS_SERVICEID) {
+      throw Error('Secret not set API_EMAILJS_SERVICEID');
+    }
+    if (!process.env.REACT_APP_API_EMAILJS_TEMPLATEID) {
+      throw Error('Secret not set API_EMAILJS_TEMPLATEID');
+    }
+    if (!process.env.REACT_APP_API_EMAILJS_PUBLIC) {
+      throw Error('Secret not set API_EMAILJS_PUBLIC');
+    }
+    emailjs
+      .send(
+        process.env.REACT_APP_API_EMAILJS_SERVICEID,
+        process.env.REACT_APP_API_EMAILJS_TEMPLATEID,
+        data,
+        process.env.REACT_APP_API_EMAILJS_PUBLIC
+      )
+      .then(
+        (_result) => {
+          notifySuccess();
+        },
+        (_error) => {
+          notifyError();
+          //TODO: add logging
+        }
+      );
     // .finally(() => setShowContactFormModal(false));
   };
 
@@ -62,9 +62,9 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
       id="contact-form"
       onSubmit={(e) => {
         e.preventDefault();
-        notifyError();
         try {
           handleSubmit(onSubmit);
+          notifySuccess();
         } catch (error) {
           //TODO log error message
           console.error(error);

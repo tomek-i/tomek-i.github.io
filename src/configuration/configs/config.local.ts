@@ -1,4 +1,4 @@
-import { Config } from '../config';
+import { Configuration } from '../config';
 
 //TODO: add specific configuration for local development and or fetch from .env / github for secrets
 export default {
@@ -6,4 +6,8 @@ export default {
     showImage: false,
     showDates: false,
   },
-} as Config;
+  profile: {
+    name: process.env.REACT_PROFILE_NAME ?? 'Thomas Iwainski',
+    position: process.env.REACT_PROFILE_POSITION ?? 'Senior Software Engineer',
+  },
+} as Configuration;

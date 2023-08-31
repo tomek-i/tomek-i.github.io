@@ -145,6 +145,12 @@ You will need to add the following envrionment variables to your `.env` file if 
 TODO: mention some helpful sources that helped creating the different features
 TODO: maybe it belongs to appendix section
 
+TAILWIND REACT STARTERKIT
+https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/download
+
+UI:
+https://headlessui.com/
+
 ## Roadmap
 
 Below is a collection of ideas and or other features to extend the functionality of this little app.

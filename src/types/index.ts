@@ -32,7 +32,7 @@ export type Job = {
 };
 
 //TODO: refactor as Meta and Timeline now are the same, see which one is more appropiate
-export type Meta = {
+export type Frontmatter = {
   company: Company;
   job: Job;
   tags: string[];
@@ -43,10 +43,9 @@ export type Timeline = {
   tags: string[];
 };
 
-export interface Post {
+export interface Post<T> {
   content: string;
-  //TODO: rename `attributes` to meta and use Post<T> to pecify the type of the meta information
-  attributes: Meta;
+  frontmatter: T;
 }
 
 //TODO: refactor this out to a separate file specific to code::stats

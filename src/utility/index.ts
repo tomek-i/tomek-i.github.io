@@ -1,4 +1,4 @@
-import { Post } from '../types';
+import { Frontmatter, Post } from '../types';
 
 export function calculateTotalYears(startDate: Date, endDate: Date) {
   const startYear = startDate.getFullYear();
@@ -53,10 +53,10 @@ export function parseDateInAustralianFormat(dateString: string): Date {
   return new Date(Number(year), Number(month) - 1, Number(day));
 }
 
-export function countTags(posts: Post[]): TagCount[] {
+export function countTags(posts: Post<Frontmatter>[]): TagCount[] {
   const tagCounts = new Map<string, number>();
   for (const obj of posts) {
-    for (const tag of obj.attributes.tags) {
+    for (const tag of obj.frontmatter.tags) {
       tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
     }
   }

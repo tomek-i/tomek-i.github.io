@@ -42,9 +42,9 @@ export const HomePage: React.FC<HomePageProps> = () => {
             <div className="_list">
               {posts?.map((post, index) => (
                 <TimelineItem
-                  timeline={post.attributes}
+                  timeline={post.frontmatter}
                   isAlternate={index % 2 !== 0}
-                  key={post.attributes.company.name + 2 + index}
+                  key={post.frontmatter.company.name + 2 + index}
                 />
               ))}
               {/* {jobs.map((job, index) => (

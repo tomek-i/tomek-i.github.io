@@ -14,12 +14,20 @@ export type Environment =
   | EnvironmentTypes.PRODUTION
   | string;
 
-export interface Config {
+export interface Configuration {
   environment: Environment;
   logLevel: Level;
-  jobcard?: {
-    showImage?: boolean;
-    showDates?: boolean;
+  profile: {
+    name: string;
+    position: string;
+  };
+  urls: {
+    workDetails: string; //'career';
+    projectDetails: string; //'project';
+  };
+  jobcard: {
+    showImage: boolean;
+    showDates: boolean;
   };
 }
 
@@ -28,7 +36,9 @@ export interface ProcessVariables {
   LOG_LEVEL?: Level;
 }
 
-export const getLocalConfig = (processVariables: ProcessVariables): Config => {
+export const getLocalConfig = (
+  processVariables: ProcessVariables
+): Partial<Configuration> => {
   const current = {
     environment: EnvironmentTypes.LOCAL,
     logLevel: processVariables.LOG_LEVEL ?? 'debug',
@@ -40,7 +50,7 @@ export const getLocalConfig = (processVariables: ProcessVariables): Config => {
 };
 export const getProductionConfig = (
   processVariables: ProcessVariables
-): Config => {
+): Partial<Configuration> => {
   const current = {
     environment: EnvironmentTypes.PRODUTION,
     logLevel: processVariables.LOG_LEVEL ?? 'error',
@@ -51,11 +61,13 @@ export const getProductionConfig = (
   };
 };
 
-export const Config = () => {
+export const Config = (): Partial<Configuration> => {
   return getConfig({ ENV: process.env.NODE_ENV });
 };
 
-export const getConfig = (processVariables: ProcessVariables): Config => {
+export const getConfig = (
+  processVariables: ProcessVariables
+): Partial<Configuration> => {
   const environment: Environment =
     processVariables.ENV || EnvironmentTypes.LOCAL;
   switch (environment) {

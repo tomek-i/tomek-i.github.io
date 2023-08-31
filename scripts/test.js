@@ -48,4 +48,9 @@ if (
   argv.push(hasSourceControl ? '--watch' : '--watchAll');
 }
 
-jest.run(argv);
+
+// Specify the path to the Jest config file
+const jestConfigPath = require.resolve('../jest.config.js');
+
+
+jest.run(argv.concat(['--config', jestConfigPath]));

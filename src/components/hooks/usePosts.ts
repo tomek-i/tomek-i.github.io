@@ -2,13 +2,13 @@ import fm from 'front-matter';
 import { useEffect, useState } from 'react';
 
 import { desc, parseDateInAustralianFormat } from '../../utility';
-import { Meta, Post as PostType } from './../../types';
+import { Frontmatter, Post as PostType } from './../../types';
 
 // TODO: use injection to allow fethcing posts from local content folder or via API
 // TODO: do the same for projects
 
 export const usePosts = () => {
-  const [posts, setPosts] = useState<PostType[]>();
+  const [posts, setPosts] = useState<PostType<Frontmatter>[]>();
   const [isLoading, setIsLoading] = useState(false);
 
   const importAll = (r: any) => r.keys().map(r);
@@ -23,40 +23,39 @@ export const usePosts = () => {
   useEffect(() => {
     const loadContent = async () => {
       setIsLoading(true);
-      let results = await Promise.all<PostType[]>(
+      let results = await Promise.all<PostType<Frontmatter>[]>(
         markdownFiles.map(async (file: any) => {
           return await fetch(file.default)
             .then((res) => res.text())
             .then((content) => {
-              const attributes = fm(content).attributes as Meta;
-
+              const frontmatter = fm(content).attributes as Frontmatter;
               //TODO: is there a better way, the frontmatter reads it as string and we need to change it back to dates??
 
               // Create an object with the desired format options
 
-              if (typeof attributes.job.dates.start === 'string') {
-                attributes.job.dates.start = parseDateInAustralianFormat(
-                  attributes.job.dates.start
+              if (typeof frontmatter.job.dates.start === 'string') {
+                frontmatter.job.dates.start = parseDateInAustralianFormat(
+                  frontmatter.job.dates.start
                 );
               }
 
               // Parse the end date if it's a string
-              if (typeof attributes.job.dates.end === 'string') {
-                attributes.job.dates.end = parseDateInAustralianFormat(
-                  attributes.job.dates.end
+              if (typeof frontmatter.job.dates.end === 'string') {
+                frontmatter.job.dates.end = parseDateInAustralianFormat(
+                  frontmatter.job.dates.end
                 );
               }
               return {
                 content,
-                attributes,
-              };
+                frontmatter,
+              } as PostType<Frontmatter>;
             });
         })
       ).then((results) =>
         results.sort((a, b) => {
           return desc(
-            a.attributes.job.dates.start,
-            b.attributes.job.dates.start
+            a.frontmatter.job.dates.start,
+            b.frontmatter.job.dates.start
           );
         })
       );

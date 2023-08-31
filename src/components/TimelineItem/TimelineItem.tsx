@@ -66,7 +66,7 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
               <JobCard.Description />
               <JobCard.Responsibilities />
               <Link
-                to={`career/${timeline.company.name}`}
+                to={`${Config().urls?.workDetails}/${timeline.company.name}`}
                 className={
                   'px-4 py-2 border rounded my-4 block text-center hover:bg-white hover:text-black'
                 }
