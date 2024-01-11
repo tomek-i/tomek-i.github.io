@@ -1,9 +1,8 @@
-import { Level } from 'pino';
 import { Environment } from './Environment';
 
 export interface Configuration {
   environment: Environment;
-  logLevel: Level;
+  logLevel: string;
   profile: {
     name: string;
     position: string;

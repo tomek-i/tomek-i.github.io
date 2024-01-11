@@ -1,4 +1,4 @@
-console.log('in progress');
+describe('the configuration', () => {});
 // import { getConfig, getLocalConfig } from './config';
 
 // describe('the configuration', () => {
