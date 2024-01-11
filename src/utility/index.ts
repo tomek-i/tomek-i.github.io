@@ -2,12 +2,8 @@ import { Frontmatter, Post } from '../types';
 
 export function calculateTotalYears(startDate: Date, endDate: Date) {
   const startYear = startDate.getFullYear();
-  const startMonth = startDate.getMonth();
-  const startDay = startDate.getDate();
 
   const endYear = endDate.getFullYear();
-  const endMonth = endDate.getMonth();
-  const endDay = endDate.getDate();
 
   let totalYears = endYear - startYear;
 
