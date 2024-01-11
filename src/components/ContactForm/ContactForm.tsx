@@ -15,7 +15,7 @@ interface ContactFormProps {
 
 //TODO: read https://www.carlrippon.com/successful-submission-in-react-hook-form/
 export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
-  const { setShowContactFormModal } = useContactForm();
+   useContactForm();
 
   type FormValues = {
     name: string;
@@ -26,7 +26,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting, isSubmitted },
+    formState: { errors, isSubmitting },
   } = useForm<FormValues>();
 
   const onSubmit = async (data: FormValues) => {
@@ -68,7 +68,6 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
           notifySuccess();
         } catch (error) {
           //TODO log error message
-          console.error(error);
           notifyError();
         }
       }}
