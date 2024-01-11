@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 
+import { createPortal } from 'react-dom';
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import { useContactForm } from '../components/ContactForm/useContactForm';
 import { Heading } from '../components/Header/Header';
@@ -17,13 +18,13 @@ export const Layout = () => {
         <Heading />
       </nav>
 
-      <Modal
+      {createPortal( <Modal
         show={showContactFormModal}
         setShow={setShowContactFormModal}
         title="Contact"
       >
         <ContactForm onCancelClick={() => setShowContactFormModal(false)} />
-      </Modal>
+      </Modal>,document.body)}
       <Outlet />
     </>
   );
