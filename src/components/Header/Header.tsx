@@ -2,9 +2,8 @@ import { settings } from '../../settings';
 import { SocialNavigation } from '../SocialNavigation';
 
 interface HeadingProps {}
-export const Heading: React.FC<HeadingProps> = () => {
-  //TODO: it would be good if the below information is pulled from some configuration file
 
+export const Heading: React.FC<HeadingProps> = () => {
   return (
     <header className="mb-8 site-header">
       <h1 className="site-title">{settings.profile.name}</h1>
