@@ -1,4 +1,7 @@
-import { CodeStatsLanguageLevel, CodeStatsResponse } from '../types';
+import {
+  CodeStatsLanguageLevel,
+  CodeStatsResponse,
+} from '../components/CodeStats';
 
 const LEVEL_FACTOR = 0.025;
 const CODESTATS_URL = 'https://codestats.net/api/users/';
