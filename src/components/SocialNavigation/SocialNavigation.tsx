@@ -11,7 +11,7 @@ export const SocialNavigation: React.FC<SocialNavigationProps> = () => {
   return (
     <div className="p-4 space-x-4 bg-white rounded-full">
       {settings.profile.socials?.map((social) => (
-        <SocialIcon url={social.url} />
+        <SocialIcon url={social.url} key={social.url} />
       ))}
 
       {settings.profile.contact?.email && (
