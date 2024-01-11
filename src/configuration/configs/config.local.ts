@@ -1,10 +1,10 @@
-import { Configuration } from '../config';
+import { Configuration } from '../Configuration';
 
 //TODO: add specific configuration for local development and or fetch from .env / github for secrets
 export default {
   jobcard: {
-    showImage: false,
-    showDates: false,
+    showImage: true,
+    showDates: true,
   },
   profile: {
     name: process.env.REACT_PROFILE_NAME ?? 'Thomas Iwainski',

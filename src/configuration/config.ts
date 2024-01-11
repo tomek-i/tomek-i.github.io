@@ -1,57 +1,42 @@
-import { Level } from 'pino';
-
 import localConfig from './configs/config.local';
 import prodConfig from './configs/config.prod';
+import { Configuration } from './Configuration';
+import { Environment } from './Environment';
+import { EnvironmentTypes } from './EnvironmentTypes';
+import { ProcessVariables } from './ProcessVariables';
 
-export enum EnvironmentTypes {
-  PRODUTION = 'production',
-  LOCAL = 'local',
-}
-
-//TODO: probably there is an easier way to allocate that, that works when extending the enum
-export type Environment =
-  | EnvironmentTypes.LOCAL
-  | EnvironmentTypes.PRODUTION
-  | string;
-
-export interface Configuration {
-  environment: Environment;
-  logLevel: Level;
-  profile: {
-    name: string;
-    position: string;
-  };
-  urls: {
-    workDetails: string; //'career';
-    projectDetails: string; //'project';
-  };
-  jobcard: {
-    showImage: boolean;
-    showDates: boolean;
-  };
-}
-
-export interface ProcessVariables {
-  ENV?: Environment;
-  LOG_LEVEL?: Level;
-}
-
-export const getLocalConfig = (
-  processVariables: ProcessVariables
+/**
+ * Retrieves the local configuration based on the provided process variables.
+ * @param processVariables The process variables used to determine the configuration.
+ * @returns The local configuration.
+ */
+const getLocalConfig = (
+  processVariables: ProcessVariables,
 ): Partial<Configuration> => {
-  const current = {
+  const current: Partial<Configuration> = {
     environment: EnvironmentTypes.LOCAL,
     logLevel: processVariables.LOG_LEVEL ?? 'debug',
+    urls: {
+      projectDetails: 'project',
+      workDetails: 'career',
+    },
   };
   return {
     ...current,
     ...localConfig,
   };
 };
-export const getProductionConfig = (
-  processVariables: ProcessVariables
+
+/**
+ * Retrieves the production configuration based on the provided process variables.
+ * @param processVariables - The process variables used to determine the configuration.
+ * @returns The production configuration.
+ */
+const getProductionConfig = (
+  processVariables: ProcessVariables,
 ): Partial<Configuration> => {
-  const current = {
+  const current: Partial<Configuration> = {
+    ...getLocalConfig(processVariables),
     environment: EnvironmentTypes.PRODUTION,
     logLevel: processVariables.LOG_LEVEL ?? 'error',
   };
@@ -61,12 +46,21 @@ export const getProductionConfig = (
   };
 };
 
+/**
+ * Retrieves the configuration based on the current environment.
+ * @returns {Partial<Configuration>} The partial configuration object.
+ */
 export const Config = (): Partial<Configuration> => {
   return getConfig({ ENV: process.env.NODE_ENV });
 };
 
-export const getConfig = (
-  processVariables: ProcessVariables
+/**
+ * Retrieves the configuration based on the provided process variables.
+ * @param processVariables - The process variables used to determine the environment.
+ * @returns The partial configuration object based on the environment.
+ */
+const getConfig = (
+  processVariables: ProcessVariables,
 ): Partial<Configuration> => {
   const environment: Environment =
     processVariables.ENV || EnvironmentTypes.LOCAL;
@@ -79,4 +73,7 @@ export const getConfig = (
   }
 };
 
+/**
+ * Configuration object for the application.
+ */
 export const config = getConfig(process.env as unknown as ProcessVariables);
