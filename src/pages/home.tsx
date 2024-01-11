@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import { AboutMe } from '../components/AboutMe/AboutMe';
 import { Section } from '../components/Section/Section';
@@ -13,6 +13,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
   //TODO: see App.tsx, we need the posts there too and should refactor
   return (
     <>
+    <HelmetProvider >
       {/* //TODO: helmet is outdated https://stackoverflow.com/questions/66045965/warning-using-unsafe-componentwillmount-in-strict-mode-is-not-recommended-upgr */}
       <Helmet>
         <script defer async src="./timeline.js" type="text/javascript"></script>
@@ -70,6 +71,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
           </p>
         </Section.Wrapper>
       </Section>
+      </HelmetProvider>
     </>
   );
 };
