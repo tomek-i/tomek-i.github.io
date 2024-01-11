@@ -11,6 +11,7 @@ export const usePosts = () => {
   const [posts, setPosts] = useState<PostType<Frontmatter>[]>();
   const [isLoading, setIsLoading] = useState(false);
 
+  //TODO: the below code exists already in postService.ts
   const importAll = (r: any) => r.keys().map(r);
 
   if (!process.env.REACT_APP_CONTENT_PATH)
