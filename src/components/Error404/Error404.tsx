@@ -1,6 +1,6 @@
 export interface Error404Props extends React.PropsWithChildren {}
 
-export const Error404: React.FC<Error404Props> = ({}) => {
+export const Error404: React.FC<Error404Props> = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center h-screen">
