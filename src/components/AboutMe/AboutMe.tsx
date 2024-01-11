@@ -5,6 +5,7 @@ import { useContactForm } from '../ContactForm/useContactForm';
 import { Section } from '../Section';
 
 interface AboutMeProps {}
+
 export const AboutMe: React.FC<AboutMeProps> = () => {
   const { setShowContactFormModal } = useContactForm();
 
