@@ -5,6 +5,7 @@ import { ContactForm } from '../components/ContactForm/ContactForm';
 import { useContactForm } from '../components/ContactForm/useContactForm';
 import { Heading } from '../components/Header/Header';
 import { Modal } from '../components/Modal/Modal';
+import { ThemeModeToggle } from '../components/ThemeModeToggle';
 
 export const Layout = () => {
   const { setShowContactFormModal, showContactFormModal } = useContactForm();
@@ -14,17 +15,21 @@ export const Layout = () => {
 
   return (
     <>
+      <ThemeModeToggle />
       <nav>
         <Heading />
       </nav>
 
-      {createPortal( <Modal
-        show={showContactFormModal}
-        setShow={setShowContactFormModal}
-        title="Contact"
-      >
-        <ContactForm onCancelClick={() => setShowContactFormModal(false)} />
-      </Modal>,document.body)}
+      {createPortal(
+        <Modal
+          show={showContactFormModal}
+          setShow={setShowContactFormModal}
+          title="Contact"
+        >
+          <ContactForm onCancelClick={() => setShowContactFormModal(false)} />
+        </Modal>,
+        document.body,
+      )}
       <Outlet />
     </>
   );
