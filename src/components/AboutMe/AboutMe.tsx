@@ -1,3 +1,5 @@
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { settings } from '../../settings';
 import { useContactForm } from '../ContactForm/useContactForm';
 import { Section } from '../Section';
@@ -36,7 +38,8 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
         <p>
           If you're interested in working with me, please don't hesitate to{' '}
           <button onClick={() => setShowContactFormModal(true)}>
-            <span className="underline underline-offset-4">reach out</span>
+            <span className="underline underline-offset-4">reach out</span> {' '}
+            <FontAwesomeIcon icon={faEnvelope} />
           </button>
           .
         </p>
