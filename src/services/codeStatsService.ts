@@ -32,7 +32,7 @@ const getStats = async (username: string) => {
 
     return stats;
   } catch (error) {
-    console.error(error);
+    //TODO: log error perhaps?
   }
   return null;
 };
