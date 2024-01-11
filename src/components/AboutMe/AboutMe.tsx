@@ -38,7 +38,7 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
         <p>
           If you're interested in working with me, please don't hesitate to{' '}
           <button onClick={() => setShowContactFormModal(true)}>
-            <span className="underline underline-offset-4">reach out</span> {' '}
+            <span className="underline underline-offset-4">reach out</span>{' '}
             <FontAwesomeIcon icon={faEnvelope} />
           </button>
           .
