@@ -14,6 +14,8 @@ import { Section } from '../components/Section/Section';
 import { CodeStatsService } from '../services/codeStatsService';
 import { CodeStatsResponse } from '../types';
 
+//TODO: experimental stats page
+
 const data = [
   { name: 'Page A', amt: 1400 },
   { name: 'Page B', amt: 2300 },
