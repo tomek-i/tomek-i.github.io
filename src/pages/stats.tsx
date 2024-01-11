@@ -10,9 +10,9 @@ import {
   XAxis,
 } from 'recharts';
 
+import { CodeStatsResponse } from '../components/CodeStats';
 import { Section } from '../components/Section/Section';
 import { CodeStatsService } from '../services/codeStatsService';
-import { CodeStatsResponse } from '../types';
 
 //TODO: experimental stats page
 
