@@ -1,3 +1,11 @@
+TODO: some fun CSS style
+
+https://botoxparty.github.io/XP.css/
+
+https://github.com/AlexBSoft/win95.css
+
+https://jdan.github.io/98.css/
+
 # CareerHub
 
 CareerHub is a dynamic and interactive personal or organizational website built using React and Typescript.
