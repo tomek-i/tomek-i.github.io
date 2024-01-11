@@ -1,26 +1,57 @@
-import { useState } from 'react';
 import { Toaster } from 'react-hot-toast';
-import { BrowserRouter } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
-import { Routes } from './Routes';
+import { Providers } from './components/Providers';
+import { ScrollToTop } from './components/ScrollToTop';
 import { usePosts } from './components/hooks/usePosts';
-import { ShowContactFormModal } from './context';
+import { Layout } from './layouts/default';
+import { ErrorPage } from './pages/error';
+import { HomePage } from './pages/home';
+
+import { Post as PostComponent } from './components/Post';
+import { Config } from './configuration';
 
 function App() {
-  const { posts } = usePosts();
   //TODO: add context for posts OR add a local cache with timestamp before re-fetching online
+  const { posts, isLoading } = usePosts();
 
-  //TODO: error boundary https://blog.bitsrc.io/react-error-handling-and-logging-best-practices-4444c57cd666
-  const [showContactFormModal, setShowContactFormModal] = useState(false);
+  if (isLoading) return <></>;
+
   return (
     <>
       <Toaster />
-      <ShowContactFormModal.Provider
-        value={{ showContactFormModal, setShowContactFormModal }}
-      >
-        {/* TODO: separate this out into routes, so it is easier to find within the app structure */}
-        <BrowserRouter>{Routes(posts)}</BrowserRouter>
-      </ShowContactFormModal.Provider>
+      <Providers>
+        <Router>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<HomePage />} />
+              {posts && (
+                <Route path={Config().urls?.workDetails}>
+                  {posts.map((post) => (
+                    <Route
+                      key={post.frontmatter.company.name}
+                      path={post.frontmatter.company.name}
+                      element={<PostComponent post={post} />}
+                    />
+                  ))}
+                </Route>
+              )}
+              <Route
+                path="contact"
+                element={
+                  <div>
+                    TODO: add contact page which will the contact form and some
+                    spill and other contact cards liek scial media etc.
+                  </div>
+                }
+              />
+
+              <Route path="*" element={<ErrorPage />} />
+            </Route>
+          </Routes>
+        </Router>
+      </Providers>
     </>
   );
 }
