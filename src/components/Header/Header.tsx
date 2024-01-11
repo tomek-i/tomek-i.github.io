@@ -10,9 +10,9 @@ export const Heading: React.FC<HeadingProps> = () => {
       <h1 className="site-title">{settings.profile.name}</h1>
       <p className="-mt-6 text-2xl">{settings.profile.position}</p>
 
-      <p className="flex justify-center mx-auto space-x-4 text-xs">
+      <div className="flex justify-center mx-auto space-x-4 text-xs">
         <SocialNavigation />
-      </p>
+      </div>
     </header>
   );
 };
