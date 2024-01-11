@@ -1,6 +1,6 @@
 export interface ThemeModeToggleProps extends React.PropsWithChildren {}
 
-export const ThemeModeToggle: React.FC<ThemeModeToggleProps> = ({}) => {
+export const ThemeModeToggle: React.FC<ThemeModeToggleProps> = () => {
   const moonComponent = (
     <div className="theme-switch__moon">
       <div className="theme-switch__spot"></div>
