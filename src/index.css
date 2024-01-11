@@ -50,6 +50,7 @@
     @apply text-xl;
     background: var(--body-bg);
     color: white;
+    overscroll-behavior: none;
   }
   h1 {
     @apply text-3xl mt-8;
