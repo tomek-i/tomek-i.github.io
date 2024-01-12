@@ -1,5 +1,3 @@
-import { Config } from './configuration';
-
 interface Settings {
   profile: {
     name: string;
@@ -21,10 +19,21 @@ interface Settings {
     };
   };
 }
+
 export const settings: Settings = {
   profile: {
-    name: Config().profile?.name ?? '',
-    position: Config().profile?.position ?? '',
+    name: 'Thomas Iwainski',
+    position: 'Senior Software Engineer',
+    contact: {
+      email: {
+        value: 'tomek.iwainski@gmail.com',
+        show: true,
+      },
+      phone: {
+        value: '',
+        show: false,
+      },
+    },
     socials: [
       {
         type: 'github',

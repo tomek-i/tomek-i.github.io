@@ -6,8 +6,4 @@ export default {
     showImage: false,
     showDates: false,
   },
-  profile: {
-    name: process.env.REACT_PROFILE_NAME ?? 'Thomas Iwainski',
-    position: process.env.REACT_PROFILE_POSITION ?? 'Senior Software Engineer',
-  },
 } as Configuration;

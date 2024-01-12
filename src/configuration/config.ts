@@ -20,11 +20,6 @@ const getLocalConfig = (
       projectDetails: 'project',
       workDetails: 'career',
     },
-
-    profile: {
-      name: 'Tomek Iwainski',
-      position: 'Software Engineer',
-    },
     jobcard: {
       showImage: true,
       showDates: true,
