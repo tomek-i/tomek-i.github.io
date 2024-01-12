@@ -62,8 +62,8 @@ export const Modal: React.FC<ModalProps> = ({
           </div>
         </div>
       </div>
-      {/* TODO: extract out as Overlay component */}
-      <div className="fixed inset-0 z-40 bg-black opacity-40"></div>
-    </>
+
+      <Overlay />
+    </div>
   );
 };
