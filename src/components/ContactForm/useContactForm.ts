@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 
-import { ShowContactFormModal } from '../../context';
+import { ContactFormContext } from '../../context/ContactFormContext';
 
 export function useContactForm() {
-  const context = useContext(ShowContactFormModal);
+  const context = useContext(ContactFormContext);
   if (!context)
     throw new Error('must be part of ShowContactFormModal Provider');
 

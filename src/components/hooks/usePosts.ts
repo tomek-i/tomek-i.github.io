@@ -19,11 +19,7 @@ export const usePosts = () => {
 
   //TODO: the following code does not support folders which makes it hard to organise content eg. work vs projects. Need to find some solutions to load projects and or abe to separate them somehow
   const markdownFiles = importAll(
-    (require as any).context(
-      process.env.REACT_APP_CONTENT_PATH,
-      false,
-      /\.md$/,
-    ),
+    (require as any).context(process.env.REACT_APP_CONTENT_PATH, false, /\.md$/)
   );
 
   useEffect(() => {
@@ -41,14 +37,14 @@ export const usePosts = () => {
 
               if (typeof frontmatter.job.dates.start === 'string') {
                 frontmatter.job.dates.start = parseDateInAustralianFormat(
-                  frontmatter.job.dates.start,
+                  frontmatter.job.dates.start
                 );
               }
 
               // Parse the end date if it's a string
               if (typeof frontmatter.job.dates.end === 'string') {
                 frontmatter.job.dates.end = parseDateInAustralianFormat(
-                  frontmatter.job.dates.end,
+                  frontmatter.job.dates.end
                 );
               }
               return {
@@ -56,14 +52,14 @@ export const usePosts = () => {
                 frontmatter,
               } as PostType<Frontmatter>;
             });
-        }),
+        })
       ).then((results) =>
         results.sort((a, b) => {
           return desc(
             a.frontmatter.job.dates.start,
-            b.frontmatter.job.dates.start,
+            b.frontmatter.job.dates.start
           );
-        }),
+        })
       );
 
       setIsLoading(false);

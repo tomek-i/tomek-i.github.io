@@ -1,5 +1,5 @@
-import localConfig from './configs/config.local';
-import prodConfig from './configs/config.prod';
+import localConfig from '../configs/config.local';
+import prodConfig from '../configs/config.prod';
 import { Configuration } from './Configuration';
 import { Environment } from './Environment';
 import { EnvironmentTypes } from './EnvironmentTypes';
@@ -11,7 +11,7 @@ import { ProcessVariables } from './ProcessVariables';
  * @returns The local configuration.
  */
 const getLocalConfig = (
-  processVariables: ProcessVariables,
+  processVariables: ProcessVariables
 ): Partial<Configuration> => {
   const current: Partial<Configuration> = {
     environment: EnvironmentTypes.LOCAL,
@@ -19,6 +19,15 @@ const getLocalConfig = (
     urls: {
       projectDetails: 'project',
       workDetails: 'career',
+    },
+
+    profile: {
+      name: 'Tomek Iwainski',
+      position: 'Software Engineer',
+    },
+    jobcard: {
+      showImage: true,
+      showDates: true,
     },
   };
   return {
@@ -33,7 +42,7 @@ const getLocalConfig = (
  * @returns The production configuration.
  */
 const getProductionConfig = (
-  processVariables: ProcessVariables,
+  processVariables: ProcessVariables
 ): Partial<Configuration> => {
   const current: Partial<Configuration> = {
     ...getLocalConfig(processVariables),
@@ -48,10 +57,10 @@ const getProductionConfig = (
 
 /**
  * Retrieves the configuration based on the current environment.
- * @returns {Partial<Configuration>} The partial configuration object.
+ * @returns {Configuration} The partial configuration object.
  */
-export const Config = (): Partial<Configuration> => {
-  return getConfig({ ENV: process.env.NODE_ENV });
+export const Config = (): Configuration => {
+  return getConfig({ ENV: process.env.NODE_ENV }) as Configuration;
 };
 
 /**
@@ -60,7 +69,7 @@ export const Config = (): Partial<Configuration> => {
  * @returns The partial configuration object based on the environment.
  */
 const getConfig = (
-  processVariables: ProcessVariables,
+  processVariables: ProcessVariables
 ): Partial<Configuration> => {
   const environment: Environment =
     processVariables.ENV || EnvironmentTypes.LOCAL;

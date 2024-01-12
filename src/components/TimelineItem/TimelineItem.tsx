@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Config } from '../../configuration';
-import { TimelineItemContext } from '../../context';
+import { TimelineItemContext } from '../../context/TimelineItemContext';
 import { Timeline } from '../../types';
 import { calculateTotalYears } from '../../utility';
 import { JobCard } from '../JobCard/JobCard';

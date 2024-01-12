@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { ShowContactFormModal } from '../../context';
+import { Config } from '../../configuration';
+import { ConfigContext } from '../../context';
+import { ContactFormContext } from '../../context/ContactFormContext';
 
 export interface ProvidersProps extends React.PropsWithChildren {}
 
@@ -9,11 +11,13 @@ export const Providers: React.FC<ProvidersProps> = ({ children }) => {
 
   return (
     <>
-      <ShowContactFormModal.Provider
-        value={{ showContactFormModal, setShowContactFormModal }}
-      >
-        {children}
-      </ShowContactFormModal.Provider>
+      <ConfigContext.Provider value={{ Configuration: Config() }}>
+        <ContactFormContext.Provider
+          value={{ showContactFormModal, setShowContactFormModal }}
+        >
+          {children}
+        </ContactFormContext.Provider>
+      </ConfigContext.Provider>
     </>
   );
 };

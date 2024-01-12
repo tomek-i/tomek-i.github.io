@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 import { Config } from '../../configuration';
-import { JobCardContext } from '../../context';
+import { JobCardContext } from '../../context/JobCardContext';
 import { Company, Job } from '../../types';
 import { JobCardDescription } from './JobCardDescription';
 import { JobCardImage } from './JobCardImage';
