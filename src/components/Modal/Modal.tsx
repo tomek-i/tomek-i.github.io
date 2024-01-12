@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react';
+import { Overlay } from '../Overlay';
+
 interface ModalProps extends React.PropsWithChildren {
   // header?: ReactNode;
   // content?: ReactNode;
@@ -14,12 +17,31 @@ export const Modal: React.FC<ModalProps> = ({
   title,
   children,
 }) => {
-  if (!show) return null;
+  const [shouldRender, setShouldRender] = useState(show);
+
+  //NOTE: this is to handle the fade in and fade out of the modal and keep it smooth
+  useEffect(() => {
+    if (show) {
+      setShouldRender(true);
+    } else {
+      const timeoutId = setTimeout(() => {
+        setShouldRender(false);
+      }, 500); //NOTE: this is the same as the transition duration in the tailwind config
+      return () => clearTimeout(timeoutId);
+    }
+  }, [show]);
+
+  const handleClose = () => {
+    setShow(false);
+  };
+
+  if (!shouldRender) return null;
 
   // TODO: extract components out like the timeline etc. or the job card, do this for content, header, and footer
 
+  //IMPORTANT: we set opacity-0 again to avoid flickering if the setTimeout is longer than the transition duration
   return (
-    <>
+    <div className={show ? 'animate-fade-in' : 'animate-fade-out opacity-0'}>
       <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none text-slate-500 focus:outline-none">
         <div className="relative w-auto max-w-3xl mx-auto my-6">
           {/*content*/}
@@ -29,7 +51,7 @@ export const Modal: React.FC<ModalProps> = ({
               <h3 className="text-3xl font-semibold">{title}</h3>
               <button
                 className="float-right p-1 ml-auto text-3xl font-semibold leading-none text-black bg-transparent border-0 outline-none focus:outline-none"
-                onClick={() => setShow(false)}
+                onClick={handleClose}
               >
                 <span className="block w-6 h-6 text-2xl text-black bg-transparent outline-none opacity-20 focus:outline-none">
                   ×
