@@ -15,7 +15,7 @@ export const JobCardImage: React.FC<JobCardImageProps> = ({
   return (
     <div className="job-card_img-box">
       <img
-        src={job?.image}
+        src={`assets/images/${job?.image}`}
         className="job-card_img"
         width={width}
         height={height}
