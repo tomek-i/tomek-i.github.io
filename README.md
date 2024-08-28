@@ -17,7 +17,7 @@ With CareerHub, you can create a professional, dynamic, and engaging online pres
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./public/assets/images/application-demo.jpg)
 
 # Getting Started
 
