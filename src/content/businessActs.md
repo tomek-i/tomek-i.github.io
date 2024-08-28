@@ -22,20 +22,6 @@ job:
 company:
   name: BusinessActs
   website: https://businessacts.de
-
-tags: [
-  SuperOffice-CRM-Modules,
-Maintenance,
-Improvement,
-Custom Solutions,
-Development,
-Client Requirements,
-Pain Points,
-Bottlenecks,
-Streamlining Processes,
-Efficiency Enhancement,
-Productivity Improvement
-]
   description: 'BusinessActs is a software development company based in Cologne, Germany, specializing in SuperOffice CRM solutions and custom integrations that enhance business processes.'
   address:
     city: 'Cologne'
@@ -44,6 +30,14 @@ Productivity Improvement
   location:
     lat: 0
     long: 0
+tags:
+  - 'SuperOffice CRM Development'
+  - 'System Maintenance'
+  - 'Custom Integrations'
+  - 'Process Improvement'
+  - 'Client Collaboration'
+  - 'Productivity Enhancement'
+  - 'Software Development'
 ---
 
 I focused on the maintenance and improvement of SuperOffice-CRM-Modules, as well as the development of custom solutions to meet client requirements. I worked closely with users to identify pain points and bottlenecks within the system, and then develop and improve components within the CRM.
