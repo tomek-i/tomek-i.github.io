@@ -5,27 +5,43 @@ job:
   dates:
     start: 01/08/2014
     end: 01/03/2021
-  responsibilities: []
+  responsibilities:
+    - Automated manual processes, significantly improving operational efficiency.
+    - Digitized data to provide better insights and accessibility for decision-making.
+    - Developed and implemented custom software solutions tailored to the winery's needs.
+    - Set up and maintained networks, ensuring seamless communication between teams.
+    - Integrated machine data into reporting systems, facilitating data-driven decisions.
+    - Collaborated with users and managers to identify needs and deliver effective solutions.
+    - Played a crucial role in the winery's successful digital transformation.
   role: 'Software Engineer'
   skills:
-    [
-      MsSQL,
-      Data Integration,
-      GS1,
-      Machine Data,
-      JavaScript,
-      C#,
-      .NET Framework,
-      Software Development,
-      Network Administration,
-    ]
-
+    - MsSQL
+    - Data Integration
+    - GS1
+    - Machine Data
+    - JavaScript
+    - C#
+    - .NET Framework
+    - Software Development
+    - Network Administration
+    - Automation
+    - Digital Transformation
 company:
   name: Warburn Estate
   website: https://www.warburnestate.com.au
   description: Warburn Estate is a family owned Winery located in Griffith, NSW
 
-tags: [software development, automation, sacda]
+tags:
+  - 'Software Development'
+  - 'Automation'
+  - 'Digital Transformation'
+  - 'Data Integration'
+  - 'Network Administration'
+  - 'Machine Data'
+  - 'Reporting'
+  - 'Productivity Enhancement'
+  - 'Efficiency Improvement'
+  - 'Data-Driven Decision-Making'
 ---
 
 As a Software Engineer at a winery, I transformed the way the company operates by automating manual processes and digitizing data for better insights. By setting up and maintaining networks, I enabled seamless communication between teams and facilitated collaboration. I also had the opportunity to research, design and write new software programs that met the unique needs of the organization.
