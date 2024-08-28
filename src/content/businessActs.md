@@ -1,6 +1,6 @@
 ---
 job:
-  summary: 'As a Junior Software developer I was working on smaller plugins and integrations with SuperOffice CRM.'
+  summary: As a Junior Software Developer at BusinessActs, I played a key role in maintaining and enhancing SuperOffice CRM modules. I developed custom integrations and solutions tailored to client needs, which improved system efficiency and client satisfaction.
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
     start: 01/06/2006
