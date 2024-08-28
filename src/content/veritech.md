@@ -31,7 +31,7 @@ job:
     - Website Redesign
     - Functionality Enhancement
 company:
-  name: Veritech Corporation Pty. Ltd.
+  name: Veritech
   website: https://www.veritechcorp.com.au/
   description: Veritech is an IT consultancy and service company in Griffith, NSW.
 
