@@ -5,26 +5,19 @@ job:
   dates:
     start: 03/03/2021
     end: 01/03/2023
-  responsibilities: []
+  responsibilities:
+    - Developed and maintained full-stack web applications using modern JavaScript frameworks and backend technologies.
+    - Led the conversion of legacy systems to scalable, serverless architectures.
+    - Collaborated closely with stakeholders to gather requirements and deliver custom software solutions.
+    - Acted as a key contributor in Agile sprints, ensuring timely and budget-friendly delivery of projects.
+    - Conducted code reviews and mentored junior developers to ensure best practices and high-quality code standards.
   role: 'Software Engineer'
   skills:
-    [
-      TypeScript,
-      Strapi.js,
-      Node.js,
-      Express.js,
-      Next.js,
-      AngularJS,
-      Agile Methodologies,
-      Legacy System Conversion,
-      Serverless,
-      Full-Stack Development,
-      JavaScript,
-      C#,
-      .NET Framework,
-      Software Development,
-      Teamwork,
-    ]
+    - Frontend: TypeScript, AngularJS, Next.js, JavaScript
+    - Backend: Node.js, Express.js, Strapi.js, C#, .NET Framework
+    - Methodologies: Agile Development, Serverless Architectures, Legacy System Conversion
+    - Soft Skills: Team Collaboration, Client Communication, Problem Solving
+    - Other: Full-Stack Development, Software Development Trends
 
 company:
   name: 4mation
