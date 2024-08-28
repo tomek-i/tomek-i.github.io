@@ -1,7 +1,7 @@
 ---
 job:
   summary: As a Full-Stack Developer at 4mation, I led the development and maintenance of web applications, spearheaded the migration of legacy systems to modern architectures, and collaborated effectively within Agile teams to deliver high-quality software solutions that consistently exceeded client expectations.
-  image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
+  image: office.jpg
   dates:
     start: 03/03/2021
     end: 01/03/2023

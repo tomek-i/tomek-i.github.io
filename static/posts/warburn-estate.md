@@ -1,7 +1,7 @@
 ---
 job:
   summary: As a Software Engineer at Warburn Estate, I spearheaded the winery's digital transformation by automating processes, digitizing data, and developing software solutions that enhanced productivity, efficiency, and data-driven decision-making. I also played a key role in network administration, ensuring reliable communication and collaboration across the organization.
-  image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
+  image: desk.jpg
   dates:
     start: 01/08/2014
     end: 01/03/2021
