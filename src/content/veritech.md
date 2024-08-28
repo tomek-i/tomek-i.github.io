@@ -33,8 +33,15 @@ job:
 company:
   name: Veritech
   website: https://www.veritechcorp.com.au/
-  description: Veritech is an IT consultancy and service company in Griffith, NSW.
-
+  description: Veritech is an IT consultancy and service company based in Griffith, NSW, specializing in website management, IT infrastructure, custom software solutions, and comprehensive IT consulting services.
+  address:
+    city: 'Griffith'
+    country: 'Australia'
+    postcode: '2680'
+    state: 'NSW'
+  location:
+    lat: 0
+    long: 0
 tags:
   - 'Website Management'
   - 'IT Consulting'
