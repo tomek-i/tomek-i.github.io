@@ -35,18 +35,15 @@ company:
     long: 0
 
 tags:
-  [
-    'Full-Stack Development (JavaScript, TypeScript, Node.js, Express.js)',
-    Web Development (PHP,
-    WordPress),
-    Agile Development,
-    'Software Solutions (Legacy System Conversion, Serverless Architectures)',
-    Collaboration and Teamwork,
-    High-Quality Software,
-    Client Requirements,
-    Software Development Trends,
-    Problem Solving,
-  ]
+  - 'Full-Stack Development'
+  - 'JavaScript & TypeScript'
+  - 'Node.js & Express.js'
+  - 'Agile Methodologies'
+  - 'Legacy System Conversion'
+  - 'Serverless Architectures'
+  - 'High-Quality Software Solutions'
+  - 'Team Collaboration'
+  - 'Client Communication'
 ---
 
 As a Full-Stack Developer, I was responsible for developing and maintaining web applications using a range of technologies, including PHP, WordPress, TypeScript, Strapi.js, Node.js, Express.js, Next.js, AngularJS, and JavaScript. Working in an Agile environment, I collaborated with other team members to develop and implement software solutions that met our clients' needs.
