@@ -1,0 +1,8 @@
+node_modules
+# Ignore artifacts:
+build
+coverage
+.plop-templates
+public/
+config/
+scripts/
