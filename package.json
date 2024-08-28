@@ -94,7 +94,7 @@
     "check": "npx depcheck",
     "plop": "plop",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --dotfiles",
     "format": "prettier --write \"src/**/*.+(js|jsx|tsx|ts|json|css|md)\"",
     "lint": "eslint \"src/**/*.+(js|jsx|ts|tsx)\"",
     "coverage1": "npm run test -- --env=jsdom --watchAll=false --coverage",
