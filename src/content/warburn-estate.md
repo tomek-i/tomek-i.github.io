@@ -29,8 +29,15 @@ job:
 company:
   name: Warburn Estate
   website: https://www.warburnestate.com.au
-  description: Warburn Estate is a family owned Winery located in Griffith, NSW
-
+  description: Warburn Estate is a family-owned winery located in Griffith, NSW, known for its innovation and quality in winemaking.
+  address:
+    city: 'Griffith'
+    country: 'Australia'
+    postcode: '2680'
+    state: 'NSW'
+  location:
+    lat: 0
+    long: 0
 tags:
   - 'Software Development'
   - 'Automation'
