@@ -6,7 +6,9 @@ export const JobCardDescription: React.FC<JobCardDescriptionProps> = () => {
   return (
     <>
       {job.summary && (
-        <p className="text-left job-card_description">{job.summary}</p>
+        <p className="text-left text-blue-800 job-card_description ">
+          {job.summary}
+        </p>
       )}
     </>
   );

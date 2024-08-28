@@ -5,7 +5,7 @@ import { Config } from '../../configuration';
 import { TimelineItemContext } from '../../context/TimelineItemContext';
 import { Timeline } from '../../types';
 import { calculateTotalYears } from '../../utility';
-import { JobCard } from '../JobCard/JobCard';
+import { JobCard } from '../JobCard';
 import { JobTimelineItemMeta } from './JobTimelineItemMeta';
 import { JobTimelineItemPoint } from './JobTimelineItemPoint';
 
