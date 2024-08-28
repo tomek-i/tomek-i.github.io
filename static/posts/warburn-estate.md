@@ -1,6 +1,6 @@
 ---
 job:
-  summary: As a Software Engineer at a winery, I automated processes, digitized data, facilitated communication, and developed software solutions that improved productivity, efficiency, reporting, and data-driven decision-making, contributing to the winery's successful digital transformation.
+  summary: As a Software Engineer at Warburn Estate, I spearheaded the winery's digital transformation by automating processes, digitizing data, and developing software solutions that enhanced productivity, efficiency, and data-driven decision-making. I also played a key role in network administration, ensuring reliable communication and collaboration across the organization.
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
     start: 01/08/2014
@@ -51,8 +51,10 @@ tags:
   - 'Data-Driven Decision-Making'
 ---
 
-As a Software Engineer at a winery, I transformed the way the company operates by automating manual processes and digitizing data for better insights. By setting up and maintaining networks, I enabled seamless communication between teams and facilitated collaboration. I also had the opportunity to research, design and write new software programs that met the unique needs of the organization.
+As a Software Engineer at Warburn Estate, I played a pivotal role in the winery's digital transformation. My primary focus was on automating manual processes and digitizing data, which significantly improved the efficiency and productivity of the company. I developed custom software solutions tailored to the winery's specific needs, ensuring that critical machine data and other key information were easily accessible for reporting and decision-making purposes.
 
-Working closely with users and managers, I developed software solutions that drove significant improvements in productivity and efficiency. Through my efforts, I was able to make machine data and key company information more accessible, leading to better reporting and data-driven decision-making.
+In addition to software development, I was responsible for network administration, setting up and maintaining networks that enabled seamless communication and collaboration across various teams. My work ensured that the winery could operate more effectively, with reliable systems that supported its day-to-day operations.
 
-Overall, I'm proud to have played a key role in the winery's digital transformation, and I'm excited to bring my skills and experience to new challenges in the future.
+I collaborated closely with users and managers to identify pain points and areas for improvement, delivering solutions that met their needs and exceeded their expectations. Through my efforts, I contributed to the winery's ability to make data-driven decisions, ultimately supporting its growth and success.
+
+I am proud to have been a key player in Warburn Estate's journey towards greater technological advancement and am eager to apply my skills and experience to new challenges in the future.
