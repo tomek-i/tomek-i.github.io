@@ -1,7 +1,7 @@
 ---
 job:
   summary: As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains.
-  image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
+  image: server.jpg
   dates:
     start: 01/06/2010
     end: 01/08/2014

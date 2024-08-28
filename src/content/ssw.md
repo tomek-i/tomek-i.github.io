@@ -1,7 +1,7 @@
 ---
 job:
   summary: 'Led the development and modernization of internal and client-facing software solutions, managed cross-functional teams, and conducted training programs to enhance technical and soft skills.'
-  image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
+  image: desk.jpg
   dates:
     start: 01/04/2023
   responsibilities:
