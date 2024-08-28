@@ -36,14 +36,7 @@ company:
     lat: 0
     long: 0
 
-tags:
-  - .NET
-  - Angular
-  - Scrum
-  - Agile
-  - Team Leadership
-  - Software Modernization
-  - Training
+tags: []
 ---
 
 As a Senior Software Engineer at SSW, I have been at the forefront of leading and modernizing internal and client-facing software projects. In my role as Tech Lead, I spearheaded the migration of the SugarLearning application from a legacy .NET 4.2 framework to the latest .NET 8, a significant milestone that involved growing and managing a team dedicated to delivering high-quality features and fixes.

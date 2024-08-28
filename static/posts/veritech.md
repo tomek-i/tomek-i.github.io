@@ -1,6 +1,6 @@
 ---
 job:
-  summary: As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains.
+  summary: As a website manager, I effectively handled a diverse portfolio of 30+ clients, ensuring the smooth hosting, maintenance, security, and functionality enhancements of their Joomla and CMS-based websites, while maintaining strong client relationships and proactive security monitoring.
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
     start: 01/06/2010
@@ -60,12 +60,6 @@ tags:
   - 'Functionality Enhancement'
 ---
 
-As a Website Manager and IT Consultant at Veritech, I was responsible for managing a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. My role extended beyond website management to include advising clients on software development, IT infrastructure, and system optimization, ensuring their technology needs were comprehensively met.
+In my role, I successfully managed a diverse portfolio of over 30 website clients. I was responsible for hosting and maintaining their websites, ensuring regular maintenance checks, performing necessary security upgrades, updating content, and enhancing website functionality as required.
 
-In the realm of website management, I handled hosting, maintenance, security upgrades, and content updates, always ensuring that our clients' online presence was secure, functional, and aligned with their business goals. I worked closely with clients to redesign and enhance website functionality, delivering custom solutions tailored to their specific needs.
-
-My sysadmin responsibilities included server management, configuration, and troubleshooting, ensuring that all systems operated efficiently and reliably. As a network engineer, I was involved in designing, implementing, and maintaining network infrastructures, supporting clients' connectivity and operational requirements.
-
-Throughout my time at Veritech, I maintained strong client relationships, built on trust and consistent delivery of high-quality IT services. My proactive approach to security and system monitoring helped prevent vulnerabilities and ensured the ongoing protection of client data.
-
-My diverse skill set in website management, IT consulting, sysadmin, and network engineering allowed me to provide comprehensive support to our clients, enabling them to achieve their business objectives through reliable and innovative technology solutions.
+The websites I developed for our clients were primarily based on Joomla and CMS platforms. With a keen focus on providing exceptional service, I maintained strong relationships with over 60 clients, the majority of whom entrusted us with their hosting needs. My responsibilities included proactive security monitoring and ensuring all components remained up to date.
