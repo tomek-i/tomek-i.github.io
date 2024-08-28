@@ -1,24 +1,45 @@
 ---
 job:
-  summary: 'As a Junior Software developer I was working on smaller plugins and integrations with SuperOffice CRM.'
+  summary: As a Junior Software Developer at BusinessActs, I played a key role in maintaining and enhancing SuperOffice CRM modules. I developed custom integrations and solutions tailored to client needs, which improved system efficiency and client satisfaction.
   image: https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png
   dates:
-    start: 10/06/1980
-    end: 11/06/1987
+    start: 01/06/2006
+    end: 01/04/2009
+  responsibilities:
+    - Developed and maintained plugins and integrations with SuperOffice CRM.
+    - Worked closely with clients to identify pain points and bottlenecks in the CRM system.
+    - Designed and implemented custom solutions to streamline processes and improve productivity.
+    - Collaborated with senior developers to ensure high-quality code and adherence to project deadlines.
+  role: 'Junior Software Developer'
   skills:
-  responsibilities: [software development, def, g e h]
-  role: 'Software Engineer'
-
+    - SuperOffice CRM
+    - Plugin Development
+    - System Integration
+    - Custom Software Solutions
+    - Client Communication
+    - Problem Solving
+    - Process Improvement
 company:
   name: BusinessActs
-  website: 'TODO  https:/[...].com.au'
-  description: 'BusinessActs is software development compay in Cologne, Germany focusing in SuperOffice CRM.'
-
-tags: []
+  website: https://businessacts.de
+  description: 'BusinessActs is a software development company based in Cologne, Germany, specializing in SuperOffice CRM solutions and custom integrations that enhance business processes.'
+  address:
+    city: 'Cologne'
+    country: 'Germany'
+    state: 'North Rhine-Westphalia'
+  location:
+    lat: 0
+    long: 0
+tags:
+  - 'SuperOffice CRM Development'
+  - 'System Maintenance'
+  - 'Custom Integrations'
+  - 'Process Improvement'
+  - 'Client Collaboration'
+  - 'Productivity Enhancement'
+  - 'Software Development'
 ---
 
-I focused on the maintenance and improvement of SuperOffice-CRM-Modules, as well as the development of custom solutions to meet client requirements. I worked closely with users to identify pain points and bottlenecks within the system, and then utilized my technical expertise to develop and improve components within the CRM.
+During my tenure as a Junior Software Developer at BusinessActs, I was responsible for maintaining and enhancing SuperOffice CRM modules, as well as developing custom plugins and integrations. My role involved close collaboration with clients to identify system inefficiencies and bottlenecks, which I addressed through tailored software solutions.
 
-By leveraging my experience in development, I was able to create customized solutions that helped clients streamline their processes, increase efficiency, and enhance their overall productivity.
-
-I am passionate about using my skills and experience to help businesses achieve their goals, and I am always eager to take on new challenges and learn new skills.
+I focused on improving the performance and usability of the CRM system, ensuring that our clients could streamline their processes and boost productivity. Working alongside more experienced developers, I honed my technical skills and contributed to the successful delivery of high-quality software solutions. My work not only enhanced client satisfaction but also laid a strong foundation for my future growth in the software development industry.

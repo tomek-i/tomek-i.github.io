@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c6ffec56.css",
-    "main.js": "/static/js/main.f5c5fff4.js",
-    "static/posts/4mation.md": "/static/posts/4mation.md",
-    "static/posts/warburn-estate.md": "/static/posts/warburn-estate.md",
-    "static/posts/businessActs.md": "/static/posts/businessActs.md",
+    "main.css": "/static/css/main.87cadd64.css",
+    "main.js": "/static/js/main.d3a708b1.js",
     "static/posts/veritech.md": "/static/posts/veritech.md",
-    "index.html": "/index.html",
+    "static/posts/warburn-estate.md": "/static/posts/warburn-estate.md",
     "static/posts/ssw.md": "/static/posts/ssw.md",
-    "static/media/4mation.md": "/static/media/4mation.md",
+    "static/posts/4mation.md": "/static/posts/4mation.md",
+    "static/posts/businessActs.md": "/static/posts/businessActs.md",
+    "index.html": "/index.html",
     "static/media/triangle.svg": "/static/media/triangle.4dbf20502a9bf5c448ad.svg",
-    "main.c6ffec56.css.map": "/static/css/main.c6ffec56.css.map",
-    "main.f5c5fff4.js.map": "/static/js/main.f5c5fff4.js.map"
+    "main.87cadd64.css.map": "/static/css/main.87cadd64.css.map",
+    "main.d3a708b1.js.map": "/static/js/main.d3a708b1.js.map"
   },
-  "entrypoints": ["static/css/main.c6ffec56.css", "static/js/main.f5c5fff4.js"]
+  "entrypoints": [
+    "static/css/main.87cadd64.css",
+    "static/js/main.d3a708b1.js"
+  ]
 }
