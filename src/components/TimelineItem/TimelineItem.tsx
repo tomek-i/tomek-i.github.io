@@ -59,7 +59,7 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
             <JobCard.Info>
               <JobCard.Title />
               <JobCard.Description />
-              <JobCard.Responsibilities />
+              {/* <JobCard.Responsibilities /> */}
               <Link
                 to={`career/${timeline.company.name}`}
                 className={
