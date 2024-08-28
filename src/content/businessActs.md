@@ -5,10 +5,20 @@ job:
   dates:
     start: 01/06/2006
     end: 01/04/2009
+  responsibilities:
+    - Developed and maintained plugins and integrations with SuperOffice CRM.
+    - Worked closely with clients to identify pain points and bottlenecks in the CRM system.
+    - Designed and implemented custom solutions to streamline processes and improve productivity.
+    - Collaborated with senior developers to ensure high-quality code and adherence to project deadlines.
+  role: 'Junior Software Developer'
   skills:
-  responsibilities: []
-  role: 'Software Engineer'
-
+    - SuperOffice CRM
+    - Plugin Development
+    - System Integration
+    - Custom Software Solutions
+    - Client Communication
+    - Problem Solving
+    - Process Improvement
 company:
   name: BusinessActs
   website: https://businessacts.de
