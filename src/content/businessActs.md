@@ -37,6 +37,13 @@ Efficiency Enhancement,
 Productivity Improvement
 ]
   description: 'BusinessActs is a software development company based in Cologne, Germany, specializing in SuperOffice CRM solutions and custom integrations that enhance business processes.'
+  address:
+    city: 'Cologne'
+    country: 'Germany'
+    state: 'North Rhine-Westphalia'
+  location:
+    lat: 0
+    long: 0
 ---
 
 I focused on the maintenance and improvement of SuperOffice-CRM-Modules, as well as the development of custom solutions to meet client requirements. I worked closely with users to identify pain points and bottlenecks within the system, and then develop and improve components within the CRM.
