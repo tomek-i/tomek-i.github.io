@@ -20,12 +20,9 @@
       agFlag = false;
 
 
-      //TODO: is there a better way - this is to avoid issues with react where not all items are available yet
       setTimeout(
         function() 
         {
-          //TODO: only load what is necessary
-
           agTimeline = $('.js-timeline');
           agTimelineLine = $('.js-timeline_line');
           agTimelineLineProgress = $('.js-timeline_line-progress');
@@ -35,9 +32,6 @@
           agHeight = $(window).height();
           f = -1;
           agFlag = false;
-
-
-          //TODO: can be probably shortened
         }, 2000);
 
     

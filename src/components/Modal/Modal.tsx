@@ -2,14 +2,10 @@ import { useEffect, useState } from 'react';
 import { Overlay } from '../Overlay';
 
 interface ModalProps extends React.PropsWithChildren {
-  // header?: ReactNode;
-  // content?: ReactNode;
-  // footer?: ReactNode;
   title?: string;
   show: boolean;
   setShow: React.Dispatch<React.SetStateAction<boolean>>;
 }
-//TODO: use react portals to render the modal as per documentation here https://react.dev/reference/react-dom/createPortal#rendering-a-modal-dialog-with-a-portal and https://blog.logrocket.com/build-modal-with-react-portals/ and https://medium.com/@janevalencia/creating-modal-with-react-portals-a55c57bba1eb and https://react.school/ui/modal
 
 export const Modal: React.FC<ModalProps> = ({
   show = false,
@@ -37,8 +33,6 @@ export const Modal: React.FC<ModalProps> = ({
 
   if (!shouldRender) return null;
 
-  // TODO: extract components out like the timeline etc. or the job card, do this for content, header, and footer
-
   //IMPORTANT: we set opacity-0 again to avoid flickering if the setTimeout is longer than the transition duration
   return (
     <div className={show ? 'animate-fade-in' : 'animate-fade-out opacity-0'}>
@@ -61,8 +55,6 @@ export const Modal: React.FC<ModalProps> = ({
             {/*body*/}
 
             {children}
-
-            {/* TODO: extract out as footer component that can be used for the modal */}
 
             {/*footer*/}
             {/* <div className="flex items-center justify-end p-6 border-t border-solid rounded-b border-slate-200">

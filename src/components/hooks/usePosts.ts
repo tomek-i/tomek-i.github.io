@@ -4,20 +4,15 @@ import { useEffect, useState } from 'react';
 import { desc, parseDateInAustralianFormat } from '../../utility';
 import { Frontmatter, Post as PostType } from './../../types';
 
-// TODO: use injection to allow fethcing posts from local content folder or via API
-// TODO: do the same for projects
-
 export const usePosts = () => {
   const [posts, setPosts] = useState<PostType<Frontmatter>[]>();
   const [isLoading, setIsLoading] = useState(false);
 
-  //TODO: the below code exists already in postService.ts
   const importAll = (r: any) => r.keys().map(r);
 
   if (!process.env.REACT_APP_CONTENT_PATH)
     throw new Error('REACT_APP_CONTENT_PATH not set');
 
-  //TODO: the following code does not support folders which makes it hard to organise content eg. work vs projects. Need to find some solutions to load projects and or abe to separate them somehow
   const markdownFiles = importAll(
     (require as any).context(process.env.REACT_APP_CONTENT_PATH, false, /\.md$/)
   );
@@ -31,7 +26,6 @@ export const usePosts = () => {
             .then((res) => res.text())
             .then((content) => {
               const frontmatter = fm(content).attributes as Frontmatter;
-              //TODO: is there a better way, the frontmatter reads it as string and we need to change it back to dates??
 
               // Create an object with the desired format options
 
@@ -67,7 +61,6 @@ export const usePosts = () => {
     };
     loadContent();
     // NOTE: adding the dependecny here will kill the process, probably need to useRef ?
-    // TODO: follow above note and add useRef based on this article: https://brandoncc.dev/blog/how-to-deal-with-circular-dependencies-in-react-hooks/
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

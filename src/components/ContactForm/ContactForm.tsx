@@ -4,7 +4,6 @@ import toast from 'react-hot-toast';
 
 import { useContactForm } from './useContactForm';
 
-//TODO: export out from here, mke it re-usable
 const notifySuccess = () => toast('Email sent.');
 const notifyError = () => {
   toast('There was an issue sending the email.');
@@ -13,9 +12,8 @@ interface ContactFormProps {
   onCancelClick: () => void;
 }
 
-//TODO: read https://www.carlrippon.com/successful-submission-in-react-hook-form/
 export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
-   useContactForm();
+  useContactForm();
 
   type FormValues = {
     name: string;
@@ -52,7 +50,6 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
         },
         (_error) => {
           notifyError();
-          //TODO: add logging ?
         }
       );
     // .finally(() => setShowContactFormModal(false));

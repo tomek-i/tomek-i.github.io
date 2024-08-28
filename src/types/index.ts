@@ -31,7 +31,6 @@ export type Job = {
   responsibilities: string[];
 };
 
-//TODO: refactor as Meta and Timeline now are the same, see which one is more appropiate
 export type Frontmatter = {
   company: Company;
   job: Job;

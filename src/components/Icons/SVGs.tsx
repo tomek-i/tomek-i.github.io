@@ -1,7 +1,5 @@
 import { IconProps } from './IconProps';
 
-//TODO: get proper social icons aybe from hero icons
-
 export const MailIcon: React.FC<IconProps> = () => {
   return (
     <svg

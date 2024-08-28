@@ -1,10 +1,14 @@
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { settings } from '../../settings';
 import { useContactForm } from '../ContactForm/useContactForm';
 import { Section } from '../Section';
 
 interface AboutMeProps {}
+
+const profile = {
+  name: 'Thomas Iwainski',
+  position: 'Senior Software Engineer',
+};
 
 export const AboutMe: React.FC<AboutMeProps> = () => {
   const { setShowContactFormModal } = useContactForm();
@@ -14,10 +18,10 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
       <Section.Wrapper>
         <h2 className="section-title">About</h2>
         <p>
-          Hi, I'm <strong>{settings.profile.name}</strong>, a software developer
-          based in Australia. Originally from Poland, I moved to Germany at a
-          young age and pursued my passion for computers with a three-year
-          course at Rheinische Akademie Köln in Germany.
+          Hi, I'm <strong>{profile.name}</strong>, a software developer based in
+          Australia. Originally from Poland, I moved to Germany at a young age
+          and pursued my passion for computers with a three-year course at
+          Rheinische Akademie Köln in Germany.
         </p>
         <p>
           Since then, I have acquired over{' '}

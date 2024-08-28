@@ -1,11 +1,3 @@
-TODO: some fun CSS style
-
-https://botoxparty.github.io/XP.css/
-
-https://github.com/AlexBSoft/win95.css
-
-https://jdan.github.io/98.css/
-
 # CareerHub
 
 CareerHub is a dynamic and interactive personal or organizational website built using React and Typescript.
@@ -28,8 +20,6 @@ With CareerHub, you can create a professional, dynamic, and engaging online pres
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 # Getting Started
-
-TODO: refer to contribution / license information
 
 ## Run Locally
 
@@ -88,31 +78,31 @@ See the section about [deployment](#deployment) for more information.
 
 ### `npm run check`
 
-TODO: runs dependency check to filter out unused packages
+runs dependency check to filter out unused packages
 
 ### `npm run plop`
 
-TODO: runs templates, currently only component setup to quickly create new components, stories and test.
+runs templates, currently only component setup to quickly create new components, stories and test.
 
 ### `npm run deploy`
 
-TODO: deploys to your github account
+deploys to your github account
 
 ### `npm run format`
 
-TODO: runs prettier on the files, needs to have prettier installed globaly (test? maybe make npx dependency) and check if npx will read the local config file
+runs prettier on the files, needs to have prettier installed globaly (test? maybe make npx dependency) and check if npx will read the local config file
 
 ### `npm run lint`
 
-TODO: runs linter to check the code
+runs linter to check the code
 
 ### `npm run coverage`
 
-TODO: runs tests (see test) and create coverage report (see test-coverage)
+runs tests (see test) and create coverage report (see test-coverage)
 
 ## Tests
 
-TODO: write something about tests
+write something about tests
 
 ## Environment Variables
 
@@ -132,8 +122,6 @@ To deploy this project run
   npm run deploy
 ```
 
-TODO: this is incomplete, needs more information and steps to deploy to github pages using `gh-pages` npm package.
-
 ## 3rd Party integrations
 
 ### EmailJS
@@ -147,40 +135,3 @@ You will need to add the following envrionment variables to your `.env` file if 
 | `REACT_APP_API_EMAILJS_PUBLIC`      | The public key provided by EmailJS service.                               |
 | `REACT_APP_API_EMAILJS_SERVICE_ID`  | The service ID provided by EmailJS service.                               |
 | `REACT_APP_API_EMAILJS_TEMPLATE_ID` | The template to use when an email is being sent / forwarded from EmailJS. |
-
-## Sources
-
-TODO: mention some helpful sources that helped creating the different features
-TODO: maybe it belongs to appendix section
-
-TAILWIND REACT STARTERKIT
-https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/download
-
-UI:
-https://headlessui.com/
-
-## Roadmap
-
-Below is a collection of ideas and or other features to extend the functionality of this little app.
-
-TODO: add additional items of things that need to be done.
-
-TODO: cleanup this todo list with prefixes like ♻️ icon for refactoring, ✨ for features etc.
-
-- change the favicon to some appropiate logo eg. the TK initial signature
-- change the title of the page, maybe allow different title per page visiting
-- add google meta information (SEO) and open graph tags: https://ahrefs.com/blog/open-graph-meta-tags/ and https://developers.google.com/search/docs/crawling-indexing/special-tags
-- Add contribution section into readme file
-- Add `Buy me a coffee` or `buy me a beer` and other support information into readme file
-- Add licence information and add a link back (footer?) on the page in case other people use it to get a link back on the build page as well as in the readme when people for the repo
-- Write tests for the different components using enzyme / jest or some other framework as well as functionality
-- add storybooks to the repo and configure the components
-- Add some analytics functionality that can be configured to on / off via the settings
-  - AppInsights
-  - Sentry.io
-  - Note: need to add user consent popup??
-  - add then a page to view stats and render some nice graphs
-- From the work experienece create a keyword cloud of tags / responsibilities
-- create a filter based of responsibilities that filters out work experience and or projects?
-- add github reopos maybe through API call and then render it and use the above filter maybe ??
-- integrate maybe contribution graph from github somehow and or some other coding stats (code:stats / waka time) similiar like the hooks to in github pages readme for the profile and render some cool graphs?

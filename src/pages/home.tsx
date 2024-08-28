@@ -5,12 +5,9 @@ import { Section } from '../components/Section/Section';
 import { TimelineItem } from '../components/TimelineItem/TimelineItem';
 import { usePosts } from '../components/hooks/usePosts';
 
-// import { jobs } from '../data/jobs';
-
 interface HomePageProps {}
 
 export const HomePage: React.FC<HomePageProps> = () => {
-  //TODO: see App.tsx, we need the posts there too and should refactor
   const { posts } = usePosts();
   return (
     <>
@@ -23,8 +20,6 @@ export const HomePage: React.FC<HomePageProps> = () => {
             type="text/javascript"
           ></script>
         </Helmet>
-
-        {/* //TODO: make compound component */}
 
         <AboutMe />
 
@@ -39,7 +34,6 @@ export const HomePage: React.FC<HomePageProps> = () => {
           </Section.Wrapper>
         </Section>
 
-        {/* TODO: separate this out as it can be a separate page called career where this component will be reused */}
         <Section className="overflow-hidden">
           <div className="timeline-format-container">
             <div className="js-timeline timeline">

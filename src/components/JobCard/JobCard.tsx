@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 
-import { Config } from '../../configuration';
 import { JobCardContext } from '../../context/JobCardContext';
 import { Company, Job } from '../../types';
 import { JobCardDescription } from './JobCardDescription';
@@ -21,7 +20,7 @@ export function JobCard({ job, company, image, info }: JobCardProps) {
     <JobCardContext.Provider value={{ job, company }}>
       <div className="job-cardtimelime_item">
         <div className="job-card_inner">
-          {Config().jobcard?.showImage && image}
+          {image}
           {info}
         </div>
         <div className="job-card_arrow"></div>
