@@ -31,7 +31,7 @@ export const Post: React.FC<PostProps> = ({ post }) => {
         <Link
           to={post.frontmatter.company.website}
           target="_blank"
-          rel="nofollow"
+          rel="nofollow external"
         >
           <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-200">
             Visit{' '}
