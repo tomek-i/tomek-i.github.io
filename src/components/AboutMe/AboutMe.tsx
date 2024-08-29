@@ -14,9 +14,8 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
   const { setShowContactFormModal } = useContactForm();
 
   return (
-    <Section className="about-me diagonal">
+    <Section className="about-me diagonal mb-4 text-lg">
       <Section.Wrapper>
-        <h2 className="section-title">About</h2>
         <p>
           Hi, I'm <strong>{profile.name}</strong>, a software developer based in
           Australia. Originally from Poland, I moved to Germany at a young age
