@@ -72,13 +72,21 @@
   }
 }
 
+@layer utilities {
+  .sticky {
+    @apply top-4 z-50;
+    position: sticky;
+  }
+
 .wrapper {
   /* @apply max-w-4xl mx-auto px-4; */
   max-width: 50rem;
   margin-inline: auto;
   padding-inline: 1rem;
 }
+}
 
+@layer components {
 .site-header {
   @apply text-center;
 }
@@ -97,13 +105,16 @@
 .about-me h2 {
   @apply text-9xl absolute -z-10 left-20 top-0 opacity-10 blur-sm -skew-y-6;
 }
+
 /***************** JOB CARD *********************/
 .job-card_img {
   width: 100%;
 }
+
 .job-card_info {
   padding: 20px 30px;
 }
+
 .job-card_title {
   /* display: none; */
   margin: 10px 0 0;
@@ -112,6 +123,7 @@
   font-size: 28px;
   color: var(--jobcard-title-color);
 }
+
 .job-card_description {
 }
 
@@ -130,13 +142,16 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+
 .job-card_meta-box {
   display: inline-block;
 }
+
 .job-card_meta {
   /* margin: 10px 0 0; */
   @apply text-xl font-bold;
 }
+
 .job-cardtimelime_item {
   display: inline-block;
   width: 45%;
@@ -161,6 +176,7 @@
 
   position: relative;
 }
+
 .job-card_arrow {
   height: 18px;
   width: 18px;
