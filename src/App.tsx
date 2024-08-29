@@ -10,9 +10,7 @@ import { ErrorPage } from './pages/error';
 import { HomePage } from './pages/home';
 
 function App() {
-  const { posts, isLoading } = usePosts();
-
-  if (isLoading) return <></>;
+  const { posts } = usePosts();
 
   return (
     <>
