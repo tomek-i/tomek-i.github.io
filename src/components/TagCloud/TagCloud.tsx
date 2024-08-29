@@ -1,3 +1,4 @@
+import { useCallback } from 'react';
 import { TagCount } from '../../utility';
 
 export interface TagCloudProps extends React.PropsWithChildren {
@@ -17,6 +18,32 @@ const MIN_TRANSPARENCY = 25 as const;
 const OFFSET_RANGE = 30; // Define the offset range
 
 export const TagCloud: React.FC<TagCloudProps> = ({ tags }) => {
+  const renderTags = useCallback(
+    (tag: TagCount, index: number) => {
+      // Calculate font size based on count
+      const fontSize = `${tag.count * MIN_FONT_SIZE}px`;
+      const transparency = (tag.count * MIN_TRANSPARENCY) / 100;
+      const { x, y } = getTagPosition(index, tag.count, tags.length);
+      return (
+        <span
+          key={tag.tag}
+          className="absolute rounded-full px-3 py-1 font-semibold cursor-default"
+          style={{
+            fontSize,
+            top: `${y}%`,
+            left: `${x}%`,
+            color: randomColor(transparency),
+            transform: 'translate(-50%, -50%)',
+            zIndex: tags.length - index,
+          }}
+        >
+          {tag.tag}
+        </span>
+      );
+    },
+    [tags.length]
+  );
+
   const getTagPosition = (index: number, count: number, totalTags: number) => {
     const radius = 1 + count * 5;
     const angle = (index / totalTags) * 2 * Math.PI;
@@ -28,30 +55,5 @@ export const TagCloud: React.FC<TagCloudProps> = ({ tags }) => {
     return { x, y };
   };
 
-  return (
-    <div className="relative h-96 w-full">
-      {tags?.map((tag, index) => {
-        // Calculate font size based on count
-        const fontSize = `${tag.count * MIN_FONT_SIZE}px`;
-        const transparency = (tag.count * MIN_TRANSPARENCY) / 100;
-        const { x, y } = getTagPosition(index, tag.count, tags.length);
-        return (
-          <span
-            key={tag.tag}
-            className="absolute rounded-full px-3 py-1 font-semibold text-gray-700"
-            style={{
-              fontSize,
-              top: `${y}%`,
-              left: `${x}%`,
-              color: randomColor(transparency),
-              transform: 'translate(-50%, -50%)',
-              zIndex: tags.length - index,
-            }}
-          >
-            {tag.tag}
-          </span>
-        );
-      })}
-    </div>
-  );
+  return <div className="relative h-96 w-full">{tags?.map(renderTags)}</div>;
 };
