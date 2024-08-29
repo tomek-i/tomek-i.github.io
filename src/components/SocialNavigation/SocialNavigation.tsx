@@ -28,6 +28,8 @@ export const SocialNavigation: React.FC<SocialNavigationProps> = () => {
       {socials.map((social) => (
         <SocialIcon
           url={social.url}
+          target="_blank"
+          rel="external nofollow noreferrer"
           key={social.url}
           style={{ height: size, width: size }}
           className="transition-opacity duration-300 ease-in-out opacity-75 hover:opacity-100"

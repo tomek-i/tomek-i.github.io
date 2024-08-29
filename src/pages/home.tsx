@@ -73,7 +73,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
             <a
               href="https://github.com/tomek-i/tomek-i.github.io"
               target="_blank"
-              rel="noreferrer"
+              rel="external nofollow noreferrer"
               className="font-bold underline underline-offset-4"
             >
               CareerHub
