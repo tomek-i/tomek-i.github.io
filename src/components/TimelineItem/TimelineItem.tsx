@@ -19,6 +19,10 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
     https://www.youtube.com/watch?v=vPRdY87_SH0
 */
 
+  const years = calculateTotalYears(
+    timeline.job.dates.start,
+    timeline.job.dates.end ?? new Date()
+  );
   const metaComponent = (
     <>
       <div className="job-card_meta-box">
@@ -30,11 +34,7 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
   const pointComponent = (
     <div className="js-timeline-job-card_point-box job-card_point-box">
       <TimelineItem.Point>
-        {timeline.job.dates.end &&
-          `${calculateTotalYears(
-            timeline.job.dates.start,
-            timeline.job.dates.end
-          )}yrs`}
+        {`${years}yr${years > 1 ? 's' : ''}`}
       </TimelineItem.Point>
     </div>
   );
