@@ -2,6 +2,7 @@ import { SocialNavigation } from '../SocialNavigation';
 
 interface HeadingProps {}
 
+// TODO: this has been also used in the AboutMe component, consider extracting it into a separate file like a configuration or settings file
 const profile = {
   name: 'Thomas Iwainski',
   position: 'Senior Software Engineer',
