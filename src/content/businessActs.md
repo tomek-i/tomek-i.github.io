@@ -31,13 +31,11 @@ company:
     lat: 50.9689333
     long: 7.0079991
 tags:
-  - 'SuperOffice CRM Development'
-  - 'System Maintenance'
-  - 'Custom Integrations'
-  - 'Process Improvement'
-  - 'Client Collaboration'
-  - 'Productivity Enhancement'
-  - 'Software Development'
+  - .NET
+  - NHibernate
+  - C#
+  - SuperOffice CRM
+  - Plugin Development
 ---
 
 During my tenure as a Junior Software Developer at BusinessActs, I was responsible for maintaining and enhancing SuperOffice CRM modules, as well as developing custom plugins and integrations. My role involved close collaboration with clients to identify system inefficiencies and bottlenecks, which I addressed through tailored software solutions.

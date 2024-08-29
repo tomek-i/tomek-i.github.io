@@ -39,16 +39,16 @@ company:
     lat: -34.2635871
     long: 145.9981136
 tags:
-  - 'Software Development'
-  - 'Automation'
-  - 'Digital Transformation'
-  - 'Data Integration'
-  - 'Network Administration'
-  - 'Machine Data'
-  - 'Reporting'
-  - 'Productivity Enhancement'
-  - 'Efficiency Improvement'
-  - 'Data-Driven Decision-Making'
+  - .NET
+  - WinForms
+  - TypeScript
+  - Automation
+  - PLC
+  - SCADA
+  - Machine Data
+  - Network
+  - SysAdmin
+  - Reports
 ---
 
 As a Software Engineer at Warburn Estate, I played a pivotal role in the winery's digital transformation. My primary focus was on automating manual processes and digitizing data, which significantly improved the efficiency and productivity of the company. I developed custom software solutions tailored to the winery's specific needs, ensuring that critical machine data and other key information were easily accessible for reporting and decision-making purposes.

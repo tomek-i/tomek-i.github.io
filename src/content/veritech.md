@@ -43,21 +43,18 @@ company:
     lat: -34.2997666
     long: 146.0717566
 tags:
-  - 'Website Management'
-  - 'IT Consulting'
-  - 'Sysadmin'
-  - 'Network Engineering'
-  - 'Joomla'
-  - 'CMS'
-  - 'Web Hosting'
-  - 'Security Upgrades'
-  - 'Client Management'
-  - 'Website Maintenance'
-  - 'Custom Solutions'
-  - 'Proactive Security Monitoring'
-  - 'Content Updates'
-  - 'Website Redesign'
-  - 'Functionality Enhancement'
+  - Joomla
+  - SysAdmin
+  - Network Engineer
+  - C++
+  - C#
+  - .NET
+  - Web Hosting
+  - Consulting
+  - CMS
+  - Wordpress
+  - PHP
+  - JavaScript
 ---
 
 As a Website Manager and IT Consultant at Veritech, I was responsible for managing a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. My role extended beyond website management to include advising clients on software development, IT infrastructure, and system optimization, ensuring their technology needs were comprehensively met.
