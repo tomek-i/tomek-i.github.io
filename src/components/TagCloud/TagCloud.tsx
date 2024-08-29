@@ -27,7 +27,7 @@ export const TagCloud: React.FC<TagCloudProps> = ({ tags }) => {
       return (
         <span
           key={tag.tag}
-          className="absolute rounded-full px-3 py-1 font-semibold cursor-default hover:animate-wiggle p-2"
+          className="absolute rounded-full px-3 py-1 font-semibold cursor-default p-2"
           style={{
             fontSize,
             top: `${y}%`,
