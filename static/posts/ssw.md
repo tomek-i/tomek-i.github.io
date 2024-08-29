@@ -49,6 +49,7 @@ tags:
   - EF Core
   - ASP .NET
   - C#
+  - AI
   - Full-Stack
   - Team Leadership
   - Software Modernization
