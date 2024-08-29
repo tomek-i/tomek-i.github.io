@@ -9,7 +9,6 @@ import { Frontmatter, Post } from '../types';
  */
 const importAll = (r: any) => r.keys().map(r);
 
-
 //NOTE: the following code does not support folders which makes it hard to organise content eg. work vs projects.
 //      Need to find some solutions to load projects and or abe to separate them somehow
 /**
@@ -17,9 +16,8 @@ const importAll = (r: any) => r.keys().map(r);
  * @type {Array<unknown>}
  */
 const markdownFiles = importAll(
-  (require as any).context(process.env.REACT_APP_CONTENT_PATH, false, /\.md$/),
+  (require as any).context(process.env.REACT_APP_CONTENT_PATH, false, /\.md$/)
 );
-
 
 /**
  * Retrieves all posts asynchronously.
@@ -37,11 +35,10 @@ const getAllPosts = async () => {
               content,
               frontmatter,
             } as Post<Frontmatter>;
-          }),
-    ),
+          })
+    )
   );
 };
-
 
 /**
  * Service for posts.
