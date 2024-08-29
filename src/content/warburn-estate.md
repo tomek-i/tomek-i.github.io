@@ -1,7 +1,7 @@
 ---
 job:
   summary: As a Software Engineer at Warburn Estate, I spearheaded the winery's digital transformation by automating processes, digitizing data, and developing software solutions that enhanced productivity, efficiency, and data-driven decision-making. I also played a key role in network administration, ensuring reliable communication and collaboration across the organization.
-  image: desk.jpg
+  image: images/desk.jpg
   dates:
     start: 01/08/2014
     end: 01/03/2021
@@ -36,8 +36,8 @@ company:
     postcode: '2680'
     state: 'NSW'
   location:
-    lat: 0
-    long: 0
+    lat: -34.2635871
+    long: 145.9981136
 tags:
   - 'Software Development'
   - 'Automation'

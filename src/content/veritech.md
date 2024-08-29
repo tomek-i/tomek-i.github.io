@@ -1,7 +1,7 @@
 ---
 job:
   summary: As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains.
-  image: server.jpg
+  image: images/server.jpg
   dates:
     start: 01/06/2010
     end: 01/08/2014
@@ -40,8 +40,8 @@ company:
     postcode: '2680'
     state: 'NSW'
   location:
-    lat: 0
-    long: 0
+    lat: -34.2997666
+    long: 146.0717566
 tags:
   - 'Website Management'
   - 'IT Consulting'
