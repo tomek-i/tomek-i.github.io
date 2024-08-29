@@ -1,17 +1,15 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import { AboutMe } from '../components/AboutMe/AboutMe';
-import { Section } from '../components/Section/Section';
-import { TimelineItem } from '../components/TimelineItem/TimelineItem';
 import { usePosts } from '../components/hooks/usePosts';
+import { Section } from '../components/Section/Section';
+import { TagCloud } from '../components/TagCloud';
+import { TimelineItem } from '../components/TimelineItem/TimelineItem';
 
 interface HomePageProps {}
 
 export const HomePage: React.FC<HomePageProps> = () => {
-  const { posts, tags } = usePosts();
-
-  // TODO: create sorting utility function so it could be used like asc(tags) or tags.sort(asc)
-  const sortedTags = tags?.sort((a, b) => b.count - a.count);
+  const { posts, tags, isLoading } = usePosts();
 
   return (
     <>
@@ -38,7 +36,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
           </Section.Wrapper>
         </Section>
 
-        <Section className="overflow-hidden">
+        <Section isLoading={isLoading} className="overflow-hidden">
           <div className="timeline-format-container">
             <div className="js-timeline timeline">
               <div className="js-timeline_line timelime_line">
@@ -59,7 +57,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
 
         {process.env.NODE_ENV === 'development' && (
           // TODO: Extract Tag Cloud to its own component
-          <Section className="spikes">
+          <Section className="spikes" isLoading={isLoading}>
             <Section.Wrapper>
               {/* <Section.Title title="section 3" /> */}
               <TagCloud tags={tags ?? []} />

@@ -13,18 +13,42 @@ type Module = {
   default: string;
 };
 
+// Declare the __WebpackModuleApi namespace if it's not available
+declare namespace __WebpackModuleApi {
+  interface RequireContext {
+    (id: string): any;
+    keys(): string[];
+    resolve(id: string): string;
+    id: string;
+  }
+}
+// Declare the NodeRequire interface with the context method
+interface NodeRequire {
+  context: (
+    path: string,
+    deep?: boolean,
+    filter?: RegExp
+  ) => __WebpackModuleApi.RequireContext;
+}
+
 export const usePosts = () => {
   const [posts, setPosts] = useState<PostType<Frontmatter>[]>();
   const [tags, setTags] = useState<TagCount[]>();
   const [isLoading, setIsLoading] = useState(false);
 
-  const importAll = (r: any) => r.keys().map(r);
-
   if (!process.env.REACT_APP_CONTENT_PATH)
     throw new Error('REACT_APP_CONTENT_PATH not set');
 
+  type ImportAllFunction = (r: __WebpackModuleApi.RequireContext) => Module[];
+
+  const importAll: ImportAllFunction = (r) => r.keys().map(r);
+
   const markdownFiles = importAll(
-    (require as any).context(process.env.REACT_APP_CONTENT_PATH, false, /\.md$/)
+    (require as unknown as NodeRequire).context(
+      process.env.REACT_APP_CONTENT_PATH,
+      false,
+      /\.md$/
+    )
   );
 
   const fetchMarkdownFile = async (
@@ -56,11 +80,16 @@ export const usePosts = () => {
     const loadContent = async () => {
       setIsLoading(true);
 
-      let results = await Promise.all<PostType<Frontmatter>[]>(
-        markdownFiles.map(fetchMarkdownFile)
-      );
+      // Create an array of promises
+      const promises = markdownFiles.map(fetchMarkdownFile);
 
-      setTags(countTags(results));
+      // Wait for all promises to resolve
+      let results = await Promise.all(promises);
+
+      const unsortedTags = countTags(results);
+
+      setTags(unsortedTags?.sort((a, b) => b.count - a.count));
+
       results.sort((a, b) => {
         return desc(
           a.frontmatter.job.dates.start,

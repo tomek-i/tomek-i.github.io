@@ -60,6 +60,8 @@ export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
               <JobCard.Title />
               <JobCard.Description />
               {/* <JobCard.Responsibilities /> */}
+
+              {/* // TODO: as in the routing, this should use the slugify utility function */}
               <Link
                 to={`career/${timeline.company.name}`}
                 className={
