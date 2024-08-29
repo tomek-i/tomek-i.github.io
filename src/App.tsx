@@ -28,6 +28,7 @@ function App() {
                   {posts.map((post) => (
                     <Route
                       key={post.frontmatter.company.name}
+                      // TODO: we should create a util functio nthat slugifies the company name
                       path={post.frontmatter.company.name.toLowerCase()}
                       element={<PostComponent post={post} />}
                     />
