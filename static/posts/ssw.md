@@ -1,7 +1,7 @@
 ---
 job:
   summary: 'Led the development and modernization of internal and client-facing software solutions, managed cross-functional teams, and conducted training programs to enhance technical and soft skills.'
-  image: desk.jpg
+  image: images/desk.jpg
   dates:
     start: 01/04/2023
   responsibilities:
@@ -31,10 +31,9 @@ company:
     postcode: '2089'
     state: 'NSW'
     street: 'Level 1, 81-91 Military Road'
-
-  loctation:
-    lat: 0
-    long: 0
+  location:
+    lat: -33.8302823
+    long: 151.2191567
 
 tags:
   - .NET

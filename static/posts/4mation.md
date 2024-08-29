@@ -1,7 +1,7 @@
 ---
 job:
   summary: As a Full-Stack Developer at 4mation, I led the development and maintenance of web applications, spearheaded the migration of legacy systems to modern architectures, and collaborated effectively within Agile teams to deliver high-quality software solutions that consistently exceeded client expectations.
-  image: office.jpg
+  image: images/office.jpg
   dates:
     start: 03/03/2021
     end: 01/03/2023
@@ -13,11 +13,11 @@ job:
     - Conducted code reviews and mentored junior developers to ensure best practices and high-quality code standards.
   role: 'Software Engineer'
   skills:
-    - Frontend: TypeScript, AngularJS, Next.js, JavaScript
-    - Backend: Node.js, Express.js, Strapi.js, C#, .NET Framework
-    - Methodologies: Agile Development, Serverless Architectures, Legacy System Conversion
-    - Soft Skills: Team Collaboration, Client Communication, Problem Solving
-    - Other: Full-Stack Development, Software Development Trends
+    - 'Frontend: TypeScript, AngularJS, Next.js, JavaScript'
+    - 'Backend: Node.js, Express.js, Strapi.js, C#, .NET Framework'
+    - 'Methodologies: Agile Development, Serverless Architectures, Legacy System Conversion'
+    - 'Soft Skills: Team Collaboration, Client Communication, Problem Solving'
+    - 'Other: Full-Stack Development, Software Development Trends'
 
 company:
   name: 4mation
@@ -31,8 +31,8 @@ company:
     street: '6 Fevaux'
 
   location:
-    lat: 0
-    long: 0
+    lat: -33.8838675
+    long: 151.2074949
 
 tags:
   - 'Full-Stack Development'

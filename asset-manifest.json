@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.87cadd64.css",
-    "main.js": "/static/js/main.98de1eeb.js",
+    "main.css": "/static/css/main.a1da9a41.css",
+    "main.js": "/static/js/main.1a4452ee.js",
     "static/posts/veritech.md": "/static/posts/veritech.md",
     "static/posts/warburn-estate.md": "/static/posts/warburn-estate.md",
     "static/posts/ssw.md": "/static/posts/ssw.md",
@@ -9,11 +9,11 @@
     "static/posts/businessActs.md": "/static/posts/businessActs.md",
     "index.html": "/index.html",
     "static/media/triangle.svg": "/static/media/triangle.4dbf20502a9bf5c448ad.svg",
-    "main.87cadd64.css.map": "/static/css/main.87cadd64.css.map",
-    "main.98de1eeb.js.map": "/static/js/main.98de1eeb.js.map"
+    "main.a1da9a41.css.map": "/static/css/main.a1da9a41.css.map",
+    "main.1a4452ee.js.map": "/static/js/main.1a4452ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.87cadd64.css",
-    "static/js/main.98de1eeb.js"
+    "static/css/main.a1da9a41.css",
+    "static/js/main.1a4452ee.js"
   ]
 }
