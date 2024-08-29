@@ -4,9 +4,9 @@ import toast from 'react-hot-toast';
 
 import { useContactForm } from './useContactForm';
 
-const notifySuccess = () => toast('Email sent.');
+const notifySuccess = () => toast.success('Email sent.');
 const notifyError = () => {
-  toast('There was an issue sending the email.');
+  toast.error('There was an issue sending the email.');
 };
 interface ContactFormProps {
   onCancelClick: () => void;
