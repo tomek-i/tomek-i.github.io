@@ -8,7 +8,11 @@ import { usePosts } from '../components/hooks/usePosts';
 interface HomePageProps {}
 
 export const HomePage: React.FC<HomePageProps> = () => {
-  const { posts } = usePosts();
+  const { posts, tags } = usePosts();
+
+  // TODO: create sorting utility function so it could be used like asc(tags) or tags.sort(asc)
+  const sortedTags = tags?.sort((a, b) => b.count - a.count);
+
   return (
     <>
       <HelmetProvider>
