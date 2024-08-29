@@ -12,9 +12,7 @@ export const Layout = () => {
 
   return (
     <>
-      <nav>
-        <Heading />
-      </nav>
+      <Heading />
 
       {createPortal(
         <Modal
@@ -26,7 +24,8 @@ export const Layout = () => {
         </Modal>,
         document.body
       )}
-      <Outlet />
+      <div className="h-full">
+        <Outlet />
       </div>
       <ScrollToTopButton />
     </>
