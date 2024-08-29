@@ -31,8 +31,6 @@ interface NodeRequire {
   ) => __WebpackModuleApi.RequireContext;
 }
 
-const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
-
 export const usePosts = () => {
   const [posts, setPosts] = useState<PostType<Frontmatter>[]>();
   const [tags, setTags] = useState<TagCount[]>();
@@ -88,7 +86,6 @@ export const usePosts = () => {
       // Wait for all promises to resolve
       let results = await Promise.all(promises);
 
-      await delay(3000);
       const unsortedTags = countTags(results);
 
       setTags(unsortedTags?.sort((a, b) => b.count - a.count));
