@@ -7,7 +7,7 @@ export type Company = {
   name: string;
   description: string;
   website: string;
-  loctation: {
+  location: {
     long: number;
     lat: number;
   };
@@ -23,6 +23,7 @@ export type Company = {
 export type Job = {
   summary: string;
   image: string;
+  skills: string[];
   dates: {
     start: Date;
     end: Date;
