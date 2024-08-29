@@ -64,7 +64,7 @@
   }
 
   p {
-    @apply my-4 text-base cursor-default;
+    @apply my-4 text-xl lg:text-base cursor-default;
   }
 
   section {
@@ -92,7 +92,7 @@
   }
 
   .site-title {
-    @apply text-9xl font-corinthia cursor-default;
+    @apply text-8xl lg:text-9xl font-corinthia cursor-default;
   }
 
   .section-title {
@@ -101,9 +101,6 @@
   /***************** ABOUT ME *********************/
   .about-me {
     @apply relative;
-  }
-  .about-me h2 {
-    @apply text-9xl absolute -z-10 left-20 top-0 opacity-10 blur-sm -skew-y-6;
   }
 
   /***************** JOB CARD *********************/

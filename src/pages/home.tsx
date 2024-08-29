@@ -57,7 +57,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
 
         {process.env.NODE_ENV === 'development' && (
           // TODO: Extract Tag Cloud to its own component
-          <Section className="spikes" isLoading={isLoading}>
+          <Section className="spikes mb-4" isLoading={isLoading}>
             <Section.Wrapper>
               {/* <Section.Title title="section 3" /> */}
               <TagCloud tags={tags ?? []} />
@@ -65,7 +65,7 @@ export const HomePage: React.FC<HomePageProps> = () => {
           </Section>
         )}
 
-        <footer className="flex justify-center text-sm cursor-default">
+        <footer className="flex justify-center text-sm cursor-default mb-4">
           <span>
             Made with love ❤️ using{' '}
             <a

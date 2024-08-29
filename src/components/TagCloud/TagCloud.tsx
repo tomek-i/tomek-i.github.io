@@ -14,7 +14,7 @@ const randomColor = (a: number) => {
 };
 
 const MIN_FONT_SIZE = 12 as const;
-const MIN_TRANSPARENCY = 25 as const;
+const MIN_TRANSPARENCY = 35 as const;
 const OFFSET_RANGE = 30; // Define the offset range
 
 export const TagCloud: React.FC<TagCloudProps> = ({ tags }) => {
@@ -27,14 +27,14 @@ export const TagCloud: React.FC<TagCloudProps> = ({ tags }) => {
       return (
         <span
           key={tag.tag}
-          className="absolute rounded-full px-3 py-1 font-semibold cursor-default"
+          className="absolute rounded-full px-3 py-1 font-semibold cursor-default hover:animate-wiggle p-2"
           style={{
             fontSize,
             top: `${y}%`,
             left: `${x}%`,
             color: randomColor(transparency),
-            transform: 'translate(-50%, -50%)',
             zIndex: tags.length - index,
+            transform: `translate(-50%, -50%)`,
           }}
         >
           {tag.tag}
@@ -55,5 +55,9 @@ export const TagCloud: React.FC<TagCloudProps> = ({ tags }) => {
     return { x, y };
   };
 
-  return <div className="relative h-96 w-full">{tags?.map(renderTags)}</div>;
+  return (
+    <div className="relative h-96 w-full overflow-clip">
+      {tags?.map(renderTags)}
+    </div>
+  );
 };
