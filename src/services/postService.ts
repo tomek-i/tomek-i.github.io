@@ -9,6 +9,10 @@ import { Frontmatter, Post } from '../types';
  */
 const importAll = (r: any) => r.keys().map(r);
 
+if (!process.env.REACT_APP_CONTENT_PATH) {
+  throw new Error('REACT_APP_CONTENT_PATH environment variable is not defined');
+}
+
 //NOTE: the following code does not support folders which makes it hard to organise content eg. work vs projects.
 //      Need to find some solutions to load projects and or abe to separate them somehow
 /**
@@ -24,20 +28,23 @@ const markdownFiles = importAll(
  * @returns A promise that resolves to an array of Post objects with Frontmatter.
  */
 const getAllPosts = async () => {
-  return Promise.all<Post<Frontmatter>[]>(
-    markdownFiles.map(
-      async (file: any) =>
-        await fetch(file.default)
-          .then((res) => res.text())
-          .then((content) => {
-            const frontmatter = fm(content).attributes as Frontmatter;
-            return {
-              content,
-              frontmatter,
-            } as Post<Frontmatter>;
-          })
-    )
-  );
+  try {
+    const posts = await Promise.all<Post<Frontmatter>[]>(
+      markdownFiles.map(async (file: any) => {
+        const response = await fetch(file.default);
+        const content = await response.text();
+        const frontmatter = fm(content).attributes as Frontmatter;
+        return {
+          content,
+          frontmatter,
+        } as Post<Frontmatter>;
+      })
+    );
+    return posts;
+  } catch (error) {
+    console.error('Error fetching posts:', error);
+    throw error;
+  }
 };
 
 /**
