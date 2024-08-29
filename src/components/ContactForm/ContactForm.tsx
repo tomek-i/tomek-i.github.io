@@ -12,6 +12,30 @@ interface ContactFormProps {
   onCancelClick: () => void;
 }
 
+// TODO: extract component into a FormErrorMessage component
+interface ErrorMessageProps {
+  message: string | undefined;
+}
+
+const ErrorMessage: React.FC<ErrorMessageProps> = ({ message }) => {
+  if (!message) return null;
+  return <span className="text-sm text-red-400">{message}</span>;
+};
+
+const checkEnvVariables = () => {
+  const requiredEnvVars = [
+    'REACT_APP_API_EMAILJS_SERVICEID',
+    'REACT_APP_API_EMAILJS_TEMPLATEID',
+    'REACT_APP_API_EMAILJS_PUBLIC',
+  ];
+
+  requiredEnvVars.forEach((envVar) => {
+    if (!process.env[envVar]) {
+      throw new Error(`Secret not set ${envVar}`);
+    }
+  });
+};
+
 export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
   useContactForm();
 
@@ -28,51 +52,28 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
   } = useForm<FormValues>();
 
   const onSubmit = async (data: FormValues) => {
-    if (!process.env.REACT_APP_API_EMAILJS_SERVICEID) {
-      throw Error('Secret not set API_EMAILJS_SERVICEID');
-    }
-    if (!process.env.REACT_APP_API_EMAILJS_TEMPLATEID) {
-      throw Error('Secret not set API_EMAILJS_TEMPLATEID');
-    }
-    if (!process.env.REACT_APP_API_EMAILJS_PUBLIC) {
-      throw Error('Secret not set API_EMAILJS_PUBLIC');
-    }
-    emailjs
-      .send(
-        process.env.REACT_APP_API_EMAILJS_SERVICEID,
-        process.env.REACT_APP_API_EMAILJS_TEMPLATEID,
+    try {
+      checkEnvVariables();
+      await emailjs.send(
+        process.env.REACT_APP_API_EMAILJS_SERVICEID!,
+        process.env.REACT_APP_API_EMAILJS_TEMPLATEID!,
         data,
-        process.env.REACT_APP_API_EMAILJS_PUBLIC
-      )
-      .then(
-        (_result) => {
-          notifySuccess();
-        },
-        (_error) => {
-          notifyError();
-        }
+        process.env.REACT_APP_API_EMAILJS_PUBLIC!
       );
-    // .finally(() => setShowContactFormModal(false));
+      notifySuccess();
+    } catch (error) {
+      notifyError();
+      console.error('Error sending email:', error);
+    }
   };
 
   return (
     <form
       id="contact-form"
-      onSubmit={(e) => {
-        e.preventDefault();
-        try {
-          handleSubmit(onSubmit);
-          notifySuccess();
-        } catch (error) {
-          //TODO log error message
-          notifyError();
-        }
-      }}
+      onSubmit={handleSubmit(onSubmit)}
       noValidate
       className="flex flex-col flex-auto p-6 space-y-4 w-[600px]"
     >
-      {/* Row 1 of form */}
-
       <div>
         <input
           type="text"
@@ -87,41 +88,33 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
           className="w-full p-2 border rounded"
           placeholder="Name"
         />
-        {errors.name && (
-          <span className="text-sm text-red-400">{errors.name.message}</span>
-        )}
+        <ErrorMessage message={errors.name?.message} />
       </div>
       <div>
         <input
           type="email"
           readOnly={isSubmitting}
           {...register('email', {
-            required: true,
+            required: 'Please enter a valid email address',
             pattern:
               /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
           })}
           className="w-full p-2 border rounded"
           placeholder="Email address"
         />
-        {errors.email && (
-          <span className="text-sm text-red-400">
-            Please enter a valid email address
-          </span>
-        )}
+        <ErrorMessage message={errors.email?.message} />
       </div>
 
       <textarea
         rows={3}
         readOnly={isSubmitting}
         {...register('content', {
-          required: true,
+          required: 'Please enter a message',
         })}
         className="p-2 border rounded"
         placeholder="Message"
       />
-      {errors.content && (
-        <span className="text-sm text-red-400">Please enter a message</span>
-      )}
+      <ErrorMessage message={errors.content?.message} />
 
       <div className="flex">
         <button
