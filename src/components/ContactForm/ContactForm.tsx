@@ -37,8 +37,7 @@ const checkEnvVariables = () => {
 };
 
 export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
-  useContactForm();
-
+  const { setShowContactFormModal } = useContactForm();
   type FormValues = {
     name: string;
     email: string;
@@ -61,6 +60,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onCancelClick }) => {
         process.env.REACT_APP_API_EMAILJS_PUBLIC!
       );
       notifySuccess();
+      setShowContactFormModal(false);
     } catch (error) {
       notifyError();
       console.error('Error sending email:', error);
