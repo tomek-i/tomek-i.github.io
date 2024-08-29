@@ -13,6 +13,7 @@ interface TimelineItemProps {
   timeline: Timeline;
 }
 export function TimelineItem({ timeline, isAlternate }: TimelineItemProps) {
+  // TODO: Timeline and it's css is not really mobile friendly
   /* 
   Timeline from here:
     https://codepen.io/alvarotrigo/pen/yLzBJaN
