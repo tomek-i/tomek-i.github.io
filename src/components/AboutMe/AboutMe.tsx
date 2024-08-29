@@ -20,8 +20,16 @@ export const AboutMe: React.FC<AboutMeProps> = () => {
         <p>
           Hi, I'm <strong>{profile.name}</strong>, a software developer based in
           Australia. Originally from Poland, I moved to Germany at a young age
-          and pursued my passion for computers with a three-year course at
-          Rheinische Akademie Köln in Germany.
+          and pursued my passion for computers with a three-year course at{' '}
+          <a
+            className="underline underline-offset-4 cursor-pointer"
+            href="https://www.rak.de/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Rheinische Akademie
+          </a>{' '}
+          Köln in Germany.
         </p>
         <p>
           Since then, I have acquired over{' '}
