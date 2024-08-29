@@ -72,6 +72,8 @@ export const HomePage: React.FC<HomePageProps> = () => {
             Made with love ❤️ using{' '}
             <a
               href="https://github.com/tomek-i/tomek-i.github.io"
+              target="_blank"
+              rel="noreferrer"
               className="font-bold underline underline-offset-4"
             >
               CareerHub
