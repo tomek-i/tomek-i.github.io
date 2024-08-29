@@ -53,17 +53,31 @@ export const HomePage: React.FC<HomePageProps> = () => {
           </div>
         </Section>
 
-        <Section className="spikes">
-          <Section.Wrapper>
-            <Section.Title title="section 3" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
-              neque velit saepe hic blanditiis maxime ipsam assumenda
-              consectetur, voluptatibus libero incidunt recusandae tenetur vel
-              deserunt, non eveniet, fuga alias culpa!
-            </p>
-          </Section.Wrapper>
-        </Section>
+        {process.env.NODE_ENV === 'development' && (
+          <Section className="spikes">
+            <Section.Wrapper>
+              <Section.Title title="section 3" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
+                neque velit saepe hic blanditiis maxime ipsam assumenda
+                consectetur, voluptatibus libero incidunt recusandae tenetur vel
+                deserunt, non eveniet, fuga alias culpa!
+              </p>
+            </Section.Wrapper>
+          </Section>
+        )}
+
+        <footer className="flex justify-center text-sm cursor-default">
+          <span>
+            Made with love ❤️ using{' '}
+            <a
+              href="https://github.com/tomek-i/tomek-i.github.io"
+              className="font-bold underline underline-offset-4"
+            >
+              CareerHub
+            </a>
+          </span>
+        </footer>
       </HelmetProvider>
     </>
   );
