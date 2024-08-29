@@ -10,7 +10,7 @@ export const JobTimelineItemMeta: React.FC<JobTimelineItemMetaProps> = () => {
       {formatDate(timeline.job.dates.start)}{' '}
       {timeline.job.dates.end
         ? `- ${formatDate(timeline.job.dates.end)}`
-        : `current`}
+        : `present`}
     </div>
   );
 };
