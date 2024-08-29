@@ -14,9 +14,10 @@ export const useScrollVisibility = (threshold: number) => {
       setIsVisible(scrolledPercentage > threshold);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    const debouncedHandleScroll = debounce(handleScroll, 100);
+    window.addEventListener('scroll', debouncedHandleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', debouncedHandleScroll);
     };
   }, [threshold]);
 
