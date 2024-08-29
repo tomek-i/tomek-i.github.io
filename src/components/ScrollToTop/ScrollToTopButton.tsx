@@ -10,7 +10,7 @@ export const ScrollToTopButton: React.FC = () => {
   };
 
   return (
-<button
+    <button
       onClick={handleScrollToTop}
       aria-label="Scroll to top"
       className={`fixed bottom-5 right-5 p-2.5 text-lg cursor-pointer z-50 bg-blue-500 text-white rounded transition-opacity duration-300 ${
@@ -18,5 +18,6 @@ export const ScrollToTopButton: React.FC = () => {
       }`}
     >
       <span aria-hidden="true">Top</span>
+    </button>
   );
 };

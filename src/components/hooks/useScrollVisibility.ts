@@ -23,3 +23,16 @@ export const useScrollVisibility = (threshold: number) => {
 
   return isVisible;
 };
+
+function debounce(handleScroll: () => void, delay: number) {
+  let timeoutId: number | undefined;
+
+  return function () {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+    timeoutId = window.setTimeout(() => {
+      handleScroll();
+    }, delay);
+  };
+}
