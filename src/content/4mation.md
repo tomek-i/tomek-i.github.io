@@ -50,6 +50,7 @@ tags:
   - PHP
   - Wordpress
   - Metamask
+  - AI
 ---
 
 As a Full-Stack Developer at 4mation, I was instrumental in developing and maintaining web applications across a range of technologies, including TypeScript, AngularJS, Next.js, Node.js, and Express.js. My role involved not only writing code but also leading the successful migration of legacy systems to modern, scalable serverless architectures.
