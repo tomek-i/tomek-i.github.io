@@ -17,21 +17,24 @@ const MIN_TRANSPARENCY = 25 as const;
 const OFFSET_RANGE = 30; // Define the offset range
 
 export const TagCloud: React.FC<TagCloudProps> = ({ tags }) => {
+  const getTagPosition = (index: number, count: number, totalTags: number) => {
+    const radius = 1 + count * 5;
+    const angle = (index / totalTags) * 2 * Math.PI;
+    const randomOffsetX = Math.random() * 2 * OFFSET_RANGE - OFFSET_RANGE;
+    const randomOffsetY = Math.random() * 2 * OFFSET_RANGE - OFFSET_RANGE;
+    let x = 50 + radius * Math.cos(angle) + randomOffsetX;
+    let y = 50 + radius * Math.sin(angle) + randomOffsetY;
+    if (index === 0) y = x = 50;
+    return { x, y };
+  };
+
   return (
     <div className="relative h-96 w-full">
       {tags?.map((tag, index) => {
         // Calculate font size based on count
         const fontSize = `${tag.count * MIN_FONT_SIZE}px`;
         const transparency = (tag.count * MIN_TRANSPARENCY) / 100;
-        const radius = 1 + tag.count * 5;
-        const angle = (index / tags.length) * 2 * Math.PI;
-        const randomOffsetX = Math.random() * 2 * OFFSET_RANGE - OFFSET_RANGE; // Random offset between -offsetRange and +offsetRange
-        const randomOffsetY = Math.random() * 2 * OFFSET_RANGE - OFFSET_RANGE; // Random offset between -offsetRange and +offsetRange
-        let x = 50 + radius * Math.cos(angle) + randomOffsetX;
-        let y = 50 + radius * Math.sin(angle) + randomOffsetY;
-
-        if (index === 0) y = x = 50;
-
+        const { x, y } = getTagPosition(index, tag.count, tags.length);
         return (
           <span
             key={tag.tag}
