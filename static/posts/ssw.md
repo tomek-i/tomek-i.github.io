@@ -40,6 +40,16 @@ tags:
   - Angular
   - Scrum
   - Agile
+  - Angular
+  - Modular Monolith
+  - Clean Architecture
+  - GitHub
+  - Azure
+  - DevOps
+  - EF Core
+  - ASP .NET
+  - C#
+  - Full-Stack
   - Team Leadership
   - Software Modernization
   - Training

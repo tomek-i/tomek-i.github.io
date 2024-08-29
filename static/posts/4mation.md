@@ -35,15 +35,21 @@ company:
     long: 151.2074949
 
 tags:
-  - 'Full-Stack Development'
-  - 'JavaScript & TypeScript'
-  - 'Node.js & Express.js'
-  - 'Agile Methodologies'
-  - 'Legacy System Conversion'
-  - 'Serverless Architectures'
-  - 'High-Quality Software Solutions'
-  - 'Team Collaboration'
-  - 'Client Communication'
+  - Full-Stack
+  - Javascript
+  - Typescript
+  - .NET
+  - Scrum
+  - Agile
+  - AWS
+  - Jira
+  - Node.js
+  - Express.js
+  - Angular.js
+  - Angular
+  - PHP
+  - Wordpress
+  - Metamask
 ---
 
 As a Full-Stack Developer at 4mation, I was instrumental in developing and maintaining web applications across a range of technologies, including TypeScript, AngularJS, Next.js, Node.js, and Express.js. My role involved not only writing code but also leading the successful migration of legacy systems to modern, scalable serverless architectures.
