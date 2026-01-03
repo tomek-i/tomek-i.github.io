@@ -1,0 +1,128 @@
+1:"$Sreact.fragment"
+2:I[94812,["/_next/static/chunks/d389128d21406d13.js","/_next/static/chunks/314b7d5f5f19bbbf.js"],"ViewportBoundary"]
+4:I[94812,["/_next/static/chunks/d389128d21406d13.js","/_next/static/chunks/314b7d5f5f19bbbf.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+19:I[84497,["/_next/static/chunks/d389128d21406d13.js","/_next/static/chunks/314b7d5f5f19bbbf.js"],"IconMark"]
+0:{"buildId":"0Y_ye9iDdIYzU4UgppJN1","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:T7ab,## Overview
+
+Completed a 3-year program as an Informationstechnischer Assistent at Rheinische Akademie Köln (RAK), focusing on both theoretical and practical aspects of information technology. The curriculum provided in-depth knowledge of programming, system and network administration, and database management, preparing me for roles in the IT industry or further academic studies.
+
+## Key Coursework
+
+- Electronics & Process Technology
+- Operating Systems & Networks
+- Computer & System Technology
+- Programming & Software Development
+- Database Management
+- Mathematics & Business Economics
+- English for IT Professionals
+- Communication & Technical Writing
+- Politics and Society
+- Software Applications
+- CAD
+- GIS
+
+## Academic Achievements
+
+- **State-certified Informationstechnischer Assistent**
+- **Fachhochschulreife** (Advanced technical college entrance qualification)
+- Successfully completed written, practical, and oral exams in core IT subjects.
+- Gained valuable **industry experience** (BusinessActs) through an internship in a relevant technology field.
+
+## Skills Developed
+
+- **Technical Expertise**: Proficient in programming (Visual Basic, HTML, PHP), system configuration, network setup, and database optimization.
+- **Analytical Thinking**: Developed strong problem-solving skills in real-world technical and business contexts.
+- **Practical Experience**: Hands-on training in robotics, game development, CAD/3D printing, and app development.
+- **Communication Skills**: Enhanced my ability to communicate technical concepts in both German and English, contributing to successful team collaborations.
+
+## Impact on Career
+
+This program laid the foundation for my career in IT, providing me with both practical skills and theoretical knowledge. It opened doors for roles in software development, network administration, and IT consulting. The Fachhochschulreife also set the stage for potential further studies in IT or engineering fields.8:T7ab,## Overview
+
+Completed a 3-year program as an Informationstechnischer Assistent at Rheinische Akademie Köln (RAK), focusing on both theoretical and practical aspects of information technology. The curriculum provided in-depth knowledge of programming, system and network administration, and database management, preparing me for roles in the IT industry or further academic studies.
+
+## Key Coursework
+
+- Electronics & Process Technology
+- Operating Systems & Networks
+- Computer & System Technology
+- Programming & Software Development
+- Database Management
+- Mathematics & Business Economics
+- English for IT Professionals
+- Communication & Technical Writing
+- Politics and Society
+- Software Applications
+- CAD
+- GIS
+
+## Academic Achievements
+
+- **State-certified Informationstechnischer Assistent**
+- **Fachhochschulreife** (Advanced technical college entrance qualification)
+- Successfully completed written, practical, and oral exams in core IT subjects.
+- Gained valuable **industry experience** (BusinessActs) through an internship in a relevant technology field.
+
+## Skills Developed
+
+- **Technical Expertise**: Proficient in programming (Visual Basic, HTML, PHP), system configuration, network setup, and database optimization.
+- **Analytical Thinking**: Developed strong problem-solving skills in real-world technical and business contexts.
+- **Practical Experience**: Hands-on training in robotics, game development, CAD/3D printing, and app development.
+- **Communication Skills**: Enhanced my ability to communicate technical concepts in both German and English, contributing to successful team collaborations.
+
+## Impact on Career
+
+This program laid the foundation for my career in IT, providing me with both practical skills and theoretical knowledge. It opened doors for roles in software development, network administration, and IT consulting. The Fachhochschulreife also set the stage for potential further studies in IT or engineering fields.6:[["$","title","0",{"children":"Informationstechnischer Assistent at Rheinische Akademie Köln | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],["$","link","2",{"rel":"author","href":"https://linkedin.com/tomek.i"}],["$","meta","3",{"name":"author","content":"Thomas Iwainski"}],["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,experience,career,professional experience,work experience,education,software engineering,development"}],["$","meta","5",{"name":"creator","content":"Thomas Iwainski"}],["$","meta","6",{"name":"publisher","content":"Thomas Iwainski"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","9",{"name":"ai-content-declaration","content":"human-authored"}],["$","meta","10",{"name":"ai-training-policy","content":"allowed-with-attribution"}],["$","meta","11",{"name":"content-authenticity","content":"verified"}],["$","meta","12",{"name":"citation-policy","content":"attribution-required"}],["$","link","13",{"rel":"canonical","href":"https://tomek.au/experience/rheinische-akademie-kln"}],["$","meta","14",{"property":"og:title","content":"Informationstechnischer Assistent at Rheinische Akademie Köln | Thomas Iwainski - Senior Software Engineer"}],["$","meta","15",{"property":"og:description","content":"$8"}],"$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17"]
+9:["$","meta","16",{"property":"og:url","content":"https://tomek.au/experience/rheinische-akademie-kln"}]
+a:["$","meta","17",{"property":"og:site_name","content":"Thomas Iwainski - Senior Software Engineer"}]
+b:["$","meta","18",{"property":"og:locale","content":"en_US"}]
+c:["$","meta","19",{"property":"og:image","content":"https://tomek.au/og-image.jpg"}]
+d:["$","meta","20",{"property":"og:image:width","content":"1200"}]
+e:["$","meta","21",{"property":"og:image:height","content":"630"}]
+f:["$","meta","22",{"property":"og:image:alt","content":"Informationstechnischer Assistent at Rheinische Akademie Köln"}]
+10:["$","meta","23",{"property":"og:type","content":"website"}]
+11:["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}]
+12:["$","meta","25",{"name":"twitter:creator","content":"@tomek_i"}]
+13:["$","meta","26",{"name":"twitter:title","content":"Informationstechnischer Assistent at Rheinische Akademie Köln | Thomas Iwainski - Senior Software Engineer"}]
+18:T7ab,## Overview
+
+Completed a 3-year program as an Informationstechnischer Assistent at Rheinische Akademie Köln (RAK), focusing on both theoretical and practical aspects of information technology. The curriculum provided in-depth knowledge of programming, system and network administration, and database management, preparing me for roles in the IT industry or further academic studies.
+
+## Key Coursework
+
+- Electronics & Process Technology
+- Operating Systems & Networks
+- Computer & System Technology
+- Programming & Software Development
+- Database Management
+- Mathematics & Business Economics
+- English for IT Professionals
+- Communication & Technical Writing
+- Politics and Society
+- Software Applications
+- CAD
+- GIS
+
+## Academic Achievements
+
+- **State-certified Informationstechnischer Assistent**
+- **Fachhochschulreife** (Advanced technical college entrance qualification)
+- Successfully completed written, practical, and oral exams in core IT subjects.
+- Gained valuable **industry experience** (BusinessActs) through an internship in a relevant technology field.
+
+## Skills Developed
+
+- **Technical Expertise**: Proficient in programming (Visual Basic, HTML, PHP), system configuration, network setup, and database optimization.
+- **Analytical Thinking**: Developed strong problem-solving skills in real-world technical and business contexts.
+- **Practical Experience**: Hands-on training in robotics, game development, CAD/3D printing, and app development.
+- **Communication Skills**: Enhanced my ability to communicate technical concepts in both German and English, contributing to successful team collaborations.
+
+## Impact on Career
+
+This program laid the foundation for my career in IT, providing me with both practical skills and theoretical knowledge. It opened doors for roles in software development, network administration, and IT consulting. The Fachhochschulreife also set the stage for potential further studies in IT or engineering fields.14:["$","meta","27",{"name":"twitter:description","content":"$18"}]
+15:["$","meta","28",{"name":"twitter:image","content":"https://tomek.au/og-image.jpg"}]
+16:["$","link","29",{"rel":"icon","href":"/favicon.ico?favicon.49c70b34.ico","sizes":"48x48","type":"image/x-icon"}]
+17:["$","$L19","30",{}]

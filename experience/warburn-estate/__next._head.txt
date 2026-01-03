@@ -1,0 +1,126 @@
+1:"$Sreact.fragment"
+2:I[94812,["/_next/static/chunks/d389128d21406d13.js","/_next/static/chunks/314b7d5f5f19bbbf.js"],"ViewportBoundary"]
+4:I[94812,["/_next/static/chunks/d389128d21406d13.js","/_next/static/chunks/314b7d5f5f19bbbf.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+23:I[84497,["/_next/static/chunks/d389128d21406d13.js","/_next/static/chunks/314b7d5f5f19bbbf.js"],"IconMark"]
+0:{"buildId":"0Y_ye9iDdIYzU4UgppJN1","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:Ta9d,## Overview
+As a Software Engineer at Warburn Estate, I spearheaded the winery's digital transformation by automating processes, digitizing data, and developing software solutions that enhanced productivity, efficiency, and data-driven decision-making. I played a pivotal role in automating manual processes and digitizing data, which significantly improved the efficiency and productivity of the company. I developed custom software solutions tailored to the winery's specific needs, ensuring that critical machine data and other key information were easily accessible for reporting and decision-making purposes. Additionally, I played a key role in network administration, ensuring reliable communication and collaboration across the organization.
+
+## Key Achievements
+- **Digital Transformation Leadership**: Spearheaded the winery's complete digital transformation, significantly improving operational efficiency and productivity
+- **Process Automation**: Successfully automated manual processes and digitized data systems, enabling data-driven decision-making across the organization
+- **Custom Software Solutions**: Developed and implemented tailored software solutions that integrated machine data into reporting systems, supporting the winery's growth and success
+
+## Responsibilities
+- Automated manual processes, significantly improving operational efficiency
+- Digitized data to provide better insights and accessibility for decision-making
+- Developed and implemented custom software solutions tailored to the winery's needs
+- Set up and maintained networks ensuring seamless communication between teams
+- Integrated machine data into reporting systems facilitating data-driven decisions
+- Collaborated with users and managers to identify needs and deliver effective solutions
+- Played a crucial role in the winery's successful digital transformation
+
+## Technology Stack
+- **Database**: MsSQL
+- **Programming Languages**: JavaScript, C#
+- **Framework**: .NET Framework
+- **Data & Integration**: Data Integration, GS1 Standards, Machine Data Integration
+- **Infrastructure**: Network Administration, Automation Systems
+- **Specializations**: Software Development, Digital Transformation
+
+## Learning Experience
+This role provided valuable experience in:
+- Leading comprehensive digital transformation initiatives in traditional industries
+- Developing custom software solutions tailored to specific industry requirements
+- Integrating machine data and industrial systems with reporting and decision-making platforms
+- Network administration and infrastructure management in enterprise environments
+- Collaborative problem-solving with cross-functional teams and stakeholders to deliver impactful solutions6:[["$","title","0",{"children":"Software Engineer at Warburn Estate | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],["$","link","2",{"rel":"author","href":"https://linkedin.com/tomek.i"}],["$","meta","3",{"name":"author","content":"Thomas Iwainski"}],["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,experience,career,professional experience,work experience,education,software engineering,development"}],["$","meta","5",{"name":"creator","content":"Thomas Iwainski"}],"$L8","$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20"]
+8:["$","meta","6",{"name":"publisher","content":"Thomas Iwainski"}]
+9:["$","meta","7",{"name":"robots","content":"index, follow"}]
+a:["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}]
+b:["$","meta","9",{"name":"ai-content-declaration","content":"human-authored"}]
+c:["$","meta","10",{"name":"ai-training-policy","content":"allowed-with-attribution"}]
+d:["$","meta","11",{"name":"content-authenticity","content":"verified"}]
+e:["$","meta","12",{"name":"citation-policy","content":"attribution-required"}]
+f:["$","link","13",{"rel":"canonical","href":"https://tomek.au/experience/warburn-estate"}]
+10:["$","meta","14",{"property":"og:title","content":"Software Engineer at Warburn Estate | Thomas Iwainski - Senior Software Engineer"}]
+21:Ta9d,## Overview
+As a Software Engineer at Warburn Estate, I spearheaded the winery's digital transformation by automating processes, digitizing data, and developing software solutions that enhanced productivity, efficiency, and data-driven decision-making. I played a pivotal role in automating manual processes and digitizing data, which significantly improved the efficiency and productivity of the company. I developed custom software solutions tailored to the winery's specific needs, ensuring that critical machine data and other key information were easily accessible for reporting and decision-making purposes. Additionally, I played a key role in network administration, ensuring reliable communication and collaboration across the organization.
+
+## Key Achievements
+- **Digital Transformation Leadership**: Spearheaded the winery's complete digital transformation, significantly improving operational efficiency and productivity
+- **Process Automation**: Successfully automated manual processes and digitized data systems, enabling data-driven decision-making across the organization
+- **Custom Software Solutions**: Developed and implemented tailored software solutions that integrated machine data into reporting systems, supporting the winery's growth and success
+
+## Responsibilities
+- Automated manual processes, significantly improving operational efficiency
+- Digitized data to provide better insights and accessibility for decision-making
+- Developed and implemented custom software solutions tailored to the winery's needs
+- Set up and maintained networks ensuring seamless communication between teams
+- Integrated machine data into reporting systems facilitating data-driven decisions
+- Collaborated with users and managers to identify needs and deliver effective solutions
+- Played a crucial role in the winery's successful digital transformation
+
+## Technology Stack
+- **Database**: MsSQL
+- **Programming Languages**: JavaScript, C#
+- **Framework**: .NET Framework
+- **Data & Integration**: Data Integration, GS1 Standards, Machine Data Integration
+- **Infrastructure**: Network Administration, Automation Systems
+- **Specializations**: Software Development, Digital Transformation
+
+## Learning Experience
+This role provided valuable experience in:
+- Leading comprehensive digital transformation initiatives in traditional industries
+- Developing custom software solutions tailored to specific industry requirements
+- Integrating machine data and industrial systems with reporting and decision-making platforms
+- Network administration and infrastructure management in enterprise environments
+- Collaborative problem-solving with cross-functional teams and stakeholders to deliver impactful solutions11:["$","meta","15",{"property":"og:description","content":"$21"}]
+12:["$","meta","16",{"property":"og:url","content":"https://tomek.au/experience/warburn-estate"}]
+13:["$","meta","17",{"property":"og:site_name","content":"Thomas Iwainski - Senior Software Engineer"}]
+14:["$","meta","18",{"property":"og:locale","content":"en_US"}]
+15:["$","meta","19",{"property":"og:image","content":"https://tomek.au/og-image.jpg"}]
+16:["$","meta","20",{"property":"og:image:width","content":"1200"}]
+17:["$","meta","21",{"property":"og:image:height","content":"630"}]
+18:["$","meta","22",{"property":"og:image:alt","content":"Software Engineer at Warburn Estate"}]
+19:["$","meta","23",{"property":"og:type","content":"website"}]
+1a:["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}]
+1b:["$","meta","25",{"name":"twitter:creator","content":"@tomek_i"}]
+1c:["$","meta","26",{"name":"twitter:title","content":"Software Engineer at Warburn Estate | Thomas Iwainski - Senior Software Engineer"}]
+22:Ta9d,## Overview
+As a Software Engineer at Warburn Estate, I spearheaded the winery's digital transformation by automating processes, digitizing data, and developing software solutions that enhanced productivity, efficiency, and data-driven decision-making. I played a pivotal role in automating manual processes and digitizing data, which significantly improved the efficiency and productivity of the company. I developed custom software solutions tailored to the winery's specific needs, ensuring that critical machine data and other key information were easily accessible for reporting and decision-making purposes. Additionally, I played a key role in network administration, ensuring reliable communication and collaboration across the organization.
+
+## Key Achievements
+- **Digital Transformation Leadership**: Spearheaded the winery's complete digital transformation, significantly improving operational efficiency and productivity
+- **Process Automation**: Successfully automated manual processes and digitized data systems, enabling data-driven decision-making across the organization
+- **Custom Software Solutions**: Developed and implemented tailored software solutions that integrated machine data into reporting systems, supporting the winery's growth and success
+
+## Responsibilities
+- Automated manual processes, significantly improving operational efficiency
+- Digitized data to provide better insights and accessibility for decision-making
+- Developed and implemented custom software solutions tailored to the winery's needs
+- Set up and maintained networks ensuring seamless communication between teams
+- Integrated machine data into reporting systems facilitating data-driven decisions
+- Collaborated with users and managers to identify needs and deliver effective solutions
+- Played a crucial role in the winery's successful digital transformation
+
+## Technology Stack
+- **Database**: MsSQL
+- **Programming Languages**: JavaScript, C#
+- **Framework**: .NET Framework
+- **Data & Integration**: Data Integration, GS1 Standards, Machine Data Integration
+- **Infrastructure**: Network Administration, Automation Systems
+- **Specializations**: Software Development, Digital Transformation
+
+## Learning Experience
+This role provided valuable experience in:
+- Leading comprehensive digital transformation initiatives in traditional industries
+- Developing custom software solutions tailored to specific industry requirements
+- Integrating machine data and industrial systems with reporting and decision-making platforms
+- Network administration and infrastructure management in enterprise environments
+- Collaborative problem-solving with cross-functional teams and stakeholders to deliver impactful solutions1d:["$","meta","27",{"name":"twitter:description","content":"$22"}]
+1e:["$","meta","28",{"name":"twitter:image","content":"https://tomek.au/og-image.jpg"}]
+1f:["$","link","29",{"rel":"icon","href":"/favicon.ico?favicon.49c70b34.ico","sizes":"48x48","type":"image/x-icon"}]
+20:["$","$L23","30",{}]

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:ai="https://schemas.ai/sitemap/1.0">
+  <!-- Main Profile Page - High Priority for AI -->
+  <url>
+    <loc>https://tomek.au</loc>
+    <lastmod>2023-12-04T13:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <ai:content-type>profile</ai:content-type>
+    <ai:description>Personal portfolio and professional profile of Thomas Iwainski, Senior Software Engineer based in Sydney, Australia</ai:description>
+    <ai:keywords>software engineer,full stack developer,react,nextjs,typescript,javascript,portfolio</ai:keywords>
+    <ai:author>Thomas Iwainski</ai:author>
+  </url>
+
+  <!-- Blog Posts - High Value Content for AI Training -->
+  
+  <url>
+    <loc>https://tomek.au/blogs/building-a-design-system-with-tailwind-css</loc>
+    <lastmod>2023-12-04T13:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <ai:content-type>article</ai:content-type>
+    <ai:description>How to create a consistent and reusable design system for your projects using the power of Tailwind CSS.</ai:description>
+    <ai:keywords>programming,web development,software engineering,tutorial,tech blog</ai:keywords>
+    <ai:author>Thomas Iwainski</ai:author>
+    <ai:published>December 05, 2023</ai:published>
+    <ai:language>en</ai:language>
+    <ai:crawl-priority>high</ai:crawl-priority>
+  </url>
+  <url>
+    <loc>https://tomek.au/blogs/nextjs-14-features</loc>
+    <lastmod>2023-11-14T13:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <ai:content-type>article</ai:content-type>
+    <ai:description>A look at the most exciting new features introduced in Next.js 14 and how they can improve your development workflow.</ai:description>
+    <ai:keywords>programming,web development,software engineering,tutorial,tech blog</ai:keywords>
+    <ai:author>Thomas Iwainski</ai:author>
+    <ai:published>November 15, 2023</ai:published>
+    <ai:language>en</ai:language>
+    <ai:crawl-priority>high</ai:crawl-priority>
+  </url>
+  <url>
+    <loc>https://tomek.au/blogs/mastering-react-hooks</loc>
+    <lastmod>2023-10-25T13:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <ai:content-type>article</ai:content-type>
+    <ai:description>An in-depth guide to understanding and mastering React Hooks for more efficient and clean component design.</ai:description>
+    <ai:keywords>programming,web development,software engineering,tutorial,tech blog</ai:keywords>
+    <ai:author>Thomas Iwainski</ai:author>
+    <ai:published>October 26, 2023</ai:published>
+    <ai:language>en</ai:language>
+    <ai:crawl-priority>high</ai:crawl-priority>
+  </url>
+
+  <!-- Blog Index - Content Discovery -->
+  <url>
+    <loc>https://tomek.au/blogs</loc>
+    <lastmod>2014-08-01T00:00:00.000Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <ai:content-type>index</ai:content-type>
+    <ai:description>Technical blog posts about web development, programming, and software engineering</ai:description>
+    <ai:keywords>blog,articles,programming,web development,tutorials</ai:keywords>
+    <ai:crawl-priority>medium</ai:crawl-priority>
+  </url>
+
+  <!-- Projects Page - Portfolio Content -->
+  <url>
+    <loc>https://tomek.au/projects</loc>
+    <lastmod>2025-09-15T03:06:40.484Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <ai:content-type>portfolio</ai:content-type>
+    <ai:description>Software development projects and portfolio showcasing technical skills</ai:description>
+    <ai:keywords>projects,portfolio,software development,web applications,react,nextjs</ai:keywords>
+    <ai:crawl-priority>high</ai:crawl-priority>
+  </url>
+
+  <!-- Experience Pages - Professional Background -->
+  
+  <url>
+    <loc>https://tomek.au/experience/warburn-estate</loc>
+    <lastmod>2014-08-01T00:00:00.000Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <ai:content-type>experience</ai:content-type>
+    <ai:description>As a Software Engineer at Warburn Estate, I spearheaded the winery's digital transformation by automating processes, digitizing data, and developing software solutions that enhanced productivity, efficiency, and data-driven decision-making. I played a pivotal role in automating manual processes and digitizing data, which significantly improved the efficiency and productivity of the company. I developed custom software solutions tailored to the winery's specific needs, ensuring that critical machine data and other key information were easily accessible for reporting and decision-making purposes. Additionally, I played a key role in network administration, ensuring reliable communication and collaboration across the organization.</ai:description>
+    <ai:keywords>professional experience,career,software engineering,work experience</ai:keywords>
+    <ai:author>Thomas Iwainski</ai:author>
+    <ai:crawl-priority>medium</ai:crawl-priority>
+  </url>
+  <url>
+    <loc>https://tomek.au/experience/rheinische-akademie-kln</loc>
+    <lastmod>2014-08-01T00:00:00.000Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <ai:content-type>experience</ai:content-type>
+    <ai:description>Completed a 3-year program as an Informationstechnischer Assistent at Rheinische Akademie Köln (RAK), focusing on both theoretical and practical aspects of information technology. The curriculum provided in-depth knowledge of programming, system and network administration, and database management, preparing me for roles in the IT industry or further academic studies.</ai:description>
+    <ai:keywords>professional experience,career,software engineering,education</ai:keywords>
+    <ai:author>Thomas Iwainski</ai:author>
+    <ai:crawl-priority>medium</ai:crawl-priority>
+  </url>
+</urlset>

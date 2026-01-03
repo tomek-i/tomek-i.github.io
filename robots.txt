@@ -1,3 +1,19 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+User-Agent: GPTBot
+User-Agent: ChatGPT-User
+User-Agent: CCBot
+User-Agent: anthropic-ai
+User-Agent: Claude-Web
+Allow: /
+Allow: /blogs/
+Allow: /projects
+Allow: /experience/
+Disallow: /api/
+
+Sitemap: https://tomek.au/sitemap.xml
+Sitemap: https://tomek.au/ai-sitemap.xml

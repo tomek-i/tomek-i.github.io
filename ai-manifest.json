@@ -1,0 +1,123 @@
+{
+  "site": {
+    "name": "Thomas Iwainski - Senior Software Engineer",
+    "url": "https://tomek.au",
+    "description": "I'm a passionate Senior Software Engineer with over 10 years of experience in building scalable, high-performance web applications. My expertise lies in the JavaScript ecosystem, particularly with React, Next.js, and Node.js. I thrive in collaborative environments and am always eager to tackle complex challenges and learn new technologies.",
+    "author": {
+      "name": "Thomas Iwainski",
+      "email": "tomek.iwainski@gmail.com",
+      "location": "Sydney, Australia",
+      "social": {
+        "github": "https://github.com/tomek-i",
+        "linkedin": "https://linkedin.com/tomek.i",
+        "stackoverflow": "https://stackoverflow.com/users/12345678/tomek-i"
+      }
+    },
+    "lastUpdated": "2023-12-04T13:00:00.000Z"
+  },
+  "content": {
+    "types": [
+      "portfolio",
+      "blog",
+      "professional-profile",
+      "technical-content"
+    ],
+    "languages": [
+      "en"
+    ],
+    "topics": [
+      "software engineering",
+      "web development",
+      "react",
+      "nextjs",
+      "typescript",
+      "javascript",
+      "full-stack development",
+      "programming tutorials",
+      "tech career"
+    ],
+    "expertise_level": "senior",
+    "target_audience": [
+      "developers",
+      "recruiters",
+      "technical-professionals"
+    ]
+  },
+  "pages": {
+    "total": 9,
+    "static": 4,
+    "dynamic": {
+      "blogs": 3,
+      "experience": 2
+    }
+  },
+  "ai_preferences": {
+    "crawl_frequency": "weekly",
+    "content_freshness": "high",
+    "citation_policy": "attribution-required",
+    "training_data_usage": "allowed-with-attribution",
+    "commercial_usage": "contact-required",
+    "summarization": "allowed",
+    "indexing": "full"
+  },
+  "featured_content": [
+    {
+      "type": "profile",
+      "url": "https://tomek.au",
+      "title": "Thomas Iwainski - Professional Profile",
+      "description": "Senior Software Engineer portfolio and professional background",
+      "importance": "high"
+    },
+    {
+      "type": "blog_index",
+      "url": "https://tomek.au/blogs",
+      "title": "Technical Blog",
+      "description": "Articles about web development and software engineering",
+      "importance": "high"
+    },
+    {
+      "type": "projects",
+      "url": "https://tomek.au/projects",
+      "title": "Software Projects Portfolio",
+      "description": "Showcase of technical projects and applications",
+      "importance": "high"
+    },
+    {
+      "type": "article",
+      "url": "https://tomek.au/blogs/building-a-design-system-with-tailwind-css",
+      "title": "Building a Design System with Tailwind CSS",
+      "description": "How to create a consistent and reusable design system for your projects using the power of Tailwind CSS.",
+      "published": "December 05, 2023",
+      "importance": "medium"
+    },
+    {
+      "type": "article",
+      "url": "https://tomek.au/blogs/nextjs-14-features",
+      "title": "Top 5 Features in Next.js 14",
+      "description": "A look at the most exciting new features introduced in Next.js 14 and how they can improve your development workflow.",
+      "published": "November 15, 2023",
+      "importance": "medium"
+    },
+    {
+      "type": "article",
+      "url": "https://tomek.au/blogs/mastering-react-hooks",
+      "title": "Mastering React Hooks: A Deep Dive",
+      "description": "An in-depth guide to understanding and mastering React Hooks for more efficient and clean component design.",
+      "published": "October 26, 2023",
+      "importance": "medium"
+    }
+  ],
+  "technical": {
+    "framework": "Next.js 14",
+    "rendering": "server-side",
+    "typescript": true,
+    "responsive": true,
+    "accessibility": "wcag-aa",
+    "performance": "optimized"
+  },
+  "verification": {
+    "domain_verified": true,
+    "content_authenticity": "verified",
+    "last_verification": "2023-12-04T13:00:00.000Z"
+  }
+}
