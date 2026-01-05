@@ -1,0 +1,133 @@
+1:"$Sreact.fragment"
+2:I[93977,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"ViewportBoundary"]
+4:I[93977,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+24:I[10237,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"IconMark"]
+0:{"buildId":"slOAVW-Z7v65tL3se6tbY","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:Tb62,## Overview
+As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains. My role extended beyond website management to include advising clients on software development, IT infrastructure, and system optimization, ensuring their technology needs were comprehensively met.
+
+## Key Achievements
+- **Website Portfolio Management**: Successfully managed over 30 Joomla and CMS-based websites, ensuring optimal performance and security
+- **Comprehensive IT Services**: Delivered integrated IT consulting, sysadmin, and network engineering services to diverse client base
+- **Client Relationship Excellence**: Maintained strong client relationships built on trust and consistent delivery of high-quality IT services
+
+## Responsibilities
+- Managed hosting, maintenance, and updates for over 30 Joomla and CMS-based websites
+- Provided IT consulting services, advising clients on software development, IT infrastructure, and system optimization
+- Performed sysadmin tasks, including server management, configuration, and troubleshooting
+- Handled network engineering duties such as network design, implementation, and maintenance
+- Conducted regular maintenance checks, security upgrades, and content updates for client websites
+- Enhanced website functionality and redesigned websites based on client needs
+- Maintained strong relationships with clients, ensuring their needs were met and exceeded
+- Conducted proactive security monitoring to prevent vulnerabilities and ensure data protection
+- Collaborated with clients to implement custom IT solutions tailored to their business requirements
+
+## Technology Stack
+- **CMS Platforms**: Joomla, Wordpress and other Content Management Systems (CMS)
+- **Web Technologies**: HTML, CSS, JavaScript, Custom Web Solutions
+- **System Administration**: Windows Server Management, Microsoft SQL Server, Configuration, Troubleshooting
+- **Network Engineering**: Network Design, Implementation, Maintenance
+- **Security & Monitoring**: Security Upgrades, Proactive Security Monitoring, Vulnerability Prevention
+- **Consulting & Management**: IT Consulting, Client Relationship Management, Website Redesign
+
+## Learning Experience
+This role provided valuable experience in:
+- Multi-platform website management and CMS expertise across diverse client portfolios
+- Comprehensive IT infrastructure consulting and system optimization strategies
+- Advanced server administration and network engineering practices
+- Proactive security monitoring and vulnerability prevention methodologies
+- Client relationship management and custom solution development in IT environments6:[["$","title","0",{"children":"Website Manager & IT Consultant at Veritech | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],["$","link","2",{"rel":"author","href":"https://linkedin.com/tomek.i"}],["$","meta","3",{"name":"author","content":"Thomas Iwainski"}],["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,experience,career,professional experience,work experience,education,software engineering,development"}],"$L8","$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21"]
+8:["$","meta","5",{"name":"creator","content":"Thomas Iwainski"}]
+9:["$","meta","6",{"name":"publisher","content":"Thomas Iwainski"}]
+a:["$","meta","7",{"name":"robots","content":"index, follow"}]
+b:["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}]
+c:["$","meta","9",{"name":"ai-content-declaration","content":"human-authored"}]
+d:["$","meta","10",{"name":"ai-training-policy","content":"allowed-with-attribution"}]
+e:["$","meta","11",{"name":"content-authenticity","content":"verified"}]
+f:["$","meta","12",{"name":"citation-policy","content":"attribution-required"}]
+10:["$","link","13",{"rel":"canonical","href":"https://tomek.au/experience/veritech"}]
+11:["$","meta","14",{"property":"og:title","content":"Website Manager & IT Consultant at Veritech | Thomas Iwainski - Senior Software Engineer"}]
+22:Tb62,## Overview
+As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains. My role extended beyond website management to include advising clients on software development, IT infrastructure, and system optimization, ensuring their technology needs were comprehensively met.
+
+## Key Achievements
+- **Website Portfolio Management**: Successfully managed over 30 Joomla and CMS-based websites, ensuring optimal performance and security
+- **Comprehensive IT Services**: Delivered integrated IT consulting, sysadmin, and network engineering services to diverse client base
+- **Client Relationship Excellence**: Maintained strong client relationships built on trust and consistent delivery of high-quality IT services
+
+## Responsibilities
+- Managed hosting, maintenance, and updates for over 30 Joomla and CMS-based websites
+- Provided IT consulting services, advising clients on software development, IT infrastructure, and system optimization
+- Performed sysadmin tasks, including server management, configuration, and troubleshooting
+- Handled network engineering duties such as network design, implementation, and maintenance
+- Conducted regular maintenance checks, security upgrades, and content updates for client websites
+- Enhanced website functionality and redesigned websites based on client needs
+- Maintained strong relationships with clients, ensuring their needs were met and exceeded
+- Conducted proactive security monitoring to prevent vulnerabilities and ensure data protection
+- Collaborated with clients to implement custom IT solutions tailored to their business requirements
+
+## Technology Stack
+- **CMS Platforms**: Joomla, Wordpress and other Content Management Systems (CMS)
+- **Web Technologies**: HTML, CSS, JavaScript, Custom Web Solutions
+- **System Administration**: Windows Server Management, Microsoft SQL Server, Configuration, Troubleshooting
+- **Network Engineering**: Network Design, Implementation, Maintenance
+- **Security & Monitoring**: Security Upgrades, Proactive Security Monitoring, Vulnerability Prevention
+- **Consulting & Management**: IT Consulting, Client Relationship Management, Website Redesign
+
+## Learning Experience
+This role provided valuable experience in:
+- Multi-platform website management and CMS expertise across diverse client portfolios
+- Comprehensive IT infrastructure consulting and system optimization strategies
+- Advanced server administration and network engineering practices
+- Proactive security monitoring and vulnerability prevention methodologies
+- Client relationship management and custom solution development in IT environments12:["$","meta","15",{"property":"og:description","content":"$22"}]
+13:["$","meta","16",{"property":"og:url","content":"https://tomek.au/experience/veritech"}]
+14:["$","meta","17",{"property":"og:site_name","content":"Thomas Iwainski - Senior Software Engineer"}]
+15:["$","meta","18",{"property":"og:locale","content":"en_US"}]
+16:["$","meta","19",{"property":"og:image","content":"https://tomek.au/og-image.jpg"}]
+17:["$","meta","20",{"property":"og:image:width","content":"1200"}]
+18:["$","meta","21",{"property":"og:image:height","content":"630"}]
+19:["$","meta","22",{"property":"og:image:alt","content":"Website Manager & IT Consultant at Veritech"}]
+1a:["$","meta","23",{"property":"og:type","content":"website"}]
+1b:["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}]
+1c:["$","meta","25",{"name":"twitter:creator","content":"@tomek_i"}]
+1d:["$","meta","26",{"name":"twitter:title","content":"Website Manager & IT Consultant at Veritech | Thomas Iwainski - Senior Software Engineer"}]
+23:Tb62,## Overview
+As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains. My role extended beyond website management to include advising clients on software development, IT infrastructure, and system optimization, ensuring their technology needs were comprehensively met.
+
+## Key Achievements
+- **Website Portfolio Management**: Successfully managed over 30 Joomla and CMS-based websites, ensuring optimal performance and security
+- **Comprehensive IT Services**: Delivered integrated IT consulting, sysadmin, and network engineering services to diverse client base
+- **Client Relationship Excellence**: Maintained strong client relationships built on trust and consistent delivery of high-quality IT services
+
+## Responsibilities
+- Managed hosting, maintenance, and updates for over 30 Joomla and CMS-based websites
+- Provided IT consulting services, advising clients on software development, IT infrastructure, and system optimization
+- Performed sysadmin tasks, including server management, configuration, and troubleshooting
+- Handled network engineering duties such as network design, implementation, and maintenance
+- Conducted regular maintenance checks, security upgrades, and content updates for client websites
+- Enhanced website functionality and redesigned websites based on client needs
+- Maintained strong relationships with clients, ensuring their needs were met and exceeded
+- Conducted proactive security monitoring to prevent vulnerabilities and ensure data protection
+- Collaborated with clients to implement custom IT solutions tailored to their business requirements
+
+## Technology Stack
+- **CMS Platforms**: Joomla, Wordpress and other Content Management Systems (CMS)
+- **Web Technologies**: HTML, CSS, JavaScript, Custom Web Solutions
+- **System Administration**: Windows Server Management, Microsoft SQL Server, Configuration, Troubleshooting
+- **Network Engineering**: Network Design, Implementation, Maintenance
+- **Security & Monitoring**: Security Upgrades, Proactive Security Monitoring, Vulnerability Prevention
+- **Consulting & Management**: IT Consulting, Client Relationship Management, Website Redesign
+
+## Learning Experience
+This role provided valuable experience in:
+- Multi-platform website management and CMS expertise across diverse client portfolios
+- Comprehensive IT infrastructure consulting and system optimization strategies
+- Advanced server administration and network engineering practices
+- Proactive security monitoring and vulnerability prevention methodologies
+- Client relationship management and custom solution development in IT environments1e:["$","meta","27",{"name":"twitter:description","content":"$23"}]
+1f:["$","meta","28",{"name":"twitter:image","content":"https://tomek.au/og-image.jpg"}]
+20:["$","link","29",{"rel":"icon","href":"/favicon.ico?favicon.49c70b34.ico","sizes":"48x48","type":"image/x-icon"}]
+21:["$","$L24","30",{}]

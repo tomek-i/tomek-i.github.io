@@ -4,7 +4,7 @@
   <!-- Main Profile Page - High Priority for AI -->
   <url>
     <loc>https://tomek.au</loc>
-    <lastmod>2023-12-04T13:00:00.000Z</lastmod>
+    <lastmod>2023-12-05T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <ai:content-type>profile</ai:content-type>
@@ -17,7 +17,7 @@
   
   <url>
     <loc>https://tomek.au/blogs/building-a-design-system-with-tailwind-css</loc>
-    <lastmod>2023-12-04T13:00:00.000Z</lastmod>
+    <lastmod>2023-12-05T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <ai:content-type>article</ai:content-type>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://tomek.au/blogs/nextjs-14-features</loc>
-    <lastmod>2023-11-14T13:00:00.000Z</lastmod>
+    <lastmod>2023-11-15T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <ai:content-type>article</ai:content-type>
@@ -43,7 +43,7 @@
   </url>
   <url>
     <loc>https://tomek.au/blogs/mastering-react-hooks</loc>
-    <lastmod>2023-10-25T13:00:00.000Z</lastmod>
+    <lastmod>2023-10-26T00:00:00.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <ai:content-type>article</ai:content-type>
@@ -81,6 +81,17 @@
 
   <!-- Experience Pages - Professional Background -->
   
+  <url>
+    <loc>https://tomek.au/experience/veritech</loc>
+    <lastmod>2014-08-01T00:00:00.000Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <ai:content-type>experience</ai:content-type>
+    <ai:description>As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains. My role extended beyond website management to include advising clients on software development, IT infrastructure, and system optimization, ensuring their technology needs were comprehensively met.</ai:description>
+    <ai:keywords>professional experience,career,software engineering,work experience</ai:keywords>
+    <ai:author>Thomas Iwainski</ai:author>
+    <ai:crawl-priority>medium</ai:crawl-priority>
+  </url>
   <url>
     <loc>https://tomek.au/experience/warburn-estate</loc>
     <lastmod>2014-08-01T00:00:00.000Z</lastmod>

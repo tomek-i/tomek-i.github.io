@@ -13,7 +13,7 @@
         "stackoverflow": "https://stackoverflow.com/users/12345678/tomek-i"
       }
     },
-    "lastUpdated": "2023-12-04T13:00:00.000Z"
+    "lastUpdated": "2023-12-05T00:00:00.000Z"
   },
   "content": {
     "types": [
@@ -44,11 +44,11 @@
     ]
   },
   "pages": {
-    "total": 9,
+    "total": 10,
     "static": 4,
     "dynamic": {
       "blogs": 3,
-      "experience": 2
+      "experience": 3
     }
   },
   "ai_preferences": {
@@ -118,6 +118,6 @@
   "verification": {
     "domain_verified": true,
     "content_authenticity": "verified",
-    "last_verification": "2023-12-04T13:00:00.000Z"
+    "last_verification": "2023-12-05T00:00:00.000Z"
   }
 }
