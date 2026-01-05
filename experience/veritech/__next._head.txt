@@ -3,7 +3,7 @@
 4:I[93977,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 24:I[10237,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"IconMark"]
-0:{"buildId":"hpczcYQgb3cv_BnMUFEW-","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"mF1pAQiEMaTFjNE_R2WP7","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:Tb62,## Overview
 As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains. My role extended beyond website management to include advising clients on software development, IT infrastructure, and system optimization, ensuring their technology needs were comprehensively met.
