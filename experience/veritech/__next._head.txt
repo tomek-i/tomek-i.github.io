@@ -3,17 +3,20 @@
 4:I[93977,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 24:I[10237,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"IconMark"]
-0:{"buildId":"mF1pAQiEMaTFjNE_R2WP7","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"oGhe-PEgcFg4mD4WsRuTS","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-7:Tb62,## Overview
+7:Tb68,## Overview
+
 As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains. My role extended beyond website management to include advising clients on software development, IT infrastructure, and system optimization, ensuring their technology needs were comprehensively met.
 
 ## Key Achievements
+
 - **Website Portfolio Management**: Successfully managed over 30 Joomla and CMS-based websites, ensuring optimal performance and security
 - **Comprehensive IT Services**: Delivered integrated IT consulting, sysadmin, and network engineering services to diverse client base
 - **Client Relationship Excellence**: Maintained strong client relationships built on trust and consistent delivery of high-quality IT services
 
 ## Responsibilities
+
 - Managed hosting, maintenance, and updates for over 30 Joomla and CMS-based websites
 - Provided IT consulting services, advising clients on software development, IT infrastructure, and system optimization
 - Performed sysadmin tasks, including server management, configuration, and troubleshooting
@@ -25,6 +28,7 @@ As a Website Manager and IT Consultant at Veritech, I managed a diverse portfoli
 - Collaborated with clients to implement custom IT solutions tailored to their business requirements
 
 ## Technology Stack
+
 - **CMS Platforms**: Joomla, Wordpress and other Content Management Systems (CMS)
 - **Web Technologies**: HTML, CSS, JavaScript, Custom Web Solutions
 - **System Administration**: Windows Server Management, Microsoft SQL Server, Configuration, Troubleshooting
@@ -33,7 +37,9 @@ As a Website Manager and IT Consultant at Veritech, I managed a diverse portfoli
 - **Consulting & Management**: IT Consulting, Client Relationship Management, Website Redesign
 
 ## Learning Experience
+
 This role provided valuable experience in:
+
 - Multi-platform website management and CMS expertise across diverse client portfolios
 - Comprehensive IT infrastructure consulting and system optimization strategies
 - Advanced server administration and network engineering practices
@@ -49,15 +55,18 @@ e:["$","meta","11",{"name":"content-authenticity","content":"verified"}]
 f:["$","meta","12",{"name":"citation-policy","content":"attribution-required"}]
 10:["$","link","13",{"rel":"canonical","href":"https://tomek.au/experience/veritech"}]
 11:["$","meta","14",{"property":"og:title","content":"Website Manager & IT Consultant at Veritech | Thomas Iwainski - Senior Software Engineer"}]
-22:Tb62,## Overview
+22:Tb68,## Overview
+
 As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains. My role extended beyond website management to include advising clients on software development, IT infrastructure, and system optimization, ensuring their technology needs were comprehensively met.
 
 ## Key Achievements
+
 - **Website Portfolio Management**: Successfully managed over 30 Joomla and CMS-based websites, ensuring optimal performance and security
 - **Comprehensive IT Services**: Delivered integrated IT consulting, sysadmin, and network engineering services to diverse client base
 - **Client Relationship Excellence**: Maintained strong client relationships built on trust and consistent delivery of high-quality IT services
 
 ## Responsibilities
+
 - Managed hosting, maintenance, and updates for over 30 Joomla and CMS-based websites
 - Provided IT consulting services, advising clients on software development, IT infrastructure, and system optimization
 - Performed sysadmin tasks, including server management, configuration, and troubleshooting
@@ -69,6 +78,7 @@ As a Website Manager and IT Consultant at Veritech, I managed a diverse portfoli
 - Collaborated with clients to implement custom IT solutions tailored to their business requirements
 
 ## Technology Stack
+
 - **CMS Platforms**: Joomla, Wordpress and other Content Management Systems (CMS)
 - **Web Technologies**: HTML, CSS, JavaScript, Custom Web Solutions
 - **System Administration**: Windows Server Management, Microsoft SQL Server, Configuration, Troubleshooting
@@ -77,7 +87,9 @@ As a Website Manager and IT Consultant at Veritech, I managed a diverse portfoli
 - **Consulting & Management**: IT Consulting, Client Relationship Management, Website Redesign
 
 ## Learning Experience
+
 This role provided valuable experience in:
+
 - Multi-platform website management and CMS expertise across diverse client portfolios
 - Comprehensive IT infrastructure consulting and system optimization strategies
 - Advanced server administration and network engineering practices
@@ -94,15 +106,18 @@ This role provided valuable experience in:
 1b:["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}]
 1c:["$","meta","25",{"name":"twitter:creator","content":"@tomek_i"}]
 1d:["$","meta","26",{"name":"twitter:title","content":"Website Manager & IT Consultant at Veritech | Thomas Iwainski - Senior Software Engineer"}]
-23:Tb62,## Overview
+23:Tb68,## Overview
+
 As a Website Manager and IT Consultant at Veritech, I managed a diverse portfolio of over 30 Joomla and CMS-based websites while also providing IT consulting, sysadmin, and network engineering services. I ensured the smooth operation, security, and functionality of clients' online presence and IT infrastructure, offering comprehensive support across various technical domains. My role extended beyond website management to include advising clients on software development, IT infrastructure, and system optimization, ensuring their technology needs were comprehensively met.
 
 ## Key Achievements
+
 - **Website Portfolio Management**: Successfully managed over 30 Joomla and CMS-based websites, ensuring optimal performance and security
 - **Comprehensive IT Services**: Delivered integrated IT consulting, sysadmin, and network engineering services to diverse client base
 - **Client Relationship Excellence**: Maintained strong client relationships built on trust and consistent delivery of high-quality IT services
 
 ## Responsibilities
+
 - Managed hosting, maintenance, and updates for over 30 Joomla and CMS-based websites
 - Provided IT consulting services, advising clients on software development, IT infrastructure, and system optimization
 - Performed sysadmin tasks, including server management, configuration, and troubleshooting
@@ -114,6 +129,7 @@ As a Website Manager and IT Consultant at Veritech, I managed a diverse portfoli
 - Collaborated with clients to implement custom IT solutions tailored to their business requirements
 
 ## Technology Stack
+
 - **CMS Platforms**: Joomla, Wordpress and other Content Management Systems (CMS)
 - **Web Technologies**: HTML, CSS, JavaScript, Custom Web Solutions
 - **System Administration**: Windows Server Management, Microsoft SQL Server, Configuration, Troubleshooting
@@ -122,7 +138,9 @@ As a Website Manager and IT Consultant at Veritech, I managed a diverse portfoli
 - **Consulting & Management**: IT Consulting, Client Relationship Management, Website Redesign
 
 ## Learning Experience
+
 This role provided valuable experience in:
+
 - Multi-platform website management and CMS expertise across diverse client portfolios
 - Comprehensive IT infrastructure consulting and system optimization strategies
 - Advanced server administration and network engineering practices

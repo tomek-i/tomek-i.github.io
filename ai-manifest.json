@@ -44,11 +44,11 @@
     ]
   },
   "pages": {
-    "total": 10,
+    "total": 13,
     "static": 4,
     "dynamic": {
       "blogs": 3,
-      "experience": 3
+      "experience": 6
     }
   },
   "ai_preferences": {

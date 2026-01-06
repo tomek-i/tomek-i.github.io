@@ -58,7 +58,7 @@
   <!-- Blog Index - Content Discovery -->
   <url>
     <loc>https://tomek.au/blogs</loc>
-    <lastmod>2014-08-01T00:00:00.000Z</lastmod>
+    <lastmod>2023-04-01T00:00:00.000Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <ai:content-type>index</ai:content-type>
@@ -82,8 +82,41 @@
   <!-- Experience Pages - Professional Background -->
   
   <url>
+    <loc>https://tomek.au/experience/4mation</loc>
+    <lastmod>2023-04-01T00:00:00.000Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <ai:content-type>experience</ai:content-type>
+    <ai:description>As a Full-Stack Developer at 4mation, I led the development and maintenance of web applications, spearheaded the migration of legacy systems to modern architectures, and collaborated effectively within Agile teams to deliver high-quality software solutions that consistently exceeded client expectations. I was instrumental in developing and maintaining web applications across a range of technologies, including TypeScript, AngularJS, Next.js, Node.js, and Express.js. My role involved not only writing code but also leading the successful migration of legacy systems to modern, scalable serverless architectures, working in a dynamic Agile environment where I collaborated closely with cross-functional teams.</ai:description>
+    <ai:keywords>professional experience,career,software engineering,work experience</ai:keywords>
+    <ai:author>Thomas Iwainski</ai:author>
+    <ai:crawl-priority>medium</ai:crawl-priority>
+  </url>
+  <url>
+    <loc>https://tomek.au/experience/businessacts</loc>
+    <lastmod>2023-04-01T00:00:00.000Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <ai:content-type>experience</ai:content-type>
+    <ai:description>As a Junior Software Developer at BusinessActs, I played a key role in maintaining and enhancing SuperOffice CRM modules. I developed custom integrations and solutions tailored to client needs, which improved system efficiency and client satisfaction.</ai:description>
+    <ai:keywords>professional experience,career,software engineering,work experience</ai:keywords>
+    <ai:author>Thomas Iwainski</ai:author>
+    <ai:crawl-priority>medium</ai:crawl-priority>
+  </url>
+  <url>
+    <loc>https://tomek.au/experience/ssw</loc>
+    <lastmod>2023-04-01T00:00:00.000Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <ai:content-type>experience</ai:content-type>
+    <ai:description>As a Senior Software Engineer at SSW, I have been at the forefront of leading and modernizing internal and client-facing software projects. In my role as Tech Lead, I spearheaded the migration of the SugarLearning application from a legacy .NET 4.2 framework to the latest .NET 8, while growing and managing a dedicated team. Beyond technical leadership, I have played a crucial role as Scrum Master, facilitating Agile ceremonies across multiple teams including SSW TV and FirebootCamp. My work extends to training interns in both technical skills (Angular, .NET) and soft skills, preparing them for real-world software development challenges. I have contributed to diverse client projects including Arriba and BizCover for system architecture optimization, LEX Australia where I developed a custom Outlook plugin for the law firm, and Whitehaven Coal where I led an AI-driven compliance and safety project. The Whitehaven Coal project involved developing sophisticated audio analysis systems using AI and manual processing to analyze radio communications for PosCom compliance requirements. Additionally, I have been instrumental in developing internal tools such as YakShaver.ai, a commercial AI-powered product that transcribes videos, analyzes user intent (such as email creation or work item management), and automatically performs the identified tasks.</ai:description>
+    <ai:keywords>professional experience,career,software engineering,work experience</ai:keywords>
+    <ai:author>Thomas Iwainski</ai:author>
+    <ai:crawl-priority>medium</ai:crawl-priority>
+  </url>
+  <url>
     <loc>https://tomek.au/experience/veritech</loc>
-    <lastmod>2014-08-01T00:00:00.000Z</lastmod>
+    <lastmod>2023-04-01T00:00:00.000Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
     <ai:content-type>experience</ai:content-type>
@@ -94,7 +127,7 @@
   </url>
   <url>
     <loc>https://tomek.au/experience/warburn-estate</loc>
-    <lastmod>2014-08-01T00:00:00.000Z</lastmod>
+    <lastmod>2023-04-01T00:00:00.000Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
     <ai:content-type>experience</ai:content-type>
@@ -105,7 +138,7 @@
   </url>
   <url>
     <loc>https://tomek.au/experience/rheinische-akademie-kln</loc>
-    <lastmod>2014-08-01T00:00:00.000Z</lastmod>
+    <lastmod>2023-04-01T00:00:00.000Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
     <ai:content-type>experience</ai:content-type>

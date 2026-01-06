@@ -1,0 +1,169 @@
+1:"$Sreact.fragment"
+2:I[93977,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"ViewportBoundary"]
+4:I[93977,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+27:I[10237,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"IconMark"]
+0:{"buildId":"oGhe-PEgcFg4mD4WsRuTS","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+7:T1278,## Overview
+
+As a Senior Software Engineer at SSW, I have been at the forefront of leading and modernizing internal and client-facing software projects. In my role as Tech Lead, I spearheaded the migration of the SugarLearning application from a legacy .NET 4.2 framework to the latest .NET 8, while growing and managing a dedicated team. Beyond technical leadership, I have played a crucial role as Scrum Master, facilitating Agile ceremonies across multiple teams including SSW TV and FirebootCamp. My work extends to training interns in both technical skills (Angular, .NET) and soft skills, preparing them for real-world software development challenges. I have contributed to diverse client projects including Arriba and BizCover for system architecture optimization, LEX Australia where I developed a custom Outlook plugin for the law firm, and Whitehaven Coal where I led an AI-driven compliance and safety project. The Whitehaven Coal project involved developing sophisticated audio analysis systems using AI and manual processing to analyze radio communications for PosCom compliance requirements. Additionally, I have been instrumental in developing internal tools such as YakShaver.ai, a commercial AI-powered product that transcribes videos, analyzes user intent (such as email creation or work item management), and automatically performs the identified tasks.
+
+## Key Achievements
+
+- **Legacy System Modernization Leadership**: Successfully led the migration of SugarLearning from .NET 4.2 to .NET 8, a significant technical milestone
+- **Team Growth & Management**: Expanded and managed the SugarLearning team from 2 to over 5 members, driving feature development and high-quality deliverables
+- **Multi-Team Scrum Leadership**: Served as Scrum Master across multiple teams (SSW TV, FirebootCamp), optimizing team performance and facilitating Agile ceremonies
+- **Training Program Leadership**: Led the FirebootCamp training program, mentoring interns in real-world scenarios and overseeing full application lifecycle development
+
+## Responsibilities
+
+- Tech Lead for the SugarLearning project, overseeing the migration of a legacy .NET 4.2 application to .NET 8
+- Managed and expanded the SugarLearning team from 2 to over 5 members, driving feature development and ensuring high-quality deliverables
+- Served as Scrum Master, facilitating ceremonies and optimizing team performance across multiple teams, including SSW TV and FirebootCamp
+- Led the FirebootCamp training program, mentoring interns in real-life work scenarios and overseeing the full application lifecycle in Angular and .NET
+- Conducted code reviews, enhancing coding standards and teaching soft skills related to effective communication with stakeholders and product owners
+- Worked on diverse client projects including Arriba and BizCover for system architecture improvements, LEX Australia for Outlook plugin development, and Whitehaven Coal for AI-driven compliance and safety systems
+- Developed internal commercial products such as YakShaver.ai, an AI-powered tool for video transcription, intent analysis, and automated task execution
+
+## Technology Stack
+
+- **Frontend**: Angular
+- **Backend**: .NET 8, Legacy .NET 4.2, VB.NET
+- **AI & Audio Processing**: Audio Analysis, AI-driven Compliance Systems, Video Transcription
+- **Integration**: Outlook Plugin Development, Microsoft Office Add-ins
+- **Methodologies**: Scrum & Agile Methodologies, Legacy System Modernization
+- **Leadership & Management**: Team Leadership, Code Reviews, Training & Mentoring
+- **Architecture**: Microservices to Modular Monolith Migration, System Architecture Optimization
+- **Client Projects**: Arriba, BizCover, LEX Australia, Whitehaven Coal, SugarLearning, SSW TV, FirebootCamp
+- **Internal Products**: YakShaver.ai (Commercial AI Product)
+
+## Learning Experience
+
+This role provided valuable experience in:
+
+- Leading complex legacy system migrations and modernization initiatives across enterprise applications
+- Managing and scaling development teams while maintaining high-quality deliverables and team performance
+- Multi-team Scrum Master responsibilities and Agile ceremony facilitation across diverse project portfolios
+- Comprehensive training program development and intern mentoring in both technical and soft skills
+- Strategic client engagement and system architecture optimization, including microservices to monolith transitions
+- AI and audio processing development for compliance and safety systems in industrial environments
+- Microsoft Office integration and plugin development for legal and professional services
+- Commercial AI product development with video transcription, intent analysis, and automated task execution capabilities6:[["$","title","0",{"children":"Senior Software Engineer at SSW | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],"$L8","$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24"]
+8:["$","link","2",{"rel":"author","href":"https://linkedin.com/tomek.i"}]
+9:["$","meta","3",{"name":"author","content":"Thomas Iwainski"}]
+a:["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,experience,career,professional experience,work experience,education,software engineering,development"}]
+b:["$","meta","5",{"name":"creator","content":"Thomas Iwainski"}]
+c:["$","meta","6",{"name":"publisher","content":"Thomas Iwainski"}]
+d:["$","meta","7",{"name":"robots","content":"index, follow"}]
+e:["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}]
+f:["$","meta","9",{"name":"ai-content-declaration","content":"human-authored"}]
+10:["$","meta","10",{"name":"ai-training-policy","content":"allowed-with-attribution"}]
+11:["$","meta","11",{"name":"content-authenticity","content":"verified"}]
+12:["$","meta","12",{"name":"citation-policy","content":"attribution-required"}]
+13:["$","link","13",{"rel":"canonical","href":"https://tomek.au/experience/ssw"}]
+14:["$","meta","14",{"property":"og:title","content":"Senior Software Engineer at SSW | Thomas Iwainski - Senior Software Engineer"}]
+25:T1278,## Overview
+
+As a Senior Software Engineer at SSW, I have been at the forefront of leading and modernizing internal and client-facing software projects. In my role as Tech Lead, I spearheaded the migration of the SugarLearning application from a legacy .NET 4.2 framework to the latest .NET 8, while growing and managing a dedicated team. Beyond technical leadership, I have played a crucial role as Scrum Master, facilitating Agile ceremonies across multiple teams including SSW TV and FirebootCamp. My work extends to training interns in both technical skills (Angular, .NET) and soft skills, preparing them for real-world software development challenges. I have contributed to diverse client projects including Arriba and BizCover for system architecture optimization, LEX Australia where I developed a custom Outlook plugin for the law firm, and Whitehaven Coal where I led an AI-driven compliance and safety project. The Whitehaven Coal project involved developing sophisticated audio analysis systems using AI and manual processing to analyze radio communications for PosCom compliance requirements. Additionally, I have been instrumental in developing internal tools such as YakShaver.ai, a commercial AI-powered product that transcribes videos, analyzes user intent (such as email creation or work item management), and automatically performs the identified tasks.
+
+## Key Achievements
+
+- **Legacy System Modernization Leadership**: Successfully led the migration of SugarLearning from .NET 4.2 to .NET 8, a significant technical milestone
+- **Team Growth & Management**: Expanded and managed the SugarLearning team from 2 to over 5 members, driving feature development and high-quality deliverables
+- **Multi-Team Scrum Leadership**: Served as Scrum Master across multiple teams (SSW TV, FirebootCamp), optimizing team performance and facilitating Agile ceremonies
+- **Training Program Leadership**: Led the FirebootCamp training program, mentoring interns in real-world scenarios and overseeing full application lifecycle development
+
+## Responsibilities
+
+- Tech Lead for the SugarLearning project, overseeing the migration of a legacy .NET 4.2 application to .NET 8
+- Managed and expanded the SugarLearning team from 2 to over 5 members, driving feature development and ensuring high-quality deliverables
+- Served as Scrum Master, facilitating ceremonies and optimizing team performance across multiple teams, including SSW TV and FirebootCamp
+- Led the FirebootCamp training program, mentoring interns in real-life work scenarios and overseeing the full application lifecycle in Angular and .NET
+- Conducted code reviews, enhancing coding standards and teaching soft skills related to effective communication with stakeholders and product owners
+- Worked on diverse client projects including Arriba and BizCover for system architecture improvements, LEX Australia for Outlook plugin development, and Whitehaven Coal for AI-driven compliance and safety systems
+- Developed internal commercial products such as YakShaver.ai, an AI-powered tool for video transcription, intent analysis, and automated task execution
+
+## Technology Stack
+
+- **Frontend**: Angular
+- **Backend**: .NET 8, Legacy .NET 4.2, VB.NET
+- **AI & Audio Processing**: Audio Analysis, AI-driven Compliance Systems, Video Transcription
+- **Integration**: Outlook Plugin Development, Microsoft Office Add-ins
+- **Methodologies**: Scrum & Agile Methodologies, Legacy System Modernization
+- **Leadership & Management**: Team Leadership, Code Reviews, Training & Mentoring
+- **Architecture**: Microservices to Modular Monolith Migration, System Architecture Optimization
+- **Client Projects**: Arriba, BizCover, LEX Australia, Whitehaven Coal, SugarLearning, SSW TV, FirebootCamp
+- **Internal Products**: YakShaver.ai (Commercial AI Product)
+
+## Learning Experience
+
+This role provided valuable experience in:
+
+- Leading complex legacy system migrations and modernization initiatives across enterprise applications
+- Managing and scaling development teams while maintaining high-quality deliverables and team performance
+- Multi-team Scrum Master responsibilities and Agile ceremony facilitation across diverse project portfolios
+- Comprehensive training program development and intern mentoring in both technical and soft skills
+- Strategic client engagement and system architecture optimization, including microservices to monolith transitions
+- AI and audio processing development for compliance and safety systems in industrial environments
+- Microsoft Office integration and plugin development for legal and professional services
+- Commercial AI product development with video transcription, intent analysis, and automated task execution capabilities15:["$","meta","15",{"property":"og:description","content":"$25"}]
+16:["$","meta","16",{"property":"og:url","content":"https://tomek.au/experience/ssw"}]
+17:["$","meta","17",{"property":"og:site_name","content":"Thomas Iwainski - Senior Software Engineer"}]
+18:["$","meta","18",{"property":"og:locale","content":"en_US"}]
+19:["$","meta","19",{"property":"og:image","content":"https://tomek.au/og-image.jpg"}]
+1a:["$","meta","20",{"property":"og:image:width","content":"1200"}]
+1b:["$","meta","21",{"property":"og:image:height","content":"630"}]
+1c:["$","meta","22",{"property":"og:image:alt","content":"Senior Software Engineer at SSW"}]
+1d:["$","meta","23",{"property":"og:type","content":"website"}]
+1e:["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}]
+1f:["$","meta","25",{"name":"twitter:creator","content":"@tomek_i"}]
+20:["$","meta","26",{"name":"twitter:title","content":"Senior Software Engineer at SSW | Thomas Iwainski - Senior Software Engineer"}]
+26:T1278,## Overview
+
+As a Senior Software Engineer at SSW, I have been at the forefront of leading and modernizing internal and client-facing software projects. In my role as Tech Lead, I spearheaded the migration of the SugarLearning application from a legacy .NET 4.2 framework to the latest .NET 8, while growing and managing a dedicated team. Beyond technical leadership, I have played a crucial role as Scrum Master, facilitating Agile ceremonies across multiple teams including SSW TV and FirebootCamp. My work extends to training interns in both technical skills (Angular, .NET) and soft skills, preparing them for real-world software development challenges. I have contributed to diverse client projects including Arriba and BizCover for system architecture optimization, LEX Australia where I developed a custom Outlook plugin for the law firm, and Whitehaven Coal where I led an AI-driven compliance and safety project. The Whitehaven Coal project involved developing sophisticated audio analysis systems using AI and manual processing to analyze radio communications for PosCom compliance requirements. Additionally, I have been instrumental in developing internal tools such as YakShaver.ai, a commercial AI-powered product that transcribes videos, analyzes user intent (such as email creation or work item management), and automatically performs the identified tasks.
+
+## Key Achievements
+
+- **Legacy System Modernization Leadership**: Successfully led the migration of SugarLearning from .NET 4.2 to .NET 8, a significant technical milestone
+- **Team Growth & Management**: Expanded and managed the SugarLearning team from 2 to over 5 members, driving feature development and high-quality deliverables
+- **Multi-Team Scrum Leadership**: Served as Scrum Master across multiple teams (SSW TV, FirebootCamp), optimizing team performance and facilitating Agile ceremonies
+- **Training Program Leadership**: Led the FirebootCamp training program, mentoring interns in real-world scenarios and overseeing full application lifecycle development
+
+## Responsibilities
+
+- Tech Lead for the SugarLearning project, overseeing the migration of a legacy .NET 4.2 application to .NET 8
+- Managed and expanded the SugarLearning team from 2 to over 5 members, driving feature development and ensuring high-quality deliverables
+- Served as Scrum Master, facilitating ceremonies and optimizing team performance across multiple teams, including SSW TV and FirebootCamp
+- Led the FirebootCamp training program, mentoring interns in real-life work scenarios and overseeing the full application lifecycle in Angular and .NET
+- Conducted code reviews, enhancing coding standards and teaching soft skills related to effective communication with stakeholders and product owners
+- Worked on diverse client projects including Arriba and BizCover for system architecture improvements, LEX Australia for Outlook plugin development, and Whitehaven Coal for AI-driven compliance and safety systems
+- Developed internal commercial products such as YakShaver.ai, an AI-powered tool for video transcription, intent analysis, and automated task execution
+
+## Technology Stack
+
+- **Frontend**: Angular
+- **Backend**: .NET 8, Legacy .NET 4.2, VB.NET
+- **AI & Audio Processing**: Audio Analysis, AI-driven Compliance Systems, Video Transcription
+- **Integration**: Outlook Plugin Development, Microsoft Office Add-ins
+- **Methodologies**: Scrum & Agile Methodologies, Legacy System Modernization
+- **Leadership & Management**: Team Leadership, Code Reviews, Training & Mentoring
+- **Architecture**: Microservices to Modular Monolith Migration, System Architecture Optimization
+- **Client Projects**: Arriba, BizCover, LEX Australia, Whitehaven Coal, SugarLearning, SSW TV, FirebootCamp
+- **Internal Products**: YakShaver.ai (Commercial AI Product)
+
+## Learning Experience
+
+This role provided valuable experience in:
+
+- Leading complex legacy system migrations and modernization initiatives across enterprise applications
+- Managing and scaling development teams while maintaining high-quality deliverables and team performance
+- Multi-team Scrum Master responsibilities and Agile ceremony facilitation across diverse project portfolios
+- Comprehensive training program development and intern mentoring in both technical and soft skills
+- Strategic client engagement and system architecture optimization, including microservices to monolith transitions
+- AI and audio processing development for compliance and safety systems in industrial environments
+- Microsoft Office integration and plugin development for legal and professional services
+- Commercial AI product development with video transcription, intent analysis, and automated task execution capabilities21:["$","meta","27",{"name":"twitter:description","content":"$26"}]
+22:["$","meta","28",{"name":"twitter:image","content":"https://tomek.au/og-image.jpg"}]
+23:["$","link","29",{"rel":"icon","href":"/favicon.ico?favicon.49c70b34.ico","sizes":"48x48","type":"image/x-icon"}]
+24:["$","$L27","30",{}]
