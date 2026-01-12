@@ -2,7 +2,7 @@
   "site": {
     "name": "Thomas Iwainski - Senior Software Engineer",
     "url": "https://tomek.au",
-    "description": "I'm a passionate Senior Software Engineer with over 10 years of experience in building scalable, high-performance web applications. My expertise lies in the JavaScript ecosystem, particularly with React, Next.js, and Node.js. I thrive in collaborative environments and am always eager to tackle complex challenges and learn new technologies.",
+    "description": "\nI'm a passionate Senior Software Engineer with over 10 years of experience in building scalable, high-performance desktop and web applications. My expertise lies in C# and .NET as well as the JavaScript ecosystem, particularly with React, Next.js, and Node.js. I thrive in collaborative environments and am always eager to tackle complex challenges and learn new technologies.\n\nAs a Senior Software Engineer currently at SSW, I have been at the forefront of leading and modernizing internal and client-facing software projects. My experience spans across diverse industries including technology consulting, winery operations, web management, and software development agencies.\n\nCurrently serving as a Senior Software Engineer and Tech Lead at SSW, where I lead the development of cutting-edge software solutions, manage cross-functional teams, and contribute to innovative AI-powered products like [YakShaver](https://yakshaver.ai).\n",
     "author": {
       "name": "Thomas Iwainski",
       "email": "tomek.iwainski@gmail.com",
@@ -108,7 +108,7 @@
     }
   ],
   "technical": {
-    "framework": "Next.js 14",
+    "framework": "Next.js 15",
     "rendering": "server-side",
     "typescript": true,
     "responsive": true,
