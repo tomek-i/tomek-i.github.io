@@ -3,7 +3,7 @@
 4:I[93977,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 19:I[10237,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"IconMark"]
-0:{"buildId":"fXgwBF8GCZys_BA2_D0lu","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"TlWmzPFVLMtJOVPd7auYi","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:T5d0,## Overview
 
@@ -67,11 +67,11 @@ This role provided valuable experience in:
 - SuperOffice CRM platform development and customization
 - Client-facing communication and requirements gathering
 - Custom software solution design and implementation
-- Collaborative development practices with senior team members6:[["$","title","0",{"children":"Junior Software Developer at Business//Acts | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],["$","link","2",{"rel":"author","href":"https://linkedin.com/tomek.i"}],["$","meta","3",{"name":"author","content":"Thomas Iwainski"}],["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,experience,career,professional experience,work experience,education,software engineering,development"}],["$","meta","5",{"name":"creator","content":"Thomas Iwainski"}],["$","meta","6",{"name":"publisher","content":"Thomas Iwainski"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","9",{"name":"ai-content-declaration","content":"human-authored"}],["$","meta","10",{"name":"ai-training-policy","content":"allowed-with-attribution"}],["$","meta","11",{"name":"content-authenticity","content":"verified"}],["$","meta","12",{"name":"citation-policy","content":"attribution-required"}],["$","link","13",{"rel":"canonical","href":"https://tomek.au/experience/businessacts"}],["$","meta","14",{"property":"og:title","content":"Junior Software Developer at Business//Acts | Thomas Iwainski - Senior Software Engineer"}],["$","meta","15",{"property":"og:description","content":"$8"}],"$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17"]
+- Collaborative development practices with senior team members6:[["$","title","0",{"children":"Junior Software Developer at Business//Acts | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],["$","link","2",{"rel":"author","href":"https://linkedin.com/tomek.i"}],["$","meta","3",{"name":"author","content":"Thomas Iwainski"}],["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,software developer,web development,portfolio,CV,resume,experience,career,professional experience,work experience,education,software engineering,development"}],["$","meta","5",{"name":"creator","content":"Thomas Iwainski"}],["$","meta","6",{"name":"publisher","content":"Thomas Iwainski"}],["$","meta","7",{"name":"robots","content":"index, follow"}],["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","9",{"name":"ai-content-declaration","content":"human-authored"}],["$","meta","10",{"name":"ai-training-policy","content":"allowed-with-attribution"}],["$","meta","11",{"name":"content-authenticity","content":"verified"}],["$","meta","12",{"name":"citation-policy","content":"attribution-required"}],["$","link","13",{"rel":"canonical","href":"https://tomek.au/experience/businessacts"}],["$","meta","14",{"property":"og:title","content":"Junior Software Developer at Business//Acts | Thomas Iwainski - Senior Software Engineer"}],["$","meta","15",{"property":"og:description","content":"$8"}],"$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17"]
 9:["$","meta","16",{"property":"og:url","content":"https://tomek.au/experience/businessacts"}]
 a:["$","meta","17",{"property":"og:site_name","content":"Thomas Iwainski - Senior Software Engineer"}]
 b:["$","meta","18",{"property":"og:locale","content":"en_US"}]
-c:["$","meta","19",{"property":"og:image","content":"https://tomek.au/og-image.jpg"}]
+c:["$","meta","19",{"property":"og:image","content":"https://tomek.au/images/og-default.jpg"}]
 d:["$","meta","20",{"property":"og:image:width","content":"1200"}]
 e:["$","meta","21",{"property":"og:image:height","content":"630"}]
 f:["$","meta","22",{"property":"og:image:alt","content":"Junior Software Developer at Business//Acts"}]
@@ -111,6 +111,6 @@ This role provided valuable experience in:
 - Client-facing communication and requirements gathering
 - Custom software solution design and implementation
 - Collaborative development practices with senior team members14:["$","meta","27",{"name":"twitter:description","content":"$18"}]
-15:["$","meta","28",{"name":"twitter:image","content":"https://tomek.au/og-image.jpg"}]
+15:["$","meta","28",{"name":"twitter:image","content":"https://tomek.au/images/og-default.jpg"}]
 16:["$","link","29",{"rel":"icon","href":"/favicon.ico?favicon.49c70b34.ico","sizes":"48x48","type":"image/x-icon"}]
 17:["$","$L19","30",{}]
