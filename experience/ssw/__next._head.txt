@@ -3,7 +3,7 @@
 4:I[93977,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 27:I[10237,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"IconMark"]
-0:{"buildId":"gk--eg9nkHwO8HeuhUTEY","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"i3J9p2d7EVJq5g_1te3EO","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:T1297,## Overview
 
@@ -50,7 +50,7 @@ This role provided valuable experience in:
 - AI and audio processing development for compliance and safety systems in industrial environments
 - Microsoft Office integration and plugin development for legal and professional services
 - Commercial AI product development with video transcription, intent analysis, and automated task execution capabilities6:[["$","title","0",{"children":"Senior Software Engineer at SSW | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],"$L8","$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24"]
-8:["$","link","2",{"rel":"author","href":"https://linkedin.com/tomek.i"}]
+8:["$","link","2",{"rel":"author","href":"https://https://linkedin.com/in/tomek-iw"}]
 9:["$","meta","3",{"name":"author","content":"Thomas Iwainski"}]
 a:["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,software developer,web development,portfolio,CV,resume,experience,career,professional experience,work experience,education,software engineering,development"}]
 b:["$","meta","5",{"name":"creator","content":"Thomas Iwainski"}]

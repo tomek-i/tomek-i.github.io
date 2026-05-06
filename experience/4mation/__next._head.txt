@@ -2,8 +2,8 @@
 2:I[93977,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"ViewportBoundary"]
 4:I[93977,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
-21:I[10237,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"IconMark"]
-0:{"buildId":"gk--eg9nkHwO8HeuhUTEY","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+22:I[10237,["/_next/static/chunks/f6e96b8e1e0faf0c.js","/_next/static/chunks/ac54c20544fcf417.js"],"IconMark"]
+0:{"buildId":"i3J9p2d7EVJq5g_1te3EO","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:Ta0a,## Overview
 
@@ -39,60 +39,15 @@ This role provided valuable experience in:
 - Full-stack development across diverse technology stacks and frameworks
 - Agile project management and cross-functional team collaboration
 - Mentoring junior developers and establishing code quality standards
-- Client stakeholder management and requirement gathering for custom software solutions6:[["$","title","0",{"children":"Full-Stack Senior Software Engineer at 4Mation | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],["$","link","2",{"rel":"author","href":"https://linkedin.com/tomek.i"}],["$","meta","3",{"name":"author","content":"Thomas Iwainski"}],["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,software developer,web development,portfolio,CV,resume,experience,career,professional experience,work experience,education,software engineering,development"}],["$","meta","5",{"name":"creator","content":"Thomas Iwainski"}],["$","meta","6",{"name":"publisher","content":"Thomas Iwainski"}],["$","meta","7",{"name":"robots","content":"index, follow"}],"$L8","$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e"]
-8:["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}]
-9:["$","meta","9",{"name":"ai-content-declaration","content":"human-authored"}]
-a:["$","meta","10",{"name":"ai-training-policy","content":"allowed-with-attribution"}]
-b:["$","meta","11",{"name":"content-authenticity","content":"verified"}]
-c:["$","meta","12",{"name":"citation-policy","content":"attribution-required"}]
-d:["$","link","13",{"rel":"canonical","href":"https://tomek.au/experience/4mation"}]
-e:["$","meta","14",{"property":"og:title","content":"Full-Stack Senior Software Engineer at 4Mation | Thomas Iwainski - Senior Software Engineer"}]
-1f:Ta0a,## Overview
-
-As a Full-Stack Developer at 4mation, I led the development and maintenance of web applications, spearheaded the migration of legacy systems to modern architectures, and collaborated effectively within Agile teams to deliver high-quality software solutions that consistently exceeded client expectations. I was instrumental in developing and maintaining web applications across a range of technologies, including TypeScript, AngularJS, Next.js, Node.js, and Express.js. My role involved not only writing code but also leading the successful migration of legacy systems to modern, scalable serverless architectures, working in a dynamic Agile environment where I collaborated closely with cross-functional teams.
-
-## Key Achievements
-
-- **Legacy System Migration Leadership**: Successfully led the migration of legacy systems to modern, scalable serverless architectures
-- **Full-Stack Development Excellence**: Developed and maintained complex web applications using cutting-edge JavaScript frameworks and backend technologies
-- **Agile Team Collaboration**: Acted as key contributor in Agile sprints, consistently delivering projects on time and within budget while exceeding client expectations
-
-## Responsibilities
-
-- Developed and maintained full-stack web applications using modern JavaScript frameworks and backend technologies
-- Led the conversion of legacy systems to scalable, serverless architectures
-- Collaborated closely with stakeholders to gather requirements and deliver custom software solutions
-- Acted as a key contributor in Agile sprints, ensuring timely and budget-friendly delivery of projects
-- Conducted code reviews and mentored junior developers to ensure best practices and high-quality code standards
-
-## Technology Stack
-
-- **Frontend**: TypeScript, AngularJS, Next.js, JavaScript
-- **Backend**: Node.js, Express.js, Strapi.js, C#, .NET Framework
-- **Architecture**: Serverless Architectures, Legacy System Conversion
-- **Methodologies**: Agile Development, Full-Stack Development
-- **Soft Skills**: Team Collaboration, Client Communication, Problem Solving, Code Reviews, Mentoring
-
-## Learning Experience
-
-This role provided valuable experience in:
-
-- Leading complex legacy system migrations to modern serverless architectures
-- Full-stack development across diverse technology stacks and frameworks
-- Agile project management and cross-functional team collaboration
-- Mentoring junior developers and establishing code quality standards
-- Client stakeholder management and requirement gathering for custom software solutionsf:["$","meta","15",{"property":"og:description","content":"$1f"}]
-10:["$","meta","16",{"property":"og:url","content":"https://tomek.au/experience/4mation"}]
-11:["$","meta","17",{"property":"og:site_name","content":"Thomas Iwainski - Senior Software Engineer"}]
-12:["$","meta","18",{"property":"og:locale","content":"en_US"}]
-13:["$","meta","19",{"property":"og:image","content":"https://tomek.au/images/og-default.jpg"}]
-14:["$","meta","20",{"property":"og:image:width","content":"1200"}]
-15:["$","meta","21",{"property":"og:image:height","content":"630"}]
-16:["$","meta","22",{"property":"og:image:alt","content":"Full-Stack Senior Software Engineer at 4Mation"}]
-17:["$","meta","23",{"property":"og:type","content":"website"}]
-18:["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}]
-19:["$","meta","25",{"name":"twitter:creator","content":"@tomek_i"}]
-1a:["$","meta","26",{"name":"twitter:title","content":"Full-Stack Senior Software Engineer at 4Mation | Thomas Iwainski - Senior Software Engineer"}]
+- Client stakeholder management and requirement gathering for custom software solutions6:[["$","title","0",{"children":"Full-Stack Senior Software Engineer at 4Mation | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],["$","link","2",{"rel":"author","href":"https://https://linkedin.com/in/tomek-iw"}],["$","meta","3",{"name":"author","content":"Thomas Iwainski"}],["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,software developer,web development,portfolio,CV,resume,experience,career,professional experience,work experience,education,software engineering,development"}],["$","meta","5",{"name":"creator","content":"Thomas Iwainski"}],["$","meta","6",{"name":"publisher","content":"Thomas Iwainski"}],"$L8","$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f"]
+8:["$","meta","7",{"name":"robots","content":"index, follow"}]
+9:["$","meta","8",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}]
+a:["$","meta","9",{"name":"ai-content-declaration","content":"human-authored"}]
+b:["$","meta","10",{"name":"ai-training-policy","content":"allowed-with-attribution"}]
+c:["$","meta","11",{"name":"content-authenticity","content":"verified"}]
+d:["$","meta","12",{"name":"citation-policy","content":"attribution-required"}]
+e:["$","link","13",{"rel":"canonical","href":"https://tomek.au/experience/4mation"}]
+f:["$","meta","14",{"property":"og:title","content":"Full-Stack Senior Software Engineer at 4Mation | Thomas Iwainski - Senior Software Engineer"}]
 20:Ta0a,## Overview
 
 As a Full-Stack Developer at 4mation, I led the development and maintenance of web applications, spearheaded the migration of legacy systems to modern architectures, and collaborated effectively within Agile teams to deliver high-quality software solutions that consistently exceeded client expectations. I was instrumental in developing and maintaining web applications across a range of technologies, including TypeScript, AngularJS, Next.js, Node.js, and Express.js. My role involved not only writing code but also leading the successful migration of legacy systems to modern, scalable serverless architectures, working in a dynamic Agile environment where I collaborated closely with cross-functional teams.
@@ -127,7 +82,53 @@ This role provided valuable experience in:
 - Full-stack development across diverse technology stacks and frameworks
 - Agile project management and cross-functional team collaboration
 - Mentoring junior developers and establishing code quality standards
-- Client stakeholder management and requirement gathering for custom software solutions1b:["$","meta","27",{"name":"twitter:description","content":"$20"}]
-1c:["$","meta","28",{"name":"twitter:image","content":"https://tomek.au/images/og-default.jpg"}]
-1d:["$","link","29",{"rel":"icon","href":"/favicon.ico?favicon.49c70b34.ico","sizes":"48x48","type":"image/x-icon"}]
-1e:["$","$L21","30",{}]
+- Client stakeholder management and requirement gathering for custom software solutions10:["$","meta","15",{"property":"og:description","content":"$20"}]
+11:["$","meta","16",{"property":"og:url","content":"https://tomek.au/experience/4mation"}]
+12:["$","meta","17",{"property":"og:site_name","content":"Thomas Iwainski - Senior Software Engineer"}]
+13:["$","meta","18",{"property":"og:locale","content":"en_US"}]
+14:["$","meta","19",{"property":"og:image","content":"https://tomek.au/images/og-default.jpg"}]
+15:["$","meta","20",{"property":"og:image:width","content":"1200"}]
+16:["$","meta","21",{"property":"og:image:height","content":"630"}]
+17:["$","meta","22",{"property":"og:image:alt","content":"Full-Stack Senior Software Engineer at 4Mation"}]
+18:["$","meta","23",{"property":"og:type","content":"website"}]
+19:["$","meta","24",{"name":"twitter:card","content":"summary_large_image"}]
+1a:["$","meta","25",{"name":"twitter:creator","content":"@tomek_i"}]
+1b:["$","meta","26",{"name":"twitter:title","content":"Full-Stack Senior Software Engineer at 4Mation | Thomas Iwainski - Senior Software Engineer"}]
+21:Ta0a,## Overview
+
+As a Full-Stack Developer at 4mation, I led the development and maintenance of web applications, spearheaded the migration of legacy systems to modern architectures, and collaborated effectively within Agile teams to deliver high-quality software solutions that consistently exceeded client expectations. I was instrumental in developing and maintaining web applications across a range of technologies, including TypeScript, AngularJS, Next.js, Node.js, and Express.js. My role involved not only writing code but also leading the successful migration of legacy systems to modern, scalable serverless architectures, working in a dynamic Agile environment where I collaborated closely with cross-functional teams.
+
+## Key Achievements
+
+- **Legacy System Migration Leadership**: Successfully led the migration of legacy systems to modern, scalable serverless architectures
+- **Full-Stack Development Excellence**: Developed and maintained complex web applications using cutting-edge JavaScript frameworks and backend technologies
+- **Agile Team Collaboration**: Acted as key contributor in Agile sprints, consistently delivering projects on time and within budget while exceeding client expectations
+
+## Responsibilities
+
+- Developed and maintained full-stack web applications using modern JavaScript frameworks and backend technologies
+- Led the conversion of legacy systems to scalable, serverless architectures
+- Collaborated closely with stakeholders to gather requirements and deliver custom software solutions
+- Acted as a key contributor in Agile sprints, ensuring timely and budget-friendly delivery of projects
+- Conducted code reviews and mentored junior developers to ensure best practices and high-quality code standards
+
+## Technology Stack
+
+- **Frontend**: TypeScript, AngularJS, Next.js, JavaScript
+- **Backend**: Node.js, Express.js, Strapi.js, C#, .NET Framework
+- **Architecture**: Serverless Architectures, Legacy System Conversion
+- **Methodologies**: Agile Development, Full-Stack Development
+- **Soft Skills**: Team Collaboration, Client Communication, Problem Solving, Code Reviews, Mentoring
+
+## Learning Experience
+
+This role provided valuable experience in:
+
+- Leading complex legacy system migrations to modern serverless architectures
+- Full-stack development across diverse technology stacks and frameworks
+- Agile project management and cross-functional team collaboration
+- Mentoring junior developers and establishing code quality standards
+- Client stakeholder management and requirement gathering for custom software solutions1c:["$","meta","27",{"name":"twitter:description","content":"$21"}]
+1d:["$","meta","28",{"name":"twitter:image","content":"https://tomek.au/images/og-default.jpg"}]
+1e:["$","link","29",{"rel":"icon","href":"/favicon.ico?favicon.49c70b34.ico","sizes":"48x48","type":"image/x-icon"}]
+1f:["$","$L22","30",{}]
