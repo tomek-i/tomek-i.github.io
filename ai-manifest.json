@@ -2,7 +2,7 @@
   "site": {
     "name": "Thomas Iwainski - Senior Software Engineer",
     "url": "https://tomek.au",
-    "description": "\nI'm a passionate Senior Software Engineer with over 10 years of experience in building scalable, high-performance desktop and web applications. My expertise lies in C# and .NET as well as the JavaScript ecosystem, particularly with React, Next.js, and Node.js. I thrive in collaborative environments and am always eager to tackle complex challenges and learn new technologies.\n\nAs a Senior Software Engineer currently at SSW, I have been at the forefront of leading and modernizing internal and client-facing software projects. My experience spans across diverse industries including technology consulting, winery operations, web management, and software development agencies.\n\nCurrently serving as a Senior Software Engineer and Tech Lead at SSW, where I lead the development of cutting-edge software solutions, manage cross-functional teams, and contribute to innovative AI-powered products like [YakShaver](https://yakshaver.ai).\n",
+    "description": "I'm a passionate Senior Software Engineer with over 10 years of experience in building scalable, high-performance desktop and web applications. My expertise lies in C# and .NET as well as the JavaScript ecosystem, particularly with React, Next.js, and Node.js. I thrive in collaborative environments and am always eager to tackle complex challenges and learn new technologies.",
     "author": {
       "name": "Thomas Iwainski",
       "email": "tomek.iwainski@gmail.com",
@@ -88,6 +88,7 @@
       "title": "Building a Design System with Tailwind CSS",
       "description": "How to create a consistent and reusable design system for your projects using the power of Tailwind CSS.",
       "published": "December 05, 2023",
+      "modified": "December 05, 2023",
       "importance": "medium"
     },
     {
@@ -96,6 +97,7 @@
       "title": "Top 5 Features in Next.js 14",
       "description": "A look at the most exciting new features introduced in Next.js 14 and how they can improve your development workflow.",
       "published": "November 15, 2023",
+      "modified": "November 15, 2023",
       "importance": "medium"
     },
     {
@@ -104,6 +106,7 @@
       "title": "Mastering React Hooks: A Deep Dive",
       "description": "An in-depth guide to understanding and mastering React Hooks for more efficient and clean component design.",
       "published": "October 26, 2023",
+      "modified": "October 26, 2023",
       "importance": "medium"
     }
   ],
