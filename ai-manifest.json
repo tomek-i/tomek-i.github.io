@@ -13,12 +13,11 @@
         "stackoverflow": "https://stackoverflow.com/users/4421557/tomek-i"
       }
     },
-    "lastUpdated": "2023-12-05T00:00:00.000Z"
+    "lastUpdated": "2026-06-22T12:16:36.955Z"
   },
   "content": {
     "types": [
       "portfolio",
-      "blog",
       "professional-profile",
       "technical-content"
     ],
@@ -44,10 +43,10 @@
     ]
   },
   "pages": {
-    "total": 13,
-    "static": 4,
+    "total": 9,
+    "static": 3,
     "dynamic": {
-      "blogs": 3,
+      "blogs": 0,
       "experience": 6
     }
   },
@@ -69,45 +68,11 @@
       "importance": "high"
     },
     {
-      "type": "blog_index",
-      "url": "https://tomek.au/blogs",
-      "title": "Technical Blog",
-      "description": "Articles about web development and software engineering",
-      "importance": "high"
-    },
-    {
       "type": "projects",
       "url": "https://tomek.au/projects",
       "title": "Software Projects Portfolio",
       "description": "Showcase of technical projects and applications",
       "importance": "high"
-    },
-    {
-      "type": "article",
-      "url": "https://tomek.au/blogs/building-a-design-system-with-tailwind-css",
-      "title": "Building a Design System with Tailwind CSS",
-      "description": "How to create a consistent and reusable design system for your projects using the power of Tailwind CSS.",
-      "published": "December 05, 2023",
-      "modified": "December 05, 2023",
-      "importance": "medium"
-    },
-    {
-      "type": "article",
-      "url": "https://tomek.au/blogs/nextjs-14-features",
-      "title": "Top 5 Features in Next.js 14",
-      "description": "A look at the most exciting new features introduced in Next.js 14 and how they can improve your development workflow.",
-      "published": "November 15, 2023",
-      "modified": "November 15, 2023",
-      "importance": "medium"
-    },
-    {
-      "type": "article",
-      "url": "https://tomek.au/blogs/mastering-react-hooks",
-      "title": "Mastering React Hooks: A Deep Dive",
-      "description": "An in-depth guide to understanding and mastering React Hooks for more efficient and clean component design.",
-      "published": "October 26, 2023",
-      "modified": "October 26, 2023",
-      "importance": "medium"
     }
   ],
   "technical": {
@@ -121,6 +86,6 @@
   "verification": {
     "domain_verified": true,
     "content_authenticity": "verified",
-    "last_verification": "2023-12-05T00:00:00.000Z"
+    "last_verification": "2026-06-22T12:16:36.955Z"
   }
 }

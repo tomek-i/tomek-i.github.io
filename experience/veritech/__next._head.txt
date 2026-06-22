@@ -3,7 +3,7 @@
 4:I[65019,["/_next/static/chunks/5c4e1328872cf425.js","/_next/static/chunks/61724950720311f4.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 24:I[26764,["/_next/static/chunks/5c4e1328872cf425.js","/_next/static/chunks/61724950720311f4.js"],"IconMark"]
-0:{"buildId":"Vm_CZxSggpkBwod0o7YW5","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"hMRZh1LCU1P9z2y6hqGGH","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 7:Tb68,## Overview
 
@@ -44,7 +44,7 @@ This role provided valuable experience in:
 - Comprehensive IT infrastructure consulting and system optimization strategies
 - Advanced server administration and network engineering practices
 - Proactive security monitoring and vulnerability prevention methodologies
-- Client relationship management and custom solution development in IT environments6:[["$","title","0",{"children":"Website Manager & IT Consultant at Veritech | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],["$","link","2",{"rel":"author","href":"https://https://linkedin.com/in/tomek-iw"}],["$","meta","3",{"name":"author","content":"Thomas Iwainski"}],["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,software developer,web development,portfolio,CV,resume,experience,career,professional experience,work experience,education,software engineering,development"}],"$L8","$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21"]
+- Client relationship management and custom solution development in IT environments6:[["$","title","0",{"children":"Website Manager & IT Consultant at Veritech | Thomas Iwainski - Senior Software Engineer"}],["$","meta","1",{"name":"description","content":"$7"}],["$","link","2",{"rel":"author","href":"https://www.linkedin.com/in/tomek-iw"}],["$","meta","3",{"name":"author","content":"Thomas Iwainski"}],["$","meta","4",{"name":"keywords","content":"Thomas Iwainski,Tomek,Senior Software Engineer,React,Next.js,TypeScript,JavaScript,Full Stack Developer,Sydney,Australia,software developer,web development,portfolio,CV,resume,experience,career,professional experience,work experience,education,software engineering,development"}],"$L8","$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21"]
 8:["$","meta","5",{"name":"creator","content":"Thomas Iwainski"}]
 9:["$","meta","6",{"name":"publisher","content":"Thomas Iwainski"}]
 a:["$","meta","7",{"name":"robots","content":"index, follow"}]

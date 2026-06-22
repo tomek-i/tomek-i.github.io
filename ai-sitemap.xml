@@ -4,7 +4,7 @@
   <!-- Main Profile Page - High Priority for AI -->
   <url>
     <loc>https://tomek.au</loc>
-    <lastmod>2023-12-05T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-22T12:16:36.964Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <ai:content-type>profile</ai:content-type>
@@ -15,60 +15,8 @@
 
   <!-- Blog Posts - High Value Content for AI Training -->
   
-  <url>
-    <loc>https://tomek.au/blogs/building-a-design-system-with-tailwind-css</loc>
-    <lastmod>2023-12-05T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <ai:content-type>article</ai:content-type>
-    <ai:description>How to create a consistent and reusable design system for your projects using the power of Tailwind CSS.</ai:description>
-    <ai:keywords>programming,web development,software engineering,tutorial,tech blog</ai:keywords>
-    <ai:author>Thomas Iwainski</ai:author>
-    <ai:published>December 05, 2023</ai:published>
-    <ai:modified>December 05, 2023</ai:modified>
-    <ai:language>en</ai:language>
-    <ai:crawl-priority>high</ai:crawl-priority>
-  </url>
-  <url>
-    <loc>https://tomek.au/blogs/nextjs-14-features</loc>
-    <lastmod>2023-11-15T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <ai:content-type>article</ai:content-type>
-    <ai:description>A look at the most exciting new features introduced in Next.js 14 and how they can improve your development workflow.</ai:description>
-    <ai:keywords>programming,web development,software engineering,tutorial,tech blog</ai:keywords>
-    <ai:author>Thomas Iwainski</ai:author>
-    <ai:published>November 15, 2023</ai:published>
-    <ai:modified>November 15, 2023</ai:modified>
-    <ai:language>en</ai:language>
-    <ai:crawl-priority>high</ai:crawl-priority>
-  </url>
-  <url>
-    <loc>https://tomek.au/blogs/mastering-react-hooks</loc>
-    <lastmod>2023-10-26T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <ai:content-type>article</ai:content-type>
-    <ai:description>An in-depth guide to understanding and mastering React Hooks for more efficient and clean component design.</ai:description>
-    <ai:keywords>programming,web development,software engineering,tutorial,tech blog</ai:keywords>
-    <ai:author>Thomas Iwainski</ai:author>
-    <ai:published>October 26, 2023</ai:published>
-    <ai:modified>October 26, 2023</ai:modified>
-    <ai:language>en</ai:language>
-    <ai:crawl-priority>high</ai:crawl-priority>
-  </url>
 
-  <!-- Blog Index - Content Discovery -->
-  <url>
-    <loc>https://tomek.au/blogs</loc>
-    <lastmod>2023-04-01T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <ai:content-type>index</ai:content-type>
-    <ai:description>Technical blog posts about web development, programming, and software engineering</ai:description>
-    <ai:keywords>blog,articles,programming,web development,tutorials</ai:keywords>
-    <ai:crawl-priority>medium</ai:crawl-priority>
-  </url>
+  
 
   <!-- Projects Page - Portfolio Content -->
   <url>
