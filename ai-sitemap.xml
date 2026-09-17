@@ -4,7 +4,7 @@
   <!-- Main Profile Page - High Priority for AI -->
   <url>
     <loc>https://tomek.au</loc>
-    <lastmod>2026-09-17T00:32:40.438Z</lastmod>
+    <lastmod>2026-09-17T01:08:14.435Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <ai:content-type>profile</ai:content-type>
@@ -21,7 +21,7 @@
   <!-- Projects Page - Portfolio Content -->
   <url>
     <loc>https://tomek.au/projects</loc>
-    <lastmod>2025-09-15T03:06:40.484Z</lastmod>
+    <lastmod>2026-06-16T05:29:36.000Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <ai:content-type>portfolio</ai:content-type>
